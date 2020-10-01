@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Connecting to your SensorGnome | SensorGnome User Guide</title>
+  <meta name="description" content="A guide to using a SensorGnome, part of Motus Wildlife Tracking System" />
+  <meta name="generator" content="bookdown 0.18 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Connecting to your SensorGnome | SensorGnome User Guide" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="A guide to using a SensorGnome, part of Motus Wildlife Tracking System" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Connecting to your SensorGnome | SensorGnome User Guide" />
+  
+  <meta name="twitter:description" content="A guide to using a SensorGnome, part of Motus Wildlife Tracking System" />
+  
+
+<meta name="author" content="The Motus People" />
+
+
+<meta name="date" content="2020-06-15" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="the-web-interface.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="connecting-to-your-sensorgnome.html"><a href="connecting-to-your-sensorgnome.html"><i class="fa fa-check"></i><b>2</b> Connecting to your SensorGnome</a><ul>
+<li class="chapter" data-level="2.1" data-path="connecting-to-your-sensorgnome.html"><a href="connecting-to-your-sensorgnome.html#raspberry-pi-sensorgnome"><i class="fa fa-check"></i><b>2.1</b> Raspberry Pi SensorGnome</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="connecting-to-your-sensorgnome.html"><a href="connecting-to-your-sensorgnome.html#option-1-wifi-hotspot"><i class="fa fa-check"></i><b>2.1.1</b> Option 1: WiFi Hotspot</a></li>
+<li class="chapter" data-level="2.1.2" data-path="connecting-to-your-sensorgnome.html"><a href="connecting-to-your-sensorgnome.html#ethernet"><i class="fa fa-check"></i><b>2.1.2</b> Option 2: Ethernet Cable</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="connecting-to-your-sensorgnome.html"><a href="connecting-to-your-sensorgnome.html#beaglebone-sensorgnome"><i class="fa fa-check"></i><b>2.2</b> BeagleBone SensorGnome</a><ul>
+<li class="chapter" data-level="2.2.1" data-path="connecting-to-your-sensorgnome.html"><a href="connecting-to-your-sensorgnome.html#firststeps"><i class="fa fa-check"></i><b>2.2.1</b> First steps</a></li>
+<li class="chapter" data-level="2.2.2" data-path="connecting-to-your-sensorgnome.html"><a href="connecting-to-your-sensorgnome.html#connecting-via-usb-cable"><i class="fa fa-check"></i><b>2.2.2</b> Connecting via USB cable</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-web-interface.html"><a href="the-web-interface.html"><i class="fa fa-check"></i><b>3</b> The Web Interface</a></li>
+<li class="chapter" data-level="4" data-path="establishing-an-ftp-connection.html"><a href="establishing-an-ftp-connection.html"><i class="fa fa-check"></i><b>4</b> Establishing an FTP Connection</a></li>
+<li class="chapter" data-level="5" data-path="other-methods-of-transferring-data.html"><a href="other-methods-of-transferring-data.html"><i class="fa fa-check"></i><b>5</b> Other methods of transferring data</a><ul>
+<li class="chapter" data-level="5.1" data-path="other-methods-of-transferring-data.html"><a href="other-methods-of-transferring-data.html#removing-the-microsd-card"><i class="fa fa-check"></i><b>5.1</b> Removing the MicroSD Card</a></li>
+<li class="chapter" data-level="5.2" data-path="other-methods-of-transferring-data.html"><a href="other-methods-of-transferring-data.html#shared-network-drive"><i class="fa fa-check"></i><b>5.2</b> Shared network drive</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="downloading-detection-data.html"><a href="downloading-detection-data.html"><i class="fa fa-check"></i><b>6</b> Downloading detection data</a></li>
+<li class="chapter" data-level="7" data-path="updating-software.html"><a href="updating-software.html"><i class="fa fa-check"></i><b>7</b> Updating software</a><ul>
+<li class="chapter" data-level="7.1" data-path="updating-software.html"><a href="updating-software.html#raspberry-pi-sensorgnome-1"><i class="fa fa-check"></i><b>7.1</b> Raspberry Pi SensorGnome</a></li>
+<li class="chapter" data-level="7.2" data-path="updating-software.html"><a href="updating-software.html#beaglebone-sensorgnome-1"><i class="fa fa-check"></i><b>7.2</b> BeagleBone SensorGnome</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="updating-software.html"><a href="updating-software.html#create-an-image-disk-with-the-latest-software"><i class="fa fa-check"></i><b>7.2.1</b> Create an image disk with the latest software</a></li>
+<li class="chapter" data-level="7.2.2" data-path="updating-software.html"><a href="updating-software.html#updating-or-reimaging-the-software"><i class="fa fa-check"></i><b>7.2.2</b> Updating or Reimaging the software</a></li>
+</ul></li>
+<li class="chapter" data-level="7.3" data-path="updating-software.html"><a href="updating-software.html#applying-a-software-patch"><i class="fa fa-check"></i><b>7.3</b> Applying a software patch</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="modifying-configuration-files.html"><a href="modifying-configuration-files.html"><i class="fa fa-check"></i><b>8</b> Modifying configuration files</a><ul>
+<li class="chapter" data-level="8.1" data-path="modifying-configuration-files.html"><a href="modifying-configuration-files.html#deployment.txt"><i class="fa fa-check"></i><b>8.1</b> Deployment.txt</a></li>
+<li class="chapter" data-level="8.2" data-path="modifying-configuration-files.html"><a href="modifying-configuration-files.html#configuring-internet-access"><i class="fa fa-check"></i><b>8.2</b> Configuring internet access</a></li>
+<li class="chapter" data-level="8.3" data-path="modifying-configuration-files.html"><a href="modifying-configuration-files.html#downloading-tag-database-to-a-sensorgnome"><i class="fa fa-check"></i><b>8.3</b> Downloading tag database to a SensorGnome</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">SensorGnome User Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="connecting-to-your-sensorgnome" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Connecting to your SensorGnome</h1>
+<p>Connecting to your SensorGnome is the only way to confirm whether it’s working properly when you leave it, so it is a very crucial step on any station visit. When you are testing an SG for the first time, this should be your first step.</p>
+<p>The steps to connect differ depending on whether you are using a Raspberry Pi or BeagleBone based SensorGnome.</p>
+<div id="raspberry-pi-sensorgnome" class="section level2">
+<h2><span class="header-section-number">2.1</span> Raspberry Pi SensorGnome</h2>
+<p>There are two methods of connecting to a Raspberry Pi based SG (RPi SG).</p>
+<div id="option-1-wifi-hotspot" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Option 1: WiFi Hotspot</h3>
+<p>The RPi that powers the SG is capable of producing a local WiFi hotspot that a computer or smartphone can connect to. This doesn’t connect to the internet, but simply forms a network connection between the SG and your device.</p>
+<p>An RPi SG with the ability to create a hotspot will have a silver button somewhere on the outside of the SensorGnome case. This button is used to activate the hotspot. If there is no button anywhere on your RPi SG then it will not be capable of creating a hotspot and you will have to connect with <a href="connecting-to-your-sensorgnome.html#ethernet">Option 2: Ethernet Cable</a>.</p>
+<div class="figure"><span id="fig:unnamed-chunk-1"></span>
+<img src="images/wifibutton.png" alt="The button on the left is used to activate the Wifi hotspot" width="400" />
+<p class="caption">
+Figure 2.1: The button on the left is used to activate the Wifi hotspot
+</p>
+</div>
+<p>The WiFi hotspot is convenient because, once a computer (or smartphone) has connected once to that particular RPi SG, it will not require any additional configuration and all further interactions with that SG can be performed by pressing the WiFi button and leaving the SG itself closed.</p>
+<p>The disadvantage is that activating the WiFi hotspot via the button can be finicky. Sometimes it takes several tries, and sometimes it doesn’t work at all.</p>
+<ol style="list-style-type: decimal">
+<li><p>Activate the WiFi hotspot by double pressing the WiFi button on the SG case. If properly activated the button will commence a slow on/off blinking pattern (the actual pattern of the blinking may vary).</p></li>
+<li><p>The WiFi hotspot should soon appear in the list of available WiFi networks to connect to. The name of the WiFi Network will be the same as the serial number of the RPi SG.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>It can take up to a minute for the WiFi network to appear</p></li>
+<li><p>The LED light in the button is usually bright enough to view in sunlight, but occasionally it is very faint and difficult to see</p></li>
+<li><p>The timing of the double press can be finicky and difficult to activate. If it doesn’t work, try it again.</p></li>
+</ol></li>
+<li><p>Connect to the new WiFi network. The password is the same as the network name, which is the same as the serial number of the RPi SG. This is just a local network so there won’t be any internet once connected.</p></li>
+<li><p>Open a web browser (Firefox or Chrome, or your smartphone browser)</p></li>
+<li><p>Navigate to <a href="http://sgpi.local" class="uri">http://sgpi.local</a> or <a href="http://192.168.7.2" class="uri">http://192.168.7.2</a></p></li>
+<li><p>You should now see the <a href="#webinterface">SensorGnome Web Interface</a></p></li>
+</ol>
+</div>
+<div id="ethernet" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> Option 2: Ethernet Cable</h3>
+<p>Connecting via Ethernet cable is usually a straightforward method that requires no configuration.</p>
+<ol style="list-style-type: decimal">
+<li><p>Connect the RPi to your computer with the Ethernet Cable. Many newer computers do not have an Ethernet jack and require an Ethernet -&gt; USB adapter</p></li>
+<li><p>Open a web browser (Firefox or Chrome)</p></li>
+<li><p>Navigate to <a href="http://sgpi.local" class="uri">http://sgpi.local</a> in the address bar</p>
+<ol style="list-style-type: lower-alpha">
+<li>Note: It will take several seconds for the connection to establish. Sometimes up to a minute or so.</li>
+</ol></li>
+<li><p>You should now see the <a href="#webinterface">SensorGnome Web Interface</a></p></li>
+</ol>
+<p><em>Note: you may require iTunes to be installed on your computer since it contains software (called Bonjour) that facilitates communication between the computer and the network.</em></p>
+</div>
+</div>
+<div id="beaglebone-sensorgnome" class="section level2">
+<h2><span class="header-section-number">2.2</span> BeagleBone SensorGnome</h2>
+<div id="firststeps" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> First steps</h3>
+<p>Prior to connecting to a BeagleBone SensorGnome for the first time, you may need to complete the following steps.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Install BeagleBones drivers</strong>. Direct link to x64 Windows Driver <a href="https://beagleboard.org/static/Drivers/Windows/BONE_D64.exe">here</a>. More information here and other versions here, about halfway down the page: <a href="http://beagleboard.org/getting-started" class="uri">http://beagleboard.org/getting-started</a></p>
+<ul>
+<li><p>Note: After June 2016, drivers are apparently no longer needed (according to <a href="https://archived.sensorgnome.org/Connecting_to_your_SensorGnome/Installing_drivers_for_the_SensorGnome_on_your_computer/" class="uri">https://archived.sensorgnome.org/Connecting_to_your_SensorGnome/Installing_drivers_for_the_SensorGnome_on_your_computer/</a>) but older versions of the software may still be encountered.</p></li>
+<li><p>Note: Sometimes Windows prevents these drivers from being installed since they are unsigned. There may not be any error message regarding the reason for the installation failure (see below). Instructions on how to temporarily disable these security checks so that the drivers can be installed can be found <a href="https://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/">here</a> (option 2 is simplest). Restart your computer after you have successfully installed the drivers in order to reset the security bypass.</p></li>
+</ul></li>
+</ol>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-2"></span>
+<img src="images/driverfail.png" alt="Unsigned drivers may fail to install without an explicit error messsage" width="312" />
+<p class="caption">
+Figure 2.2: Unsigned drivers may fail to install without an explicit error messsage
+</p>
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li><strong>Allow SMBv1 connections on Windows</strong>.
+Later versions of Windows block connections using this protocol since it’s not as secure as newwer protocols. This can be overridden by going to Control Panel &gt; Programs &gt; Turn Windows Features On or Off &gt; and Expand SMB 1.0/CIFS File Sharing Support. Toggle “SMB 1.0/CIFS Client” On. More info can be found <a href="https://www.windowscentral.com/how-access-files-network-devices-using-smbv1-windows-10">here</a>. Note that since you are disabling a safety feature, it is best not to suppress the warning message you will get when you connect in FileZilla, though this means you will be have to click “OK” on the warning screen each time you connect.</li>
+</ol>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-3"></span>
+<img src="images/smb.png" alt="SMCv1 connections must be enablesd" width="278" />
+<p class="caption">
+Figure 2.3: SMCv1 connections must be enablesd
+</p>
+</div>
+</div>
+<div id="connecting-via-usb-cable" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Connecting via USB cable</h3>
+<p>A USB cable is currently the only method of connecting to a BB SG.</p>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
+<img src="images/bbusb.png" alt="A Mini-USB connection is used to connect a BB SG to a computer" width="512" />
+<p class="caption">
+Figure 2.4: A Mini-USB connection is used to connect a BB SG to a computer
+</p>
+</div>
+<p>Connect the end with the Mini USB connection to the BeagleBone, and the end with the standard USB port to your computer.</p>
+<p>Allow several seconds, or up to a minute, for the connection to establish. Open a modern browser (e.g. Firefox) and visit <a href="http://192.168.7.2" class="uri">http://192.168.7.2</a>. You should now see the Web Interface.</p>
+<p>Note: If the BB is already powered on by using the power cable, you can simply plug in the USB cable. The USB connection will also power the BB by itself if needed.</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-web-interface.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["SensorGnomeUserGuide.pdf", "SensorGnomeUserGuide.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
