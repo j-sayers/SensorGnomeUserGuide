@@ -1,1 +1,1 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/home/about/ for how to compile this example.
+This is a guide to using a SensorGnome receiver with the Motus Wildlife Trakcing System (motus.org)
