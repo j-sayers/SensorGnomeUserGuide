@@ -19,7 +19,7 @@ biblio-style: apalike
 
 # Introduction and Overview
 
-This document explains how to connect to your SensorGnome, check its status via the Web Interface, download detection data from your SensorGnome, and update the software.
+TEST This document explains how to connect to your SensorGnome, check its status via the Web Interface, download detection data from your SensorGnome, and update the software.
 
 Note that the instructions differ somewhat depending on whether you have a SensorGnome powered by a Raspberry Pi computer, or one powered by a BeagleBone computer.
 
