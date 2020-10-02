@@ -19,11 +19,11 @@ biblio-style: apalike
 
 # Introduction and Overview
 
-TEST This document explains how to connect to your SensorGnome, check its status via the Web Interface, download detection data from your SensorGnome, and update the software.
+This document explains how to connect to your SensorGnome, check its status via the Web Interface, download detection data from your SensorGnome, and update the software.
 
 Note that the instructions differ somewhat depending on whether you have a SensorGnome powered by a Raspberry Pi computer, or one powered by a BeagleBone computer.
 
-A cheatsheet of connection types is provided below, with more detailed informaiton on each aspect provided in the text.
+A cheatsheet of connection types is provided below, with more detailed information on each aspect provided in the text.
 
 
 1. Raspberry Pi SensorGnome Cheatsheet
@@ -238,9 +238,23 @@ This only works with a BeagleBone based SensorGnome. It is not the recommended m
 
 # Downloading detection data
 
-# Updating software
+# Updating software {#anchor}
 
 ## Raspberry Pi SensorGnome
+
+The Raspberry Pi does not have internal memory and instead the software is run directly from the MicroSD card. In order to update the software you need only copy the software files onto a formatted Micro SD card.
+
+- Download the most recent software for a RPi SG. Currently that is the software dated 2018-10-12. A direct link is [here](https://public.sensorgnome.org/Raspberry_Pi_Sensorgnome/SGPI-2018-10-12_LIWIXI.ZIP)
+- Unzip the archive and copy the entire contents into the *root* folder of a blank MicroSD card.
+
+
+```{r echo=F, fig.cap='This is what the contents of the MicroSD card should look like after copying over the firmware', fig.align='center'}
+knitr::include_graphics('images/rpifolder.png')
+```
+
+
+That's it. The MicroSD card can now be used to power a RPi SG. 
+
 
 ## BeagleBone SensorGnome
 
@@ -252,20 +266,20 @@ In order to update the software running on a BeagleBone SensorGnome you must fir
 
     i) The [**full software**](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_image_2017-03-06_15-33-00.img.7z) is the primary software that runs on the BeagleBone and powers the SensorGnome. When you insert a MicroSD card with the full software image on it, it will be written to the internal memory of the BeagleBone. This is the way to update the software if you are running an earlier version than 2017-03-06, and is one of the first steps in trying to restore a BeagleBone SensorGnome that is having issues.  
   
-    ii) The [**resuce image**](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_rescue_image_2017-03-06_15-33-00.img.7z) is nearly identical to the full software image, except that it does not attempt to write the software to the internal memory of the BeagleBone. Instead, the software runs directly from the MicroSD card itself. This is most helpful for BeagleBones that won't boot properly as it can allow access to locally stored files, but it can also be helpful in "resetting" otherwise malfunctioning BeagleBones (after attempting to reimage with the full software version).  
+    ii) The [**resuce image**](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_rescue_image_2017-03-06_15-33-00.img.7z) is nearly identical to the full software image, except that it does not attempt to write the software to the internal memory of the BeagleBone. Instead, the software runs directly from the MicroSD card itself. This is most helpful for BeagleBones that won't boot properly as it can allow access to locally stored files. You can also run a BB SG off the sd card if you are unable to flash the software to the internal memory.
     *Note: If you wish to view other software versions you can view them [here](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/).*
   
 1. Unzip the downloaded file using [7-Zip](https://www.7-zip.org/). After uncompressing you will have an "image" file with the extension ".img".
 
 2. Insert a MicroSD card into your computer, either in the appropriate slot (if your computer has one) or more likely using a USB adapter.
 
-3. Download and install [BalenaEtcher](https://www.balena.io/etcher/), which is free and open-sourced to write---or "flash"---the softare image onto your MicroSD card.
+3. Download and install [BalenaEtcher](https://www.balena.io/etcher/), which is free and open-sourced to write---or "flash"---the software image onto your MicroSD card.
 
-4. Load the softare image file into BalenaEtcher interface and click "Flash". **Note: this will erase anything on the MicroSD card.**
+4. Load the software image file into BalenaEtcher interface and click "Flash". **Note: this will erase anything on the MicroSD card.**
 
 5. When the process is complete, [eject the MicroSD](https://support.microsoft.com/en-us/help/4051300/windows-10-safely-remove-hardware) and remove it from your computer. **Note: Your computer may alert you that the card is corrupt and needs to be formatted. That is expected.**
 
-It's a good idea always to have on hand a MicroSD with the most recent softare and/or to have all the relevant softare on your computer during field visits. Both the full software and the rescue image are useful during site checks.
+It's a good idea always to have on hand a MicroSD with the most recent software and/or to have all the relevant software on your computer during field visits. Both the full software and the rescue image are useful during site checks.
 
 ### Updating or Reimaging the software
 
@@ -289,15 +303,15 @@ Once you have a MicroSD with the latest software image, you can use it update th
     
 4. You can now power down the BB, remove the image card, power back up, then try to connect and view the Web Interface to confirm everything worked. 
 
-## Applying a software patch
+## Applying a software patch (CTT compatibility)
 
-Occasionally a software patch is required to address a bug or make small changes to the underlying software installed on the BeagleBone. 
+In order to make a SensorGnome capable of detecting CTT tags you must apply a software patch. 
 
-Download the appropriate software file. 
+Download the appropriate software file. The most recent software 
 
 If navigating to the uboot folder via the Windows shared drive, ensure that you navigate to \\\\192.168.7.2\\root\\boot\\uboot and **not** \\\\192.168.7.2\\boot\\uboot. 
 
-Note: if you wish to update the entire software version, do not use this method. Rather, create an image disk containing the full software version and update that way. Instructions are given above.
+Note: if you wish to update the entire software version, do not use this method. Rather, follow the instrutions for completing a full software update given [above.](#anchor)
 
 
 # Modifying configuration files

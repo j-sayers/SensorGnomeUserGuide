@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Transferring Data and Files | SensorGnome User Guide</title>
+  <title>Chapter 6 Updating software | SensorGnome User Guide</title>
   <meta name="description" content="A guide to using a SensorGnome, part of Motus Wildlife Tracking System" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Transferring Data and Files | SensorGnome User Guide" />
+  <meta property="og:title" content="Chapter 6 Updating software | SensorGnome User Guide" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Transferring Data and Files | SensorGnome User Guide" />
+  <meta name="twitter:title" content="Chapter 6 Updating software | SensorGnome User Guide" />
   
   <meta name="twitter:description" content="A guide to using a SensorGnome, part of Motus Wildlife Tracking System" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-web-interface.html"/>
-<link rel="next" href="downloading-detection-data.html"/>
+<link rel="prev" href="downloading-detection-data.html"/>
+<link rel="next" href="modifying-configuration-files.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -121,47 +121,67 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="transferring-data-and-files" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> Transferring Data and Files</h1>
-<div id="option-1-ftp-connection" class="section level2">
-<h2><span class="header-section-number">4.1</span> Option 1: FTP Connection</h2>
-<p>An FTP Connection is the preferred method of transferring files to and from a SensorGnome in most cases. In these examples, we use the free and open-source <a href="https://filezilla-project.org/">FileZilla</a> program, though the process would be similar for other FTP clients. The instructions are the same for both Raspberry Pi and BeagleBone SG’s, though the credentials needed to connect are different.</p>
-<ol style="list-style-type: decimal">
-<li><p>Connect to the SensorGnome using the process described <a href="connect.html#connect">above</a></p></li>
-<li><p>Open FileZille and enter the remote host address and login credentials in the top left bar. The host address differs depending on whether you are a RPi or BB SG. In each case you will log in as user: root and password: root.</p></li>
-</ol>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
-<img src="images/fzhost.jpg" alt="Enter the host address and credentials in the top left. These are the credentials for a Raspberry Pi SensorGnome."  />
+<div id="anchor" class="section level1">
+<h1><span class="header-section-number">Chapter 6</span> Updating software</h1>
+<div id="raspberry-pi-sensorgnome-1" class="section level2">
+<h2><span class="header-section-number">6.1</span> Raspberry Pi SensorGnome</h2>
+<p>The Raspberry Pi does not have internal memory and instead the software is run directly from the MicroSD card. In order to update the softare you need only copy the software files onto a formatted Micro SD card.</p>
+<ul>
+<li>Download the most recent software for a RPi SG. Currently that is the software dated 2018-10-12. A direct link is<a href="https://public.sensorgnome.org/Raspberry_Pi_Sensorgnome/SGPI-2018-10-12_LIWIXI.ZIP">here</a></li>
+<li>Unzip the archive and copy the entire contents into the <em>root</em> folder of a blank MicroSD card.</li>
+</ul>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
+<img src="images/rpifolder.png" alt="This is what the contents of the MicroSD card should look like after copying over the firmware"  />
 <p class="caption">
-Figure 4.1: Enter the host address and credentials in the top left. These are the credentials for a Raspberry Pi SensorGnome.
+Figure 6.1: This is what the contents of the MicroSD card should look like after copying over the firmware
 </p>
 </div>
-<p>Once connected, the two left hand panels will represent the folder structure on your own local computer, and the right hand panel will represent the folder strucure on the SensorGnome. If you are downloaded detection files, you will need to navivate to the SGdata folder. If you are modifying the deployment.txt file, applying a software patch, or configuring internet access over WiFi, you will need to navigate to the uboot folder.</p>
-<p><em>Tip: You can save the connection configuration as well as create bookmarks for specific paths in FileZilla. This will save a lot of time when in the field.</em></p>
-<p><strong>Raspberry Pi SG</strong></p>
-<ul>
-<li><p>host address: <a href="sftp://sgpi.local" class="uri">sftp://sgpi.local</a>*</p></li>
-<li><p>username: root</p></li>
-<li><p>password: root</p></li>
-<li><p>SGdata path:</p></li>
-<li><p>uboot path:</p></li>
-<li><p><em>when connnecting via WiFi Hotpsot, you may also use the host address: <a href="sftp://192.168.7.2" class="uri">sftp://192.168.7.2</a></em></p></li>
-</ul>
-<p><strong>BeagleBone SG</strong></p>
-<ul>
-<li>host address: <a href="sftp://192.168.7.2" class="uri">sftp://192.168.7.2</a></li>
-<li>username: root</li>
-<li>password: root</li>
-<li>SGdata path:</li>
-<li>uboot path:</li>
-</ul>
+<p>That’s it. The MicroSD card can now be used to power a RPi SG.</p>
 </div>
-<div id="option-2-removing-the-microsd-card" class="section level2">
-<h2><span class="header-section-number">4.2</span> Option 2: Removing the MicroSD Card</h2>
+<div id="beaglebone-sensorgnome-1" class="section level2">
+<h2><span class="header-section-number">6.2</span> BeagleBone SensorGnome</h2>
+<div id="create-an-image-disk-with-the-latest-software" class="section level3">
+<h3><span class="header-section-number">6.2.1</span> Create an image disk with the latest software</h3>
+<p>In order to update the software running on a BeagleBone SensorGnome you must first create an image disk containing the latest software version.</p>
+<ol style="list-style-type: decimal">
+<li><p>Download the latest SensorGnome software. There are two versions of this: the full software image and the rescue image. They do different things, but it useful to have both. The most recent version of both is 2017-03-06.</p>
+<ol style="list-style-type: lower-roman">
+<li><p>The <a href="https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_image_2017-03-06_15-33-00.img.7z"><strong>full software</strong></a> is the primary software that runs on the BeagleBone and powers the SensorGnome. When you insert a MicroSD card with the full software image on it, it will be written to the internal memory of the BeagleBone. This is the way to update the software if you are running an earlier version than 2017-03-06, and is one of the first steps in trying to restore a BeagleBone SensorGnome that is having issues.</p></li>
+<li><p>The <a href="https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_rescue_image_2017-03-06_15-33-00.img.7z"><strong>resuce image</strong></a> is nearly identical to the full software image, except that it does not attempt to write the software to the internal memory of the BeagleBone. Instead, the software runs directly from the MicroSD card itself. This is most helpful for BeagleBones that won’t boot properly as it can allow access to locally stored files, but it can also be helpful in “resetting” otherwise malfunctioning BeagleBones (after attempting to reimage with the full software version).<br />
+<em>Note: If you wish to view other software versions you can view them <a href="https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/">here</a>.</em></p></li>
+</ol></li>
+<li><p>Unzip the downloaded file using <a href="https://www.7-zip.org/">7-Zip</a>. After uncompressing you will have an “image” file with the extension “.img”.</p></li>
+<li><p>Insert a MicroSD card into your computer, either in the appropriate slot (if your computer has one) or more likely using a USB adapter.</p></li>
+<li><p>Download and install <a href="https://www.balena.io/etcher/">BalenaEtcher</a>, which is free and open-sourced to write—or “flash”—the softare image onto your MicroSD card.</p></li>
+<li><p>Load the softare image file into BalenaEtcher interface and click “Flash”. <strong>Note: this will erase anything on the MicroSD card.</strong></p></li>
+<li><p>When the process is complete, <a href="https://support.microsoft.com/en-us/help/4051300/windows-10-safely-remove-hardware">eject the MicroSD</a> and remove it from your computer. <strong>Note: Your computer may alert you that the card is corrupt and needs to be formatted. That is expected.</strong></p></li>
+</ol>
+<p>It’s a good idea always to have on hand a MicroSD with the most recent softare and/or to have all the relevant softare on your computer during field visits. Both the full software and the rescue image are useful during site checks.</p>
 </div>
-<div id="shareddrive" class="section level2">
-<h2><span class="header-section-number">4.3</span> Option 3: Shared network drive</h2>
-<p>This only works with a BeagleBone based SensorGnome. It is not the recommended method of transferring files but can be occasionally be useful as an alternate method.</p>
+<div id="updating-or-reimaging-the-software" class="section level3">
+<h3><span class="header-section-number">6.2.2</span> Updating or Reimaging the software</h3>
+<p>Once you have a MicroSD with the latest software image, you can use it update the software on an SG, or to “reimage” the existing software even if it’s the same version already. Reimaging can help restore functionality to a BB SG that you cannot connect to, or that otherwise has not been working properly.</p>
+<ol style="list-style-type: decimal">
+<li><p>Fully power down the SG, then remove any existing MicroSD card (if applicable)</p></li>
+<li><p>Insert the image card into the BeagleBone SG and power on</p></li>
+<li><p>Watch carefully for the next several seconds as the pattern of LED flashing will help indicate if the process is working properly.</p>
+<ol style="list-style-type: lower-roman">
+<li><p>Shortly after powering on the BB, the blue LED lights should start randomly flashing for a few seconds</p></li>
+<li><p>After a few seconds, all four LED lights will flash ON/OFF in unison for another few seconds. This indicates the update/reiminaging process in beginning.</p></li>
+<li><p>Following this, the LED lights should begin flashing in a “crawling” or “wave” pattern, one after the other in a line. This should continue for several minutes at least. If it only lasts a minute or so, there is a good chance the process failed.</p></li>
+<li><p>When the process is complete, all four LED lights will remain ON.</p></li>
+</ol>
+<p>You can watch a video of this process here (Video coming soon)</p></li>
+<li><p>You can now power down the BB, remove the image card, power back up, then try to connect and view the Web Interface to confirm everything worked.</p></li>
+</ol>
+</div>
+</div>
+<div id="applying-a-software-patch-ctt-compatibility" class="section level2">
+<h2><span class="header-section-number">6.3</span> Applying a software patch (CTT compatibility)</h2>
+<p>In order to make a SensorGnome capable of detecting CTT tags you must apply a software patch.</p>
+<p>Download the appropriate software file. The most recent software</p>
+<p>If navigating to the uboot folder via the Windows shared drive, ensure that you navigate to \\192.168.7.2\root\boot\uboot and <strong>not</strong> \\192.168.7.2\boot\uboot.</p>
+<p>Note: if you wish to update the entire software version, do not use this method. Rather, follow the instrutions for completing a full software update given <a href="anchor.html#anchor">above.</a></p>
 </div>
 </div>
             </section>
@@ -169,8 +189,8 @@ Figure 4.1: Enter the host address and credentials in the top left. These are th
           </div>
         </div>
       </div>
-<a href="the-web-interface.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="downloading-detection-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="downloading-detection-data.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="modifying-configuration-files.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

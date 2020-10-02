@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 Transferring Data and Files | SensorGnome User Guide</title>
+  <title>SensorGnome User Guide</title>
   <meta name="description" content="A guide to using a SensorGnome, part of Motus Wildlife Tracking System" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 Transferring Data and Files | SensorGnome User Guide" />
+  <meta property="og:title" content="SensorGnome User Guide" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Transferring Data and Files | SensorGnome User Guide" />
+  <meta name="twitter:title" content="SensorGnome User Guide" />
   
   <meta name="twitter:description" content="A guide to using a SensorGnome, part of Motus Wildlife Tracking System" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="the-web-interface.html"/>
-<link rel="next" href="downloading-detection-data.html"/>
+
+<link rel="next" href="connect.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -101,6 +101,27 @@
 <li class="chapter" data-level="7.2" data-path="modifying-configuration-files.html"><a href="modifying-configuration-files.html#configuring-internet-access"><i class="fa fa-check"></i><b>7.2</b> Configuring internet access</a></li>
 <li class="chapter" data-level="7.3" data-path="modifying-configuration-files.html"><a href="modifying-configuration-files.html#downloading-tag-database-to-a-sensorgnome"><i class="fa fa-check"></i><b>7.3</b> Downloading tag database to a SensorGnome</a></li>
 </ul></li>
+<li class="chapter" data-level="8" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>8</b> Introduction</a><ul>
+<li class="chapter" data-level="8.1" data-path="connect.html"><a href="connect.html#raspberry-pi-sensorgnome"><i class="fa fa-check"></i><b>8.1</b> Raspberry Pi SensorGnome</a><ul>
+<li class="chapter" data-level="8.1.1" data-path="connect.html"><a href="connect.html#option-1-wifi-hotspot"><i class="fa fa-check"></i><b>8.1.1</b> Option 1: WiFi Hotspot</a></li>
+<li class="chapter" data-level="8.1.2" data-path="connect.html"><a href="connect.html#ethernet"><i class="fa fa-check"></i><b>8.1.2</b> Option 2: Ethernet Cable</a></li>
+</ul></li>
+<li class="chapter" data-level="8.2" data-path="connect.html"><a href="connect.html#beaglebone-sensorgnome"><i class="fa fa-check"></i><b>8.2</b> BeagleBone SensorGnome</a><ul>
+<li class="chapter" data-level="8.2.1" data-path="connect.html"><a href="connect.html#firststeps"><i class="fa fa-check"></i><b>8.2.1</b> First steps</a></li>
+<li class="chapter" data-level="8.2.2" data-path="connect.html"><a href="connect.html#connecting-via-usb-cable"><i class="fa fa-check"></i><b>8.2.2</b> Connecting via USB cable</a></li>
+</ul></li>
+<li class="chapter" data-level="8.3" data-path="introduction.html"><a href="introduction.html#removing-the-microsd-card"><i class="fa fa-check"></i><b>8.3</b> Removing the MicroSD Card</a></li>
+<li class="chapter" data-level="8.4" data-path="introduction.html"><a href="introduction.html#shared-network-drive"><i class="fa fa-check"></i><b>8.4</b> Shared network drive</a></li>
+<li class="chapter" data-level="8.5" data-path="anchor.html"><a href="anchor.html#raspberry-pi-sensorgnome-1"><i class="fa fa-check"></i><b>8.5</b> Raspberry Pi SensorGnome</a></li>
+<li class="chapter" data-level="8.6" data-path="anchor.html"><a href="anchor.html#beaglebone-sensorgnome-1"><i class="fa fa-check"></i><b>8.6</b> BeagleBone SensorGnome</a><ul>
+<li class="chapter" data-level="8.6.1" data-path="anchor.html"><a href="anchor.html#create-an-image-disk-with-the-latest-software"><i class="fa fa-check"></i><b>8.6.1</b> Create an image disk with the latest software</a></li>
+<li class="chapter" data-level="8.6.2" data-path="anchor.html"><a href="anchor.html#updating-or-reimaging-the-software"><i class="fa fa-check"></i><b>8.6.2</b> Updating or Reimaging the software</a></li>
+</ul></li>
+<li class="chapter" data-level="8.7" data-path="introduction.html"><a href="introduction.html#applying-a-software-patch"><i class="fa fa-check"></i><b>8.7</b> Applying a software patch</a></li>
+<li class="chapter" data-level="8.8" data-path="modifying-configuration-files.html"><a href="modifying-configuration-files.html#deployment.txt"><i class="fa fa-check"></i><b>8.8</b> Deployment.txt</a></li>
+<li class="chapter" data-level="8.9" data-path="modifying-configuration-files.html"><a href="modifying-configuration-files.html#configuring-internet-access"><i class="fa fa-check"></i><b>8.9</b> Configuring internet access</a></li>
+<li class="chapter" data-level="8.10" data-path="modifying-configuration-files.html"><a href="modifying-configuration-files.html#downloading-tag-database-to-a-sensorgnome"><i class="fa fa-check"></i><b>8.10</b> Downloading tag database to a SensorGnome</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -121,56 +142,96 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="transferring-data-and-files" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> Transferring Data and Files</h1>
-<div id="option-1-ftp-connection" class="section level2">
-<h2><span class="header-section-number">4.1</span> Option 1: FTP Connection</h2>
-<p>An FTP Connection is the preferred method of transferring files to and from a SensorGnome in most cases. In these examples, we use the free and open-source <a href="https://filezilla-project.org/">FileZilla</a> program, though the process would be similar for other FTP clients. The instructions are the same for both Raspberry Pi and BeagleBone SG’s, though the credentials needed to connect are different.</p>
-<ol style="list-style-type: decimal">
-<li><p>Connect to the SensorGnome using the process described <a href="connect.html#connect">above</a></p></li>
-<li><p>Open FileZille and enter the remote host address and login credentials in the top left bar. The host address differs depending on whether you are a RPi or BB SG. In each case you will log in as user: root and password: root.</p></li>
-</ol>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
-<img src="images/fzhost.jpg" alt="Enter the host address and credentials in the top left. These are the credentials for a Raspberry Pi SensorGnome."  />
-<p class="caption">
-Figure 4.1: Enter the host address and credentials in the top left. These are the credentials for a Raspberry Pi SensorGnome.
-</p>
+<div id="header">
+<h1 class="title">SensorGnome User Guide</h1>
+<p class="author"><em>The Motus People</em></p>
+<p class="date"><em>2020-10-02</em></p>
 </div>
-<p>Once connected, the two left hand panels will represent the folder structure on your own local computer, and the right hand panel will represent the folder strucure on the SensorGnome. If you are downloaded detection files, you will need to navivate to the SGdata folder. If you are modifying the deployment.txt file, applying a software patch, or configuring internet access over WiFi, you will need to navigate to the uboot folder.</p>
-<p><em>Tip: You can save the connection configuration as well as create bookmarks for specific paths in FileZilla. This will save a lot of time when in the field.</em></p>
-<p><strong>Raspberry Pi SG</strong></p>
+<div id="introduction-and-overview" class="section level1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction and Overview</h1>
+<p>TEST This document explains how to connect to your SensorGnome, check its status via the Web Interface, download detection data from your SensorGnome, and update the software.</p>
+<p>Note that the instructions differ somewhat depending on whether you have a SensorGnome powered by a Raspberry Pi computer, or one powered by a BeagleBone computer.</p>
+<p>A cheatsheet of connection types is provided below, with more detailed information on each aspect provided in the text.</p>
+<ol style="list-style-type: decimal">
+<li>Raspberry Pi SensorGnome Cheatsheet
 <ul>
-<li><p>host address: <a href="sftp://sgpi.local" class="uri">sftp://sgpi.local</a>*</p></li>
-<li><p>username: root</p></li>
-<li><p>password: root</p></li>
-<li><p>SGdata path:</p></li>
-<li><p>uboot path:</p></li>
-<li><p><em>when connnecting via WiFi Hotpsot, you may also use the host address: <a href="sftp://192.168.7.2" class="uri">sftp://192.168.7.2</a></em></p></li>
-</ul>
-<p><strong>BeagleBone SG</strong></p>
+<li>Access Web Interface
 <ul>
-<li>host address: <a href="sftp://192.168.7.2" class="uri">sftp://192.168.7.2</a></li>
+<li>Connection type: Ethernet cable
+<ul>
+<li>Navigate to <a href="http://sgpi.local" class="uri">http://sgpi.local</a> on Firefox or Chrome</li>
+</ul></li>
+<li>Connection type: WiFi Hotspot (WiFi password is the same as the network / SensorGnome ID)
+<ul>
+<li>Navigate to <a href="http://192.168.7.2" class="uri">http://192.168.7.2</a> on Firefox, Chrome, or smartphone browser</li>
+</ul></li>
+</ul></li>
+<li>Download detection files
+<ul>
+<li>FTP Transfer (using FileZilla)
+<ul>
+<li>Connection type: Ethernet
+<ul>
+<li>host: <a href="sftp://sgpi.local" class="uri">sftp://sgpi.local</a></li>
 <li>username: root</li>
 <li>password: root</li>
-<li>SGdata path:</li>
-<li>uboot path:</li>
-</ul>
-</div>
-<div id="option-2-removing-the-microsd-card" class="section level2">
-<h2><span class="header-section-number">4.2</span> Option 2: Removing the MicroSD Card</h2>
-</div>
-<div id="shareddrive" class="section level2">
-<h2><span class="header-section-number">4.3</span> Option 3: Shared network drive</h2>
-<p>This only works with a BeagleBone based SensorGnome. It is not the recommended method of transferring files but can be occasionally be useful as an alternate method.</p>
-</div>
+<li>SGdata path: /dev/sdcard/Sgdata</li>
+</ul></li>
+<li>Connection type: WiFi Hotspot (WiFi password is the same as the network / gnome ID)
+<ul>
+<li>host: <a href="sftp://192.168.7.2" class="uri">sftp://192.168.7.2</a></li>
+<li>username: root</li>
+<li>password: root</li>
+<li>SGdata path: /dev/sdcard/Sgdata</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>BeagleBone SensorGnome Cheatsheet
+<ul>
+<li>Complete <a href="connect.html#firststeps">first steps</a> the first time you try to connect to a BeagleBone</li>
+<li>To check live status via Web Interface
+<ul>
+<li>Connection type: USB
+- navigate to <a href="http://192.168.7.2" class="uri">http://192.168.7.2</a> using Firefox or Chrome</li>
+</ul></li>
+<li>To transfer detection files
+<ul>
+<li>Connection type: USB
+<ul>
+<li>Option 1: FTP Transfer (using FileZilla)
+<ul>
+<li>host: <a href="sftp://192.168.7.2" class="uri">sftp://192.168.7.2</a></li>
+<li>username: root</li>
+<li>password: root</li>
+<li>SGData path: /media/internal_SD_card/Sgdata</li>
+</ul></li>
+<li>Option 2: Shared Network Drive (using Windows File Explorer)
+<ul>
+<li>SGData path : \192.168.7.2_SD_card</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>To update software or deplyoyment.txt
+<ul>
+<li>Connection type: USB
+<ul>
+<li>Navigate to \192.168.7.2 using Windows File Explorer
+<ul>
+<li>Copy</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="the-web-interface.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="downloading-detection-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+
+<a href="connect.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
