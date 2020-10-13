@@ -197,7 +197,9 @@ o	“Devices” is an important section. This lists every unit attached to the R
 
 ## Option 1: FTP Connection
 
-An FTP Connection is the preferred method of transferring files to and from a SensorGnome in most cases. In these examples, we use the free and open-source [FileZilla](https://filezilla-project.org/) program, though the process would be similar for other FTP clients. The instructions are the same for both Raspberry Pi and BeagleBone SG's, though the credentials needed to connect are different.
+In order to download detection data, update the software of your SensorGnome, modify configuration files you must use one of the following methods to transfers files to and from the SensorGnome.
+
+An FTP Connection is the preferred method of transferring files in most cases. It allows data to be transferred without powering down the SG, and it also ensures the Web Interface can also be checked at the same time, which is an important step when working with your SG. In these examples, we use the free and open-source [FileZilla](https://filezilla-project.org/) program, though the process would be similar for other FTP clients. The instructions are the same for both Raspberry Pi and BeagleBone SG's, though the credentials needed to connect are different.
 
 1) Connect to the SensorGnome using the process described [above](#connect)
 
