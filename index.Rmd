@@ -167,14 +167,21 @@ Note: If the BB is already powered on by using the power cable, you can simply p
 
 The Web Interface is where you can check the status of your SensorGnome, to ensure that all the components are running as they should. As such, it's a crucial part of any site visit, and generally be **the first and last thing you do** whenever you work with your SensorGnome
 
-**The contents of the Web Interface is the same regardless of whether you have a BeagleBone or Raspberry Pi SensorGnome**
+**The contents of the Web Interface is the same regardless of whether you have a BeagleBone or Raspberry Pi SensorGnome**, though the layout may differ slightly depending on software version.
 
-In order to access the Web Interface, you must first connect to your SensorGnome following the instructions above. Recall that the URL differs depending on how you are connected (visit http://sgpi.local if you are connected to a Raspberry Pi SG via Ethernet cable, otherwise visit http://192.168.7.2).  
+In order to access the Web Interface, you must first connect to your SensorGnome following the instructions above. 
 
-Once you have connected to the RPi SG you should be able to load the Web Interface. On a computer, use Firefox or Chrome (avoid Internet Explorer). Recall that the address is different depending on whether you are connecting via Ethernet or WiFi Hotspot.  
+Once you have connected to the RPi SG you should be able to load the Web Interface. Recall that the address is different depending on whether you are connecting via Ethernet or WiFi Hotspot.  
 - If connecting via WiFi Hotspot, navigate to http://sgpi.local or http://192.168.7.2
 - If connecting via Ethernet, navigate to: http://sgpi.local 
-The Web Interface itself should look the same regardless of how you access it. On it you’ll find very important information related to how your SensorGnome is functioning: what software version it is running, what dongles are attached, if the antennas are picking up any radio activity, etc. It’s a great idea to take a photo of the Web Interface once you have it opened. This will have the date and time you visited it, the location (if taken on a smartphone with accurate location), and can be a very helpful reminder down the road of what the status was that day.
+
+**If you cannot access the Web Interface, there is a good chance that the SensorGnome is not working properly.**
+
+```{r echo=F, fig.align = 'center ',fig.cap='The Web Interface displays several status indicators.'}
+knitr::include_graphics("images/webinterface.png")
+```
+
+The Web Interface itself should look the same regardless of how you access it. On it you’ll find very important information related to how your SensorGnome is functioning: what software version it is running, what dongles are attached, if the antennas are picking up any radio activity, etc. It’s a great idea to take a photo or screenshot of the Web Interface once you have it opened. This will have the date and time you visited it, the location (if taken on a smartphone with accurate location), and can be a very helpful reminder down the road of what the status was that day.
 •	The serial number of the RPi powering your SensorGnome, referred to as “Machine ID”. Note that Raspberry Pi serial number will always have “RPI” in the middle of it, whereas a BeagleBone serial number will have “BBB” in the middle of it.
 •	The Software version the SensorGnome is running. This only refers to the primary software; any patches that have been applied will not reflected up here.
 •	The GPS Location and Time (in UTC, not likely your local time zone). Double check these to make sure they look right. If the GPS is not working properly your data may end up with incorrect dates. This will prevent tag detections from being identified in your data.

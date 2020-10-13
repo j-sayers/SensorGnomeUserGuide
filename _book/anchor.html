@@ -24,7 +24,7 @@
 <meta name="author" content="The Motus People" />
 
 
-<meta name="date" content="2020-10-02" />
+<meta name="date" content="2020-10-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -125,12 +125,12 @@
 <h1><span class="header-section-number">Chapter 6</span> Updating software</h1>
 <div id="raspberry-pi-sensorgnome-1" class="section level2">
 <h2><span class="header-section-number">6.1</span> Raspberry Pi SensorGnome</h2>
-<p>The Raspberry Pi does not have internal memory and instead the software is run directly from the MicroSD card. In order to update the softare you need only copy the software files onto a formatted Micro SD card.</p>
+<p>The Raspberry Pi does not have internal memory and instead the software is run directly from the MicroSD card. In order to update the software you need only copy the software files onto a formatted Micro SD card.</p>
 <ul>
-<li>Download the most recent software for a RPi SG. Currently that is the software dated 2018-10-12. A direct link is<a href="https://public.sensorgnome.org/Raspberry_Pi_Sensorgnome/SGPI-2018-10-12_LIWIXI.ZIP">here</a></li>
+<li>Download the most recent software for a RPi SG. Currently that is the software dated 2018-10-12. A direct link is <a href="https://public.sensorgnome.org/Raspberry_Pi_Sensorgnome/SGPI-2018-10-12_LIWIXI.ZIP">here</a></li>
 <li>Unzip the archive and copy the entire contents into the <em>root</em> folder of a blank MicroSD card.</li>
 </ul>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
+<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-7"></span>
 <img src="images/rpifolder.png" alt="This is what the contents of the MicroSD card should look like after copying over the firmware"  />
 <p class="caption">
 Figure 6.1: This is what the contents of the MicroSD card should look like after copying over the firmware
@@ -147,16 +147,16 @@ Figure 6.1: This is what the contents of the MicroSD card should look like after
 <li><p>Download the latest SensorGnome software. There are two versions of this: the full software image and the rescue image. They do different things, but it useful to have both. The most recent version of both is 2017-03-06.</p>
 <ol style="list-style-type: lower-roman">
 <li><p>The <a href="https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_image_2017-03-06_15-33-00.img.7z"><strong>full software</strong></a> is the primary software that runs on the BeagleBone and powers the SensorGnome. When you insert a MicroSD card with the full software image on it, it will be written to the internal memory of the BeagleBone. This is the way to update the software if you are running an earlier version than 2017-03-06, and is one of the first steps in trying to restore a BeagleBone SensorGnome that is having issues.</p></li>
-<li><p>The <a href="https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_rescue_image_2017-03-06_15-33-00.img.7z"><strong>resuce image</strong></a> is nearly identical to the full software image, except that it does not attempt to write the software to the internal memory of the BeagleBone. Instead, the software runs directly from the MicroSD card itself. This is most helpful for BeagleBones that won’t boot properly as it can allow access to locally stored files, but it can also be helpful in “resetting” otherwise malfunctioning BeagleBones (after attempting to reimage with the full software version).<br />
+<li><p>The <a href="https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_rescue_image_2017-03-06_15-33-00.img.7z"><strong>resuce image</strong></a> is nearly identical to the full software image, except that it does not attempt to write the software to the internal memory of the BeagleBone. Instead, the software runs directly from the MicroSD card itself. This is most helpful for BeagleBones that won’t boot properly as it can allow access to locally stored files. You can also run a BB SG off the sd card if you are unable to flash the software to the internal memory.
 <em>Note: If you wish to view other software versions you can view them <a href="https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/">here</a>.</em></p></li>
 </ol></li>
 <li><p>Unzip the downloaded file using <a href="https://www.7-zip.org/">7-Zip</a>. After uncompressing you will have an “image” file with the extension “.img”.</p></li>
 <li><p>Insert a MicroSD card into your computer, either in the appropriate slot (if your computer has one) or more likely using a USB adapter.</p></li>
-<li><p>Download and install <a href="https://www.balena.io/etcher/">BalenaEtcher</a>, which is free and open-sourced to write—or “flash”—the softare image onto your MicroSD card.</p></li>
-<li><p>Load the softare image file into BalenaEtcher interface and click “Flash”. <strong>Note: this will erase anything on the MicroSD card.</strong></p></li>
+<li><p>Download and install <a href="https://www.balena.io/etcher/">BalenaEtcher</a>, which is free and open-sourced to write—or “flash”—the software image onto your MicroSD card.</p></li>
+<li><p>Load the software image file into BalenaEtcher interface and click “Flash”. <strong>Note: this will erase anything on the MicroSD card.</strong></p></li>
 <li><p>When the process is complete, <a href="https://support.microsoft.com/en-us/help/4051300/windows-10-safely-remove-hardware">eject the MicroSD</a> and remove it from your computer. <strong>Note: Your computer may alert you that the card is corrupt and needs to be formatted. That is expected.</strong></p></li>
 </ol>
-<p>It’s a good idea always to have on hand a MicroSD with the most recent softare and/or to have all the relevant softare on your computer during field visits. Both the full software and the rescue image are useful during site checks.</p>
+<p>It’s a good idea always to have on hand a MicroSD with the most recent software and/or to have all the relevant software on your computer during field visits. Both the full software and the rescue image are useful during site checks.</p>
 </div>
 <div id="updating-or-reimaging-the-software" class="section level3">
 <h3><span class="header-section-number">6.2.2</span> Updating or Reimaging the software</h3>
