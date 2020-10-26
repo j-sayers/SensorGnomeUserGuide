@@ -75,7 +75,7 @@ A cheatsheet of connection types is provided below, with more detailed informati
 
             -   Option 2: Shared Network Drive (using Windows File Explorer)
 
-                -   SGData path : \\192.168.7.2\data\internal\_SD_card\SGdata 
+                -   SGData path : \\192.168.7.2\data\internal\_SD_card\SGdata
 
     -   To update software or deplyoyment.txt
 
@@ -215,45 +215,45 @@ Recall that the address is different depending on whether you are connecting via
 knitr::include_graphics("images/webinterface.png")
 ```
 
-On it you'll find very important information related to how your SensorGnome is functioning:
-
--   Serial number of the receiver
-
--   What software version it is running
-
--   Whether the time and GPS location are correctly set
-
--   What dongles (software defined radio) are attached
-
--   If the antennas are picking up any radio activity
-
--   How much storage space remains on the receiver
-
-It's a great idea to take a photo or screenshot of the Web Interface once you have it opened.
+On it you'll find very important information related to how your SensorGnome is functioning.
+It's also a great idea to take a photo or screenshot of the Web Interface once you have it opened.
 This will have the date and time you visited it, the location (if taken on a smartphone with accurate location), and can be a very helpful reminder down the road of what the status was that day.
-• The serial number of the RPi powering your SensorGnome, referred to as "Machine ID".
-Note that Raspberry Pi serial number will always have "RPI" in the middle of it, whereas a BeagleBone serial number will have "BBB" in the middle of it.
-• The Software version the SensorGnome is running.
-This only refers to the primary software; any patches that have been applied will not reflected up here.
-• The GPS Location and Time (in UTC, not likely your local time zone).
-Double check these to make sure they look right.
-If the GPS is not working properly your data may end up with incorrect dates.
-This will prevent tag detections from being identified in your data.
-• Live Pulses represent any radio activity picked up by the antennas.
-This may be an actual tag, but more likely it's just background noise.
-If live pulses are present, they can be helpful in confirming that all antennas and dongles are properly functioning.
-In the example below, only the antenna plugged in to USB port 4 (P4) is registering activity at the moment.
-Often, in areas with less background radio noise, there won't be any Live Pulses.
-• What I'm Doing Now displays the status and settings of your attached dongles.
-If you do not see this section, it means that your SensorGnome is not recording!
-o The first section displays the settings of your attached dongles.
-This generally isn't of great interest to the average user except to note that all your dongles show up.
-This will also display the average rate of pulses per dongle over the last time period.
-o "Devices" is an important section.
-This lists every unit attached to the RPi.
-You should see all your dongles listed here, along with the USB port they are attached to.
-You should see your GPS attached.
-This will also give you the status of the device storage, and how much is filled up.
+
+Below is a list of some of the information displayed on the Web Interface.
+The top half of the page is the most useful.
+
+-   The serial number of the RPi powering your SensorGnome, referred to as "Machine ID".
+    Note that Raspberry Pi serial number will always have "RPI" in the middle of it, whereas a BeagleBone serial number will have "BBB" in the middle of it.
+
+-   The Software version the SensorGnome is running.
+    This only refers to the primary software; any patches that have been applied will not reflected up here.
+
+-   The GPS Location and Time (in UTC, not likely your local time zone).
+    Double check these to make sure they look right.
+    If the GPS is not working properly your data may end up with incorrect dates.
+    This will prevent tag detections from being identified in your data.
+
+-   Live Pulses represent any radio activity picked up by the antennas.
+    This may be an actual tag, but more likely it's just background noise.
+    If live pulses are present, they can be helpful in confirming that all antennas and dongles are properly functioning.
+    In the example below, only the antenna plugged in to USB port 4 (P4) is registering activity at the moment.
+    Often, in areas with less background radio noise, there won't be any Live Pulses.
+
+-   Live Known Tags will show any CTT LifeTag ID's detected, as well as any Nanotag ID's that have been detected (and that have been loaded onto the SensorGnome)
+
+-   What I'm Doing Now displays the status and settings of your attached dongles.
+    If you do not see this section, it means that your SensorGnome is not recording!
+
+    -   The first section displays the settings of your attached dongles.
+        This generally isn't of great interest to the average user except to note that all your dongles show up.
+        This will also display the average rate of pulses per dongle over the last time period.
+        If you have CTT dongles attached they will not show up in this section
+
+    -   "Devices" is an important section.
+        This lists every unit attached to the RPi.
+        You should see all your dongles listed here, along with the USB port they are attached to.
+        All dongle types including the CTT dongle should show up here, as well as any other devices that are attached, such as the GPS.
+        This will also give you the status of the device storage, and how much is filled up.
 
 # Transferring Data and Files
 
