@@ -242,7 +242,7 @@ The top half of the page is the most useful.
 -   Live Known Tags will show any CTT LifeTag ID's detected, as well as any Nanotag ID's that have been detected (and that have been loaded onto the SensorGnome)
 
 -   What I'm Doing Now displays the status and settings of your attached dongles.
-    If you do not see this section, it means that your SensorGnome is not recording!
+    **If you do not see this section, it means that your SensorGnome is not recording!**
 
     -   The first section displays the settings of your attached dongles.
         This generally isn't of great interest to the average user except to note that all your dongles show up.
@@ -257,9 +257,9 @@ The top half of the page is the most useful.
 
 # Transferring Data and Files
 
-## Option 1: FTP Connection
+In order to download detection data, update the software of your SensorGnome, or modify configuration files you must use one of the following methods to transfers files to and from the SensorGnome.
 
-In order to download detection data, update the software of your SensorGnome, modify configuration files you must use one of the following methods to transfers files to and from the SensorGnome.
+## Option 1: FTP Connection
 
 An FTP Connection is the preferred method of transferring files in most cases.
 It allows data to be transferred without powering down the SG, and it also ensures the Web Interface can also be checked at the same time, which is an important step when working with your SG.
@@ -268,15 +268,15 @@ The instructions are the same for both Raspberry Pi and BeagleBone SG's, though 
 
 1)  [Connect](#connect) to the SensorGnome using the process described above
 
-2)  Open FileZille and enter the remote host address and login credentials in the top left bar.
+2)  Open FileZilla and enter the remote host address and login credentials in the top left bar.
     The host address differs depending on whether you are a RPi or BB SG. In each case you will log in as user: root and password: root.
 
 ```{r echo=F, fig.cap='Enter the host address and credentials in the top left. These are the credentials for a Raspberry Pi SensorGnome.', fig.align='center'}
 knitr::include_graphics('images/fzhost.jpg')
 ```
 
-Once connected, the two left hand panels will represent the folder structure on your own local computer, and the right hand panel will represent the folder strucure on the SensorGnome.
-If you are downloaded detection files, you will need to navivate to the SGdata folder.
+Once connected, the two left hand panels will represent the folder structure on your own local computer, and the right hand panel will represent the folder structure on the SensorGnome.
+If you are downloaded detection files, you will need to navigate to the SGdata folder.
 If you are modifying the deployment.txt file, applying a software patch, or configuring internet access over WiFi, you will need to navigate to the uboot folder.
 
 *Tip: You can save the connection configuration as well as create bookmarks for specific paths in FileZilla. This will save a lot of time when in the field.*
@@ -289,7 +289,7 @@ If you are modifying the deployment.txt file, applying a software patch, or conf
 -   SGdata path:
 -   uboot path:
 
-*when connnecting via WiFi Hotpsot, you may also use the host address: <sftp://192.168.7.2>*
+*\*when connnecting via WiFi Hotpsot, you may also use the host address: <sftp://192.168.7.2>*
 
 **BeagleBone SG**
 
@@ -301,12 +301,45 @@ If you are modifying the deployment.txt file, applying a software patch, or conf
 
 ## Option 2: Removing the MicroSD Card
 
+Removing the MicroSD card is fairly straightforward, but comes with two strong **warnings**.
+
+-   Always ensure that the Raspberry Pi or BeagleBone computer is *completely* powered down when removing or replacing the card.
+    Failure to do say may result in power loss.
+    Note that the BeagleBone has two potential sources of power: the 5V barrel jack (the main source) as well as the Mini USB which can also power the BB.
+
+-   For Raspberry Pi SensorGnomes, the software that powers the SG is on the MicroSD card, and not installed on internal memory.
+    If you remove the card, or if you replace the card with another that does not have the software installed on it, the SG will not run properly when you turn it back on.
+
+Once the SG is powered down, remove the MicroSD card.
+
+-   You may need tweezers to remove the card from the Raspberry Pi as it is deeply recessed into the slot.
+
+-   You may also see a label to the effect of "Do not remove this card".
+    That is due to the warnings given above and can be disregarded.
+
+-   You may see a message on your computer saying that the card needs to be formatted, especially with cards that had been used in BeagleBones.
+    In most cases you can ignore this.
+
+### BeagleBone
+
+Copying detection data is the only task that can be achieved by removing the MicroSD card.
+
+### Raspberry Pi
+
+To copy detection data from the MicroSD card, navigate on your computer to the SGdata folder and download the desired folders.
+
+Because the software for a RPi SG runs off the MicroSD card, you can also make direct changes to configuration, such as modifying the deployment.txt and network.txt files, as well as to apply a software patch.
+
 ## Option 3: Shared network drive {#shareddrive}
 
 This only works with a BeagleBone based SensorGnome.
-It is not the recommended method of transferring files but can be occasionally be useful as an alternate method.
+It is not the recommended method of transferring files but can be occasionally be useful as an alternate method, especially for BeagleBones that cannot be properly accessed via FTP.
+
+In your file explorer on your computer, visit `\\192.168.7.2\root`.
 
 # Downloading detection data
+
+Lorem ipso facto y'know
 
 # Updating software {#anchor}
 
