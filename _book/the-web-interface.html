@@ -24,7 +24,7 @@
 <meta name="author" content="The Motus People" />
 
 
-<meta name="date" content="2020-10-22" />
+<meta name="date" content="2020-10-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="connect.html"/>
 <link rel="next" href="transferring-data-and-files.html"/>
-<script src="libs/header-attrs-2.4.5/header-attrs.js"></script>
+<script src="libs/header-attrs-2.5/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -133,7 +133,7 @@
 <div id="the-web-interface" class="section level1" number="3">
 <h1><span class="header-section-number">Chapter 3</span> The Web Interface</h1>
 <p>The Web Interface is where you can check the status of your SensorGnome, to ensure that all the components are running as they should.
-As such, it’s a crucial part of any site visit, and generally be <strong>the first and last thing you do</strong> whenever you work with your SensorGnome</p>
+As such, it’s a crucial part of any site visit, and generally be <strong>the first and last thing you do</strong> whenever you work with your SensorGnome.</p>
 <p><strong>The contents of the Web Interface is the same regardless of whether you have a BeagleBone or Raspberry Pi SensorGnome</strong>, though the layout may differ slightly depending on software version.</p>
 <p>In order to access the Web Interface, you must first connect to your SensorGnome following the instructions above.</p>
 <p>Once you have connected to the RPi SG you should be able to load the Web Interface.
@@ -146,32 +146,39 @@ Recall that the address is different depending on whether you are connecting via
 Figure 3.1: The Web Interface displays several status indicators.
 </p>
 </div>
-<p>On it you’ll find very important information related to how your SensorGnome is functioning: what software version it is running, what dongles are attached, if the antennas are picking up any radio activity, etc.
-It’s a great idea to take a photo or screenshot of the Web Interface once you have it opened.
-This will have the date and time you visited it, the location (if taken on a smartphone with accurate location), and can be a very helpful reminder down the road of what the status was that day.
-• The serial number of the RPi powering your SensorGnome, referred to as “Machine ID.”
-Note that Raspberry Pi serial number will always have “RPI” in the middle of it, whereas a BeagleBone serial number will have “BBB” in the middle of it.
-• The Software version the SensorGnome is running.
-This only refers to the primary software; any patches that have been applied will not reflected up here.
-• The GPS Location and Time (in UTC, not likely your local time zone).
+<p>On it you’ll find very important information related to how your SensorGnome is functioning.
+It’s also a great idea to take a photo or screenshot of the Web Interface once you have it opened.
+This will have the date and time you visited it, the location (if taken on a smartphone with accurate location), and can be a very helpful reminder down the road of what the status was that day.</p>
+<p>Below is a list of some of the information displayed on the Web Interface.
+The top half of the page is the most useful.</p>
+<ul>
+<li><p>The serial number of the RPi powering your SensorGnome, referred to as “Machine ID.”
+Note that Raspberry Pi serial number will always have “RPI” in the middle of it, whereas a BeagleBone serial number will have “BBB” in the middle of it.</p></li>
+<li><p>The Software version the SensorGnome is running.
+This only refers to the primary software; any patches that have been applied will not reflected up here.</p></li>
+<li><p>The GPS Location and Time (in UTC, not likely your local time zone).
 Double check these to make sure they look right.
 If the GPS is not working properly your data may end up with incorrect dates.
-This will prevent tag detections from being identified in your data.
-• Live Pulses represent any radio activity picked up by the antennas.
+This will prevent tag detections from being identified in your data.</p></li>
+<li><p>Live Pulses represent any radio activity picked up by the antennas.
 This may be an actual tag, but more likely it’s just background noise.
 If live pulses are present, they can be helpful in confirming that all antennas and dongles are properly functioning.
 In the example below, only the antenna plugged in to USB port 4 (P4) is registering activity at the moment.
-Often, in areas with less background radio noise, there won’t be any Live Pulses.
-• What I’m Doing Now displays the status and settings of your attached dongles.
-If you do not see this section, it means that your SensorGnome is not recording!
-o The first section displays the settings of your attached dongles.
+Often, in areas with less background radio noise, there won’t be any Live Pulses.</p></li>
+<li><p>Live Known Tags will show any CTT LifeTag ID’s detected, as well as any Nanotag ID’s that have been detected (and that have been loaded onto the SensorGnome)</p></li>
+<li><p>What I’m Doing Now displays the status and settings of your attached dongles.
+If you do not see this section, it means that your SensorGnome is not recording!</p>
+<ul>
+<li><p>The first section displays the settings of your attached dongles.
 This generally isn’t of great interest to the average user except to note that all your dongles show up.
-This will also display the average rate of pulses per dongle over the last time period.
-o “Devices” is an important section.
+This will also display the average rate of pulses per dongle over the last time period</p></li>
+<li><p>“Devices” is an important section.
 This lists every unit attached to the RPi.
 You should see all your dongles listed here, along with the USB port they are attached to.
 You should see your GPS attached.
-This will also give you the status of the device storage, and how much is filled up.</p>
+This will also give you the status of the device storage, and how much is filled up.</p></li>
+</ul></li>
+</ul>
 </div>
             </section>
 
