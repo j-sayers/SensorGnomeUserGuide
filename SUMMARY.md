@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Introduction and Overview](README.md)
-* [Overview](overview.md)
 * [Connecting to your SensorGnome](untitled.md)
 * [The Web Interface](untitled-1.md)
 * [Establishing an FTP connection](untitled-2.md)
