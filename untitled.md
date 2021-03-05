@@ -1,10 +1,10 @@
 # Connecting to your SensorGnome
 
-In order to transfer files such as detection data, to check the SG’s live status in the Web Interface, or to apply a software patch, you must establish a connection between the SensorGnome and your computer. The actual method used will depend on whether you are using a RPi or BB SG, but the end result is similar in each case.
+In order to download raw detection data, to check the SG’s live status in the Web Interface, or to apply a software patch, you must establish a connection between the SensorGnome and your computer. The actual method used will depend on whether you are using a RPi or BB SG, but the end result is similar in each case.
 
 ## Raspberry Pi SensorGnome
 
-There are two methods available for connecting to a RPi SG: WiFi Hotspot or Ethernet cable. WiFi hotspot can be more convenient, but not every RPi SG is equipped with this functionality. Ethernet cable should work in every case.
+There are two methods available for connecting to a RPi SG: WiFi Hotspot or Ethernet cable. WiFi hotspot can be more convenient, but not every RPi SG is equipped with this functionality. Ethernet cable should work in every case \(provided you have iTunes installed on your computer, in the case of Windows users\).
 
 ### Option 1: WiFi Hotspot
 
@@ -12,7 +12,7 @@ The RPi that powers the SG is capable of producing a local WiFi hotspot that a c
 
 An RPi SG with the ability to create a hotspot will have a silver button somewhere on the outside of the SensorGnome case. This button is used to activate the hotspot. If there is no button then it will not be capable of creating a hotspot and you will have to connect with Option 2: Ethernet Cable.
 
-The WiFi Hotspot activation button
+![The WiFi Hotspot activation button](.gitbook/assets/wifibutton.png)
 
 The WiFi hotspot is convenient because, once a computer \(or smartphone\) has connected once to that particular RPi SG, it will not require any additional configuration and all further interactions with that SG can be performed by pressing the WiFi button and leaving the SG case itself closed.
 
