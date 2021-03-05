@@ -1,8 +1,10 @@
 # The Web Interface
 
-The Web Interface is where you can check the live status of your SensorGnome, to ensure that all the components are present and running as they should. As such, it’s a crucial part of any site visit, and generally be **the first and last thing you do** whenever you work with your SensorGnome. It is a very good idea to take a photo or screenshot prior to leaving a site.
+The Web Interface is where you can check the live status of your SensorGnome, to ensure that all the components are present and running as they should. As such, it’s a crucial part of any site visit, and generally should be **the first and last thing you do** whenever you work with your SensorGnome. It is a very good idea to take a photo or screenshot prior to leaving a site.
 
-_**If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option \(better to leave a SensorGnome that**_ **may not** _**be working, than leave no SensorGnome at all!\)**_
+{% hint style="info" %}
+If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option \(it's better to leave a SensorGnome that _may not_ be working, than leave no SensorGnome at all!\).
+{% endhint %}
 
 The contents of the Web Interface is the same regardless of whether you have a BeagleBone or Raspberry Pi SensorGnome, though the layout may differ slightly depending on software version.
 
@@ -17,6 +19,10 @@ Below that is the **software version** that the SensorGnome is running. This SG 
 The SensorGnome keeps track of when and how often it reboots, and keeps an internal **reboot odometer** that increments each time. When you first arrive at a SG in the field, you _hope_ to see that the SG has been running for a long period prior to your arrival, and that it has not rebooted very often during that period. It’s not necessarily a problem if you see that the SG only recently rebooted prior to arrival, or that it has rebooted many hundreds of times since the last visit, but it does potentially point to issues with a power supply, wiring, or perhaps gradual hardware failure.
 
 Finally, the **GPS location and time** are displayed. Time is displayed in UTC/GMT time so there is a good chance it will be offset from your local time zone. In addition to logging the precise location of the receiver, the GPS also has a role in keeping time. Whenever an SG reboots, the internal clock will reset to 2000-01-01 and start counting from there. It is the GPS that corrects this to the proper current so that accurate timekeeping is maintained. Sometimes when a receiver is found to be recording data when the time and/or location are not properly set, it may be possible retroactively correct them. But often, any data recorded during this period will be lost. Therefore it is critical to confirm the status of these during site visits.
+
+{% hint style="info" %}
+Importance of the GPS
+{% endhint %}
 
 In addition to logging the precise location of the receiver, the GPS is also responsible for resetting the proper time if the SG reboots. Newer SGs often include an attached “GPS Hat” inside the case that uses a watch battery to preserve the time even during extended loss of power.
 
