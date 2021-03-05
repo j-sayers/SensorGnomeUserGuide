@@ -1,10 +1,8 @@
 # The Web Interface
 
-The Web Interface is where you can check the live status of your SensorGnome, to ensure that all the components are present and running as they should. As such, it’s a crucial part of any site visit, and generally should be **the first and last thing you do** whenever you work with your SensorGnome. It is a very good idea to take a photo or screenshot prior to leaving a site.
+The Web Interface is where you can check the live status of your SensorGnome, to ensure that all the components are present and running as they should. As such, it’s a crucial part of any site visit, and generally be **the first and last thing you do** whenever you work with your SensorGnome. It is a very good idea to take a photo or screenshot prior to leaving a site.
 
-{% hint style="info" %}
-If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option \(it's better to leave a SensorGnome that _may not_ be working, than leave no SensorGnome at all!\).
-{% endhint %}
+_**If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option \(better to leave a SensorGnome that**_ **may not** _**be working, than leave no SensorGnome at all!\)**_
 
 The contents of the Web Interface is the same regardless of whether you have a BeagleBone or Raspberry Pi SensorGnome, though the layout may differ slightly depending on software version.
 

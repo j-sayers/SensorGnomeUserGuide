@@ -17,9 +17,7 @@ The recommended method of transferring the detection data and other files betwee
      * username: `root`
      * password: `root`
 3. Click “Quickconnect”
-
    * The first time you connect to a particular SG you may see a pop-up warning that the “server’s host key is unknown.” If you entered the connection credentials correctly, click “OK” and continue.
-
 4. You should now have an active FTP connection between your computer and the SG. In the image below the connection credentials \(for an RPi connected using an Ethernet cable\) are highlighted in red. The panels on the left reflect your own computer \(aka the local site\) and the two panels on the right represent the remote site \(the Raspberry Pi or BeagleBone that powers the SensorGnome\). You are now ready to transfer detection data or modify configuration files
 
    FileZilla after an FTP connection has been established with a Raspberry Pi SensorGnome
