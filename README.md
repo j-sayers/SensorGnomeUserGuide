@@ -25,11 +25,11 @@ The BeagleBone and Raspberry Pi computers may be housed in a variety of cases th
 
 A **Raspberry Pi** has one Ethernet port on the left, with 4 standard USB ports to its right
 
-Raspberry Pi
+![Raspberry Pi](.gitbook/assets/rpi.jpg)
 
 A **BeagleBone** has one Ethernet port in the centre flanked by a Mini USB port on its left, and a circular “barrel jack” on its right. The circular hole above the Mini USB port is a feature of the case; there may or may not be any port
 
-BeagleBone
+![BeagleBone](.gitbook/assets/bb.jpg)
 
 _Note: there are two other receivers compatible with the Motus network: the SensorStation made by Cellular Tracking Technologies \(CTT\) and the SRX receivers made by Lotek. For guides on how to use these receivers, please consult CTT or Lotek respectively._
 
