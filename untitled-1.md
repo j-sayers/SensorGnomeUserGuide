@@ -20,12 +20,6 @@ The SensorGnome keeps track of when and how often it reboots, and keeps an inter
 
 Finally, the **GPS location and time** are displayed. Time is displayed in UTC/GMT time so there is a good chance it will be offset from your local time zone. In addition to logging the precise location of the receiver, the GPS also has a role in keeping time. Whenever an SG reboots, the internal clock will reset to 2000-01-01 and start counting from there. It is the GPS that corrects this to the proper current so that accurate timekeeping is maintained. Sometimes when a receiver is found to be recording data when the time and/or location are not properly set, it may be possible retroactively correct them. But often, any data recorded during this period will be lost. Therefore it is critical to confirm the status of these during site visits.
 
-{% hint style="info" %}
-Importance of the GPS
-{% endhint %}
-
-In addition to logging the precise location of the receiver, the GPS is also responsible for resetting the proper time if the SG reboots. Newer SGs often include an attached “GPS Hat” inside the case that uses a watch battery to preserve the time even during extended loss of power.
-
 ![The &#x201C;Live Pulses&#x201D; pane](.gitbook/assets/webinterface2.png)
 
 The **Live Pulses** pane will show all radio pulses detected by the receiver in real time. Unless you have a test tag on hand this is most likely just to be background radio noise. Background radio noise is a common occurrence and most sites will show at least something here. But the amount of activity will vary quite; some stations are so “noisy” there is a steady stream of pulses coming in, whereas others may go minutes or even days without detecting pulses. The dongle that detected the pulse is also printed to the screen. The presence of pulses can help you confirm that your receiver and all dongles are functioning, but the absence of pulses isn’t all that informative.
