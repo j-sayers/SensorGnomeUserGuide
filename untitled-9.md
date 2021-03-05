@@ -3,17 +3,17 @@
 This is a quick reference of the methods used to connect to an SG and to navigate to the various folders
 
 * **Raspberry Pi SensorGnome**
-  * Connecting to your computer \(Firefox or Chrome browser\)
-    * Wi-Fi Hotspot
-      * `http://192.168.7.2`
-    * Ethernet cable
+  * Connecting to your computer
+    * WiFi Hotspot
+      * `http://192.168.9.2`
+    * Ethernet
       * `http://sgpi.local`
   * Establishing FTP connection
-    * Using Wi-Fi hotspot
+    * WiFi Hotspot
       * host: `sftp://192.168.7.2`
       * username: `root`
       * password: `root`
-    * Using Ethernet cable
+    * Ethernet
       * host: `sftp://sgpi.local`
       * username: `root`
       * username: `root`

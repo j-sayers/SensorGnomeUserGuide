@@ -1,14 +1,10 @@
 # Connecting to your SensorGnome
 
-In order to download raw detection data, to check the SG’s live status in the Web Interface, or to apply a software patch, you must establish a connection between the SensorGnome and your computer. The actual method used will depend on whether you are using a RPi or BB SG, but the end result is similar in each case.
-
-**Raspberry Pi SensorGnome**
-
-**BeagleBone SensorGnome**
+In order to transfer files such as detection data, to check the SG’s live status in the Web Interface, or to apply a software patch, you must establish a connection between the SensorGnome and your computer. The actual method used will depend on whether you are using a RPi or BB SG, but the end result is similar in each case.
 
 ## Raspberry Pi SensorGnome
 
-There are two methods available for connecting to a RPi SG: WiFi Hotspot or Ethernet cable. WiFi hotspot can be more convenient, but not every RPi SG is equipped with this functionality. Ethernet cable should work in every case \(provided you have iTunes installed on your computer, in the case of Windows users\).
+There are two methods available for connecting to a RPi SG: WiFi Hotspot or Ethernet cable. WiFi hotspot can be more convenient, but not every RPi SG is equipped with this functionality. Ethernet cable should work in every case.
 
 ### Option 1: WiFi Hotspot
 
@@ -16,7 +12,7 @@ The RPi that powers the SG is capable of producing a local WiFi hotspot that a c
 
 An RPi SG with the ability to create a hotspot will have a silver button somewhere on the outside of the SensorGnome case. This button is used to activate the hotspot. If there is no button then it will not be capable of creating a hotspot and you will have to connect with Option 2: Ethernet Cable.
 
-![The WiFi Hotspot activation button](.gitbook/assets/wifibutton.png)
+The WiFi Hotspot activation button
 
 The WiFi hotspot is convenient because, once a computer \(or smartphone\) has connected once to that particular RPi SG, it will not require any additional configuration and all further interactions with that SG can be performed by pressing the WiFi button and leaving the SG case itself closed.
 
@@ -40,13 +36,12 @@ The disadvantage is that activating the WiFi hotspot via the button can be finic
 
 An Ethernet cable is usually the most reliable way of connecting to a RPi SG, and doesn’t depend on having a WiFi hotspot activation button. No configuration is needed on the RPi. However some configuration may be required on your computer.
 
-![Ethernet cable](.gitbook/assets/ethernet.jpg)
+Ethernet cable
 
-If you use a Windows computer, ensure that iTunes is installed. Installing iTunes also installs a networking tool called Bonjour that the SG relies on to establish the connection. If you don’t want to install iTunes, you can install [Bonjour by itself directly from Apple](https://support.apple.com/kb/DL999?locale=en_CA). If you use a Mac computer, Bonjour should already be installed.
-
-1. Connect one end of the Ethernet cable to the Ethernet port on the Raspberry Pi and the other end to your computer
+1. If you use a Windows computer, ensure that iTunes is installed. Installing iTunes also installs a networking tool called Bonjour that the SG relies on to establish the connection. If you don’t want to install iTunes, you can install [Bonjour by itself directly from Apple](https://support.apple.com/kb/DL999?locale=en_CA). If you use a Mac computer, Bonjour should already be installed.
+2. Connect one end of the Ethernet cable to the Ethernet port on the Raspberry Pi and the other end to your computer
    * Many newer computers do not have an Ethernet port. If yours lacks an Ethernet port, you can use an “Ethernet to USB adapter” and connect to one of your computer’s USB ports.
-2. After waiting 30-60 seconds, confirm that the connection is established by accessing the Web Interface
+3. After waiting 30-60 seconds, confirm that the connection is established by accessing the Web Interface
    * Open a web browser \(Firefox or Chrome\)
    * Navigate to `http://sgpi.local`
    * You should now see the SensorGnome Web Interface
@@ -57,16 +52,15 @@ The recommended, and often only, method of connecting to a BeagleBone SG is with
 
 **First steps:** Before connecting to a BeagleBone SG for the first time, it is likely you’ll need to install drivers. Drivers for your operating system can be found at [http://beagleboard.org/getting-started](http://beagleboard.org/getting-started), about halfway down the page. This only needs to be done once, though newer operating systems often block the process. If the driver installation fails refer to Appendix for guidance on how to install.
 
-![Mini USB to Standard USB cable](.gitbook/assets/usbab.jpg)
+USB A to USB Mini B cable
 
 1. Connect the Mini USB end to the BeagleBone. The port is found on the same side as the 5V barrel jack and Ethernet port.
    * The USB connection will also power the BB by itself if needed. However if a primary power supply is already plugged in to the barrel jack, you can simply plug in the USB cable while the BeagleBone is powered on.
 
-![The Mini USB port used to connect to a BeagleBone](.gitbook/assets/bbusb.png)
+The Mini USB port used to connect to a BeagleBone
 
-After several seconds or up to a minute, confirm that the connection is established by accessing the Web Interface
-
-1. * Open a web browser \(Firefox or Chrome\)
+1. After several seconds or up to a minute, confirm that the connection is established by accessing the Web Interface
+   * Open a web browser \(Firefox or Chrome\)
    * Navigate to `http://192.168.7.2`
    * You should now see the SensorGnome Web Interface
 
