@@ -3,7 +3,7 @@
 The Web Interface is where you can check the live status of your SensorGnome, to ensure that all the components are present and running as they should. As such, it’s a crucial part of any site visit, and generally should be **the first and last thing you do** whenever you work with your SensorGnome. It is aa very good idea to take a photo or screenshot prior to leaving a site.
 
 {% hint style="info" %}
-If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option \(it's better to leave a SensorGnome that _may not_ be working, than leave no SensorGnome at all!\).
+If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option \(better to leave a SensorGnome that _may not_ be working, than leave no SensorGnome at all!\).
 {% endhint %}
 
 The contents of the Web Interface is the same regardless of whether you have a BeagleBone or Raspberry Pi SensorGnome, though the layout may differ slightly depending on software version.
@@ -30,9 +30,9 @@ These panes will only show up if a recognized dongle is plugged in. If you know 
 
 ![The &#x201C;What I&#x2019;m Doing Now&#x201D; and &quot;Devices&quot; sections](.gitbook/assets/webinterface3.png)
 
-The **What I’m doing now** section displays important information about the dongles connected. You should see each of the dongles \(e.g. FunCUBE dongles\) in these two sections. Also note the frame rate and frequency. The frame rate should be 48 and the frequency should match your local region \(166 MHz in the Western Hemisphere, 150.1 in Europe, and 151 MHz in Australia\).
+The **What I’m doing now** section displays important information about the dongles connected. You should see each of the dongles \(e.g. FUNcube dongles\) in these two sections. Also note the frame rate and frequency. The frame rate should be 48 and the frequency should match your local region \(166 MHz in the Western Hemisphere, 150.1 in Europe, and 151 MHz in Australia\). 
 
-CTT dongles \(434 MHz worldwide\) will only be shown in the lower section when plugged in; they will not be displayed in the top section, whereas FunCUBE dongles should be displayed in both sections.
+CTT dongles \(434 MHz worldwide\) will only be shown in the lower section when plugged in; they will not be displayed in the top section, whereas FUNcube dongles should be displayed in both sections.
 
 You’ll also see the amount of storage space that has been filled on the MicroSD card. In the example above, only 7% of the nominal 32 GB has been used. In normal operating conditions it will take multiple years to fill up a 32 GB card with data, but it’s important to keep an eye on.
 
