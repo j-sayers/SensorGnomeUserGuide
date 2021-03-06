@@ -4,7 +4,7 @@ The recommended method of transferring the detection data and other files betwee
 
 **1\)** Connect to your SensorGnome using the instructions above. Confirm you are connected by accessing the Web Interface. If you cannot access the Web Interface there is a very good chance you will not be able to establish an FTP connection either. 
 
-**2\)** Open FileZilla and enter the following in the top bar, depending on what type of SG you have and how you connected, enter the following credentials:
+**2\)** Open FileZilla and enter the following credentials in the top left bar, depending on what type of SG you have and how you connected.
 
 {% tabs %}
 {% tab title="Raspberry Pi" %}
@@ -40,14 +40,14 @@ The recommended method of transferring the detection data and other files betwee
 
 {% tabs %}
 {% tab title="Raspberry Pi" %}
-**Raspberry Pi**
+#### **Raspberry Pi**
 
 * SGdata folder: `/dev/sdcard/SGdata`
 * uboot folder: `/dev/sdcard/uboot`
 {% endtab %}
 
 {% tab title="BeagleBone" %}
-**BeagleBone**
+#### **BeagleBone**
 
 * SGdata folder: `/media/internal_SD_card/SGdata`
 * uboot folder: `/boot/uboot`
@@ -72,5 +72,5 @@ Then under the desired site, click “New Bookmark” and assign the desired pat
 
 ![](.gitbook/assets/fzsm3.png)
 
-Once configured, you can connect to the SG and navigate to the proper folders on your computer and the SG with just one click.
+Once configured, you can connect to the SG and navigate to the proper folders on your computer and the SG with just one click. 
 

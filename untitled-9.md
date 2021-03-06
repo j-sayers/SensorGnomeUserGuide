@@ -48,8 +48,6 @@ This is a quick reference of the network addresses and folder paths, organized b
   * `http://192.168.7.2`
 * Ethernet cable \(network must first be configured\)
   * `http://192.168.9.2`
-* Shared network drive \(e.g. in Windows Explorer\)
-  * NA?
 
 #### Establishing FTP connection \(e.g. with FileZilla\)
 

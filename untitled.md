@@ -85,5 +85,6 @@ An inability to access the Web Interface may indicate issues with your SensorGno
   * `http://sgpi.local` if you are connecting with Ethernet
 * Make sure the cables you are using \(if applicable\) are connected properly
 * Reboot and restart both the computer and SG
+* Re-image the SG \(if it's a BeagleBone\) or try clean software version \(if it's a Raspberry Pi\)
 * If you still cannot access the Web Interface, you will not be able to confirm that the SG is running properly. Don’t leave an SG deployed in the field in this condition unless you have no other option. There may still be a way of downloading data \(directly from the SD card for a RPi, or through a shared network drive for BB\).
 

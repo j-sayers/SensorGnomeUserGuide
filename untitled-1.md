@@ -38,3 +38,7 @@ You’ll also see the amount of storage space that has been filled on the MicroS
 
 Raspberry Pi SGs only save detection data on the MicroSD card as they have no internal storage. BeagleBone SGs do have internal memory; this is what the SG software is installed on. However in most cases, a MicroSD card is used to store the detection data since the BB only has 2GB or 4GB of internal storage. There are situations where the BB SG does not recognize the MicroSD card and will save detection data to the internal memory. In these cases, you will see the storage reported as 2 GB or 4 GB, depending on how much onboard storage that particular SG has.
 
+{% hint style="info" %}
+Get in the habit of taking a photo or screenshot of the Web Interface prior to finishing up at a station. 
+{% endhint %}
+
