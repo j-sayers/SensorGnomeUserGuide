@@ -2,7 +2,7 @@
 
 One of the first steps in troubleshooting is to ensure that you have the most up-to-date software installed on your SensorGnome. Aside from ensuring your SG is up-to-date – this entire guide as based on the premise that you are using the most recent software – reinstalling the most recent software can resolve many issues.
 
-## Raspberry Pi
+## Raspberry Pi SensorGnome
 
 For Raspberry Pi SensorGnomes, the software runs entirely off the MicroSD card; if the proper software isn’t present on the MicroSD card, the RPi SG won’t function properly. This can cause issues for teams who are unaware of this – and who expect to be able to simply swap out one card without ensuring that the new card has the proper software on it. But it also makes updating the software with a clean installation very simple; all you need to do is copy the software files onto a blank SD card.
 
@@ -22,7 +22,7 @@ Always ensure that the MicroSD card you use with an RPi SG has the software copi
 
 ![The MicroSD card \(highlighted in red\) is inserted with the contacts facing up](.gitbook/assets/rpisdslot.jpg)
 
-## BeagleBone
+## BeagleBone SensorGnome
 
 The software that runs the BeagleBone SG is installed onto the internal memory of the BeagleBone. In order to upgrade or re-install the software you need to make a designated installation disk which contains the software image on a MicroSD card. Upgrading the BB in this way is referred to as _re-imaging_ the BeagleBone. Reimaging a BB will overwrite whatever existing software is already installed on the BB. However it will not overwrite any detection data present on the BB SG, so it can be a helpful first step in “refreshing” a BB SG that you are having trouble connecting to.
 
@@ -35,7 +35,7 @@ The software that runs the BeagleBone SG is installed onto the internal memory o
 4. Select the MicroSD card in the next step, and then click “Flash!” This will overwrite any data that happens to be on the target MicroSD card so make sure you have everything copied over that you need.
 5. Once the process is complete, you may get a computer popup warning that the MicroSD card is corrupted and needs to be formatted. This is expected as the file format is no longer compatible with a Windows or Mac computer
 
-###  **Reimaging the BeagleBone**
+###  Updating / r**eimaging the BeagleBone**
 
 1. Ensure that the BeagleBone is completely powered down \(both the Mini USB and “barrel jack” are capable of powering the BeagleBone\).
 2. Insert the image card into the BeagleBone and power on.
