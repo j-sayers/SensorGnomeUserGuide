@@ -26,14 +26,14 @@ This is a quick reference of the network addresses and folder paths, organized b
 
 #### Detection data \(SGdata\) folder
 
-* via FTP connection \(e.g. in FileZilla\)
+* FTP connection \(e.g. in FileZilla\)
   * `/dev/sdcard/SGdata`
 * Directly on MicroSD card when removed from powered-down RPi
   * `/SGdata`
 
-#### uboot folder \(configuration files\)
+#### _uboot_ folder \(configuration files\)
 
-* via FTP connection \(e.g. in FileZilla\)
+* FTP connection \(e.g. in FileZilla\)
   * `/dev/sdcard/uboot`
 * Directly on MicroSD card when removed from powered-down RPi
   * `/uboot`
@@ -62,21 +62,21 @@ This is a quick reference of the network addresses and folder paths, organized b
 
 #### Detection data \(SGdata\) folder
 
-* via FTP connection \(e.g. in FileZilla\)
+* FTP connection \(e.g. in FileZilla\)
   * `/media/internal_SD_card/SGdata`
 * Shared network drive \(e.g. in Windows Explorer\)
   * `\\192.168.7.2\data\internal_SD_card\SGdata`
 
 #### Internal detection data folder \(when MicroSD card is absent or can't be read\)
 
-* via FTP connection \(e.g. in FileZilla\)
+* FTP connection \(e.g. in FileZilla\)
   * **`/media/internal_system_memory/SGdata`**
 * Shared network drive \(e.g. in Windows Explorer\)
   * **`\\192.168.7.2\data\internal_system_memory\SGdata`**
 
 #### uboot folder \(configuration files\)
 
-* via FTP connection \(e.g. in FileZilla\)
+* FTP connection \(e.g. in FileZilla\)
   * `/boot/uboot`
 * Shared network drive \(e.g. in Windows Explorer\)
   * `\\192.168.7.2\root\boot\uboot\`
