@@ -1,6 +1,6 @@
 # CTT LifeTag Compatibility
 
-By default a SensorGnome is capable of detecting only Lotek Nanotags. However by applying a software patch a SensorGnome can also detect CTT LifeTags/ PowerTags. We refer to SGs that are listening for both tag types as “dual-mode.” CTT compatibility is most reliably accomplished with a RPi SG.
+By default a SensorGnome is capable of detecting only Lotek Nanotags. However by applying a software patch a SensorGnome can also detect CTT LifeTags/ PowerTags. We refer to SGs that are listening for both tag types as “dual-mode” SensorGnomes. CTT compatibility is most reliably accomplished with a RPi SG. 
 
 _Note: you will not be able to use the same dongles for CTT tags as you use for Lotek tags. For CTT-compatible dongles, contact CTT or Birds Canada._
 

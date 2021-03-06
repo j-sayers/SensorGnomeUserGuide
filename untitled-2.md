@@ -32,13 +32,11 @@ The recommended method of transferring the detection data and other files betwee
 
 **3\)** Click “Quickconnect”
 
-* The first time you connect to a particular SG you may see a pop-up warning that the “server’s host key is unknown.” If you entered the connection credentials correctly, click “OK” and continue.
+* _The first time you connect to a particular SG you may see a pop-up warning that the “server’s host key is unknown.” If you entered the connection credentials correctly, click “OK” and continue._
 
-**4\)** You should now have an active FTP connection between your computer and the SG. In the image below the connection credentials \(for an RPi connected using an Ethernet cable\) are highlighted in red. The panels on the left reflect your own computer \(aka the local site\) and the two panels on the right represent the remote site \(the Raspberry Pi or BeagleBone that powers the SensorGnome\). You are now ready to transfer detection data or modify configuration files
+![Enter the appropriate host address in the top left address bar ](.gitbook/assets/fztransfer.png)
 
-FileZilla after an FTP connection has been established with a Raspberry Pi SensorGnome
-
-**5\)** Once connected, you’ll need to navigate to the appropriate folder on the Remote site \(the SensorGnome\) for the next step. There are two main locations you’ll be working with: the **SGdata folder**, where the detection data is stored, and the **uboot folder**, where certain configuration files are stored. You can click around through the folders in the right hand panes to get to these locations but it’s easier to cut and paste the address directly into the location bar on the top right panel.
+**4\)** Once connected, you’ll need to navigate to the appropriate folder on the Remote site \(aka the SensorGnome\) for the next step. There are two main locations you’ll be working with: the **SGdata folder**, where the detection data files are stored, and the **uboot folder**, where certain configuration files are stored. You can click around through the folders in the right hand panes to get to these locations but it’s easier to cut and paste the address directly into the location bar on the top right panel.
 
 {% tabs %}
 {% tab title="Raspberry Pi" %}
@@ -56,8 +54,10 @@ FileZilla after an FTP connection has been established with a Raspberry Pi Senso
 {% endtab %}
 {% endtabs %}
 
+![](.gitbook/assets/remotepath.png)
+
 {% hint style="info" %}
-To save time later, you can add site-specific bookmarks in FileZilla containing both the connection credentials as well as the folder paths to be navigated to. Then you can simply click on the appropriate shortcut and proceed automatically through the steps above. This isn’t necessary, but can speed up your work process later on if configured. Refer to the Cheatsheet for a quick summary of the various path names
+To save time later, you can add site-specific bookmarks in FileZilla containing both the connection credentials as well as the folder paths to be navigated to. Then you can simply click on the appropriate shortcut and proceed automatically through the steps above. This isn’t necessary, but can speed up your work process later on if configured. 
 {% endhint %}
 
 * In FileZilla, select File &gt; Site Manager
