@@ -4,7 +4,7 @@ In order to download raw detection data, to check the SG’s live status in the 
 
 {% tabs %}
 {% tab title="Raspberry Pi" %}
-## Raspberry Pi SensorGnome
+### Raspberry Pi SensorGnome
 
 There are two methods available for connecting to a RPi SG: Wi-Fi Hotspot or Ethernet cable. Wi-Fi hotspot can be more convenient, but not every RPi SG is equipped with this functionality. Ethernet cable should work in every case \(provided you have iTunes installed on your computer, in the case of Windows users\).
 
@@ -51,7 +51,7 @@ If you use a Windows computer, ensure that iTunes is installed. Installing iTune
 {% endtab %}
 
 {% tab title="BeagleBone" %}
-## BeagleBone SensorGnome
+### BeagleBone SensorGnome
 
 The recommended, and often only, method of connecting to a BeagleBone SG is with a USB cable. Specifically this is a cable with a “standard” USB jack on one end, and a Mini USB jack on the other end. These aren’t as commonly found in day-to-day usage as they used to be but can still be found easily and for affordable prices online. Purchase a few so that you have a couple extras available.
 

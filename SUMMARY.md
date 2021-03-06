@@ -9,7 +9,7 @@
 * [CTT LifeTag Compatibility](untitled-5.md)
 * [Data syncing over the Internet](untitled-7.md)
 * [Loading local tag database](untitled-8.md)
-* [Appendix: Connection and folder path reference](untitled-9.md)
+* [Appendix: Connection and folder path Cheetsheat](untitled-9.md)
 * [Appendix: Overview of Raspberry Pi SG Hardware](untitled-10.md)
 * [Appendix: Overview of BeagleBone SG Hardware](appendix-overview-of-beaglebone-sg-hardware.md)
 * [Appendix: Installing BeagleBone drivers](appendix-installing-beaglebone-drivers.md)
