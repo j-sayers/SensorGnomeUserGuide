@@ -54,7 +54,7 @@ The recommended method of transferring the detection data and other files betwee
 {% endtab %}
 {% endtabs %}
 
-![](.gitbook/assets/remotepath.png)
+![Navigate to the desired path on right hand panel, or enter the path address in the highlighted area](.gitbook/assets/remotepath.png)
 
 {% hint style="info" %}
 To save time later, you can add site-specific bookmarks in FileZilla containing both the connection credentials as well as the folder paths to be navigated to. Then you can simply click on the appropriate shortcut and proceed automatically through the steps above. This isn’t necessary, but can speed up your work process later on if configured. 
