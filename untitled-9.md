@@ -60,7 +60,7 @@ This is a quick reference of the network addresses and folder paths, organized b
   * username: `root`
   * password: `root`
 
-#### Detection data \(SGdata\) folder
+#### Detection data \(SGdata\) folder on the MicroSD card
 
 * FTP connection \(e.g. in FileZilla\)
   * `/media/internal_SD_card/SGdata`

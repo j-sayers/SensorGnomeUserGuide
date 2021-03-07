@@ -8,8 +8,6 @@ In order to identify the tags that have been detected by the SG, the raw data mu
 _We use the term “detection data” to refer to the raw radio data recorded by a SensorGnome. However it’s important to remember that in most cases, the vast majority of the “detection data” present will be product of background radio noise and not actual tag signals._
 {% endhint %}
 
-Transferring via an FTP connection is the recommended way of copying the data files. That allows you to check the live status of the SG on the Web Interface without turning the SensorGnome off, and gives you a better sense of the state you are leaving the station in. If you cannot establish an FTP connection, there are a couple other options to copy the data; these are described later in this chapter.
-
 ### Where does a SensorGnome save detection data?
 
 Raspberry Pi and BeagleBone based SensorGnomes save their detection data in slightly different places. Usually, this is on the MicroSD card, but there are some subtle differences between the two that can be quite important.
@@ -27,14 +25,18 @@ RPi SensorGnomes save detection data on the MicroSD card. This is the _only_ pla
 {% endtab %}
 
 {% tab title="BeagleBone" %}
-A BeagleBone has its own internal storage; this is what the SG software is installed on. However it is a limited amount of storage \(only 2GB or 4GB, depending on the BB\), so detection data is usually stored on the MicroSD card.
+A BeagleBone has its own internal storage; this is what the SG software is installed on. However it is a limited amount of storage \(only 2GB or 4GB, depending on the BB, and much of that is used up by the software\), so detection data is usually stored on the MicroSD card. 
 
-#### Detection data \(SGdata\) folder
+#### Detection data \(SGdata\) folder on the MicroSD card
 
 * FTP connection \(e.g. in FileZilla\)
   * `/media/internal_SD_card/SGdata`
 * Shared network drive \(e.g. in Windows Explorer\)
   * `\\192.168.7.2\data\internal_SD_card\SGdata`
+* Directly on the MicroSD card
+  * `/SGdata`
+
+Sometimes a BeagleBone is unable to recognize or write to a MicroSD card. In this case the BeagleBone will write to a different folder on the internal storage. When you copy data from this folder, be sure to delete it when finished since the BB can fail to record if its internal storage is completely full.
 
 #### Internal detection data folder \(when MicroSD card is absent or can't be read\)
 
@@ -45,16 +47,23 @@ A BeagleBone has its own internal storage; this is what the SG software is insta
 {% endtab %}
 {% endtabs %}
 
+Transferring via an FTP connection is the recommended way of copying the data files. That allows you to check the live status of the SG on the Web Interface without turning the SensorGnome off, and gives you a better sense of the state you are leaving the station in. If you cannot establish an FTP connection, there are a couple other options to copy the data; these are described later in this chapter.
+
 ## Option 1: Transferring over FTP Connection
 
 **1\)** Connect to your SensorGnome using the instructions above. Confirm you are connected by accessing the Web Interface. If you cannot access the Web Interface there is a very good chance you will not be able to establish an FTP connection either.
 
 **2\)** Open FileZilla and establish a connection following the instructions above. In FileZilla, navigate to the SGdata folder where the detection data files are stored. 
 
-* **Raspberry Pi**
-  * `/dev/sdcard/SGdata`
-* **BeagleBone**
-  * `/media/internal_SD_card/SGdata`
+{% tabs %}
+{% tab title="Raspberry Pi SG" %}
+`/dev/sdcard/SGdata`
+{% endtab %}
+
+{% tab title="BeagleBone SG" %}
+`/media/internal_SD_card/SGdata`
+{% endtab %}
+{% endtabs %}
 
 **3\)** In the lower right panel, you should see a series of folders named for each date that the SG was recording data. Copy over all of the folders to a location on your computer so that it can be later uploaded to the Motus server to processing. Give the folder on your computer a meaningful name, such as "Site Name 2021-02-03", including the site name and the date you downloaded the data.
 
