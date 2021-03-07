@@ -1,6 +1,6 @@
 # Appendix: Connection and folder path Cheetsheat
 
-This is a quick reference of the network addresses and folder paths, organized by receiver type \(RPi vs BB\) and method of connection.
+This is a complete reference of the network addresses and folder paths, organized by receiver type \(RPi vs BB\) and method of connection.
 
 {% tabs %}
 {% tab title="Raspberry Pi " %}
