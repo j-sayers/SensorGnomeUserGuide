@@ -56,16 +56,18 @@ Transferring via an FTP connection is the recommended way of copying the data fi
 **2\)** Open FileZilla and establish a connection following the instructions above. In FileZilla, navigate to the SGdata folder where the detection data files are stored. 
 
 {% tabs %}
-{% tab title="Raspberry Pi SG" %}
+{% tab title="Raspberry Pi SensorGnome" %}
 `/dev/sdcard/SGdata`
 {% endtab %}
 
-{% tab title="BeagleBone SG" %}
+{% tab title="BeagleBone SensorGnome" %}
 `/media/internal_SD_card/SGdata`
 {% endtab %}
 {% endtabs %}
 
 **3\)** In the lower right panel, you should see a series of folders named for each date that the SG was recording data. Copy over all of the folders to a location on your computer so that it can be later uploaded to the Motus server to processing. Give the folder on your computer a meaningful name, such as "Site Name 2021-02-03", including the site name and the date you downloaded the data.
+
+![SGdata folder on a RPi SG](.gitbook/assets/sgdata.png)
 
 * To quickly determining how much of the data you should copy from the SG to your computer, can you click on the station pin on the [Motus Receiver Map](https://motus.org/data/receiversMap?lang=en). The popup will tell you the last date for which there is data for this receiver. Copy over everything from today’s date back through to the “last data date”
 * The Motus server will ignore any duplicate data that gets uploaded, so if in doubt about how much of the data to transfer to your computer, err on the side of copying more than you think you actually need.
@@ -73,13 +75,29 @@ Transferring via an FTP connection is the recommended way of copying the data fi
 
 ## Option 2: Copying directly from the MicroSD card
 
-With both Raspberry Pi and BeagleBone SensorGnomes it's possible to copy detection data files directly from the MicroSD card. Usually this isn't the ideal method since it introduces more potential for problems. But 
+With both Raspberry Pi and BeagleBone SensorGnomes it's possible to copy detection data files directly from the MicroSD card. Usually this isn't the preferred method since it introduces more potential for problems, but it works just fine as long as you pay attention to a few of the details.
 
-{% hint style="danger" %}
+**1\)** Completely power down the SG by disconnecting the power source\(s\) from the RPi or BB. A RPi has just one power source, supplied through the micro USB; a BB can be powered by either the "barrel jack" or the mini USB so make sure both are disconnected if applicable.
+
+{% hint style="warning" %}
 Ensure that the RPi or BB is fully powered down prior to removing or inserting the MicroSD card. Failure to do so may result in loss of data.
 {% endhint %}
 
+**2\)** Remove the MicroSD card from the SG. For some RPi the MicroSD is deeply recessed in the case and difficult to remove without tweezers. You may also see a sticker saying something like "Do not remove this card".
+
+**3\)** Insert the MicroSD card into your computer. Most computers do not have a designated slot for reading this side card so an adapter is likely needed.
+
+**4\)** Navigate to the appropriate folder and copy the data files. There is generally no need to delete the files on the card unless it is running low on storage space. 
+
+**5\)** Replace the MicroSD card 
+
+{% hint style="danger" %}
+For Raspberry Pi SGs, make sure that the card you are replacing has the SG software on it. Without the proper software on the card, the SG will not work properly even though you may see lights on. Do not put a blank MicroSD card into a RPi.
+{% endhint %}
+
+**6\)** Power on the SG. Check the Web Interface after you are done to confirm everything is working properly.
+
 ## Option 3: Accessing the SG as a shared network drive \(BeagleBone only\)
 
-
+See Appendix for information about accessing files on a BB SG via a shared network drive.
 

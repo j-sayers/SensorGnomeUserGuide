@@ -6,7 +6,7 @@ One of the first steps in troubleshooting is to ensure that you have the most up
 
 For Raspberry Pi SensorGnomes, the software runs entirely off the MicroSD card; if the proper software isn’t present on the MicroSD card, the RPi SG won’t function properly. This can cause issues for teams who are unaware of this – and who expect to be able to simply swap out one card without ensuring that the new card has the proper software on it. But it also makes updating the software with a clean installation very simple; all you need to do is copy the software files onto a blank SD card.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Always ensure that the MicroSD card you use with an RPi SG has the software copied onto it. The RPi SG runs _exclusively_ from the software SD card, so if a blank SD card is used, the SG won't record any data \(though you may still still lights flashing on the RPi\).
 {% endhint %}
 
