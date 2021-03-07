@@ -56,11 +56,11 @@ Transferring via an FTP connection is the recommended way of copying the data fi
 **2\)** Open FileZilla and establish a connection following the instructions above. In FileZilla, navigate to the SGdata folder where the detection data files are stored. 
 
 {% tabs %}
-{% tab title="Raspberry Pi SensorGnome" %}
+{% tab title="Raspberry Pi" %}
 `/dev/sdcard/SGdata`
 {% endtab %}
 
-{% tab title="BeagleBone SensorGnome" %}
+{% tab title="BeagleBone" %}
 `/media/internal_SD_card/SGdata`
 {% endtab %}
 {% endtabs %}

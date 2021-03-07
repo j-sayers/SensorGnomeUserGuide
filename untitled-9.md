@@ -3,7 +3,7 @@
 This is a quick reference of the network addresses and folder paths, organized by receiver type \(RPi vs BB\) and method of connection.
 
 {% tabs %}
-{% tab title="Raspberry Pi SensorGnome" %}
+{% tab title="Raspberry Pi " %}
 ### Raspberry Pi SensorGnome
 
 #### Web Interface \(Firefox or Chrome browser\)
@@ -39,7 +39,7 @@ This is a quick reference of the network addresses and folder paths, organized b
   * `/uboot`
 {% endtab %}
 
-{% tab title="BeagleBone SensorGnome" %}
+{% tab title="BeagleBone" %}
 ### BeagleBone SensorGnome
 
 #### Web Interface \(Firefox or Chrome browser\)
@@ -60,7 +60,7 @@ This is a quick reference of the network addresses and folder paths, organized b
   * username: `root`
   * password: `root`
 
-#### Detection data \(SGdata\) folder
+#### Detection data \(SGdata\) folder on the MicroSD card
 
 * FTP connection \(e.g. in FileZilla\)
   * `/media/internal_SD_card/SGdata`
