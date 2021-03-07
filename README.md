@@ -37,9 +37,7 @@ A **BeagleBone** \(below\) has one Ethernet port in the centre flanked by a Mini
 
 _Note: there are two other receivers compatible with the Motus network: the SensorStation made by Cellular Tracking Technologies \(CTT\) and the SRX receivers made by Lotek. For guides on how to use these receivers, please consult CTT or Lotek respectively._
 
-##  Overview of Typical Workflow
-
-There are many similarities between Raspberry Pi and BeagleBone based SensorGnomes – in terms of the hardware, the software that powers them, and the process of using them. But there are also some key differences, particularly as it relates to the method of connecting to them and transferring data. These steps are described in detail in this guide, with an effort to presenting the commonalities between them. Where differences are found between RPi and BB SensorGnomes, they will be broken down into sub-sections. 
+##  Overview of typical workflow
 
 Generally each time you work with a SensorGnome – either deployed in the field or as a test on your desktop – you will perform the same basic steps below. 
 
@@ -48,4 +46,8 @@ Generally each time you work with a SensorGnome – either deployed in the field
 3. Establish an FTP connection to download detection data or modify configuration files
 4. Confirm status once again on the Web Interface \(and take a photo or screenshot\)
 5. Disconnect from the SensorGnome
+
+There are many similarities between Raspberry Pi and BeagleBone based SensorGnomes – in terms of the hardware, the software that powers them, and the process of using them typically follows the same outline. But there are also some key differences, particularly as it relates to the method of connecting to them and transferring data. 
+
+The steps above are described in detail in this guide, with an effort to presenting the commonalities between them. Where differences are found between RPi and BB SensorGnomes, they will be broken down into sub-sections.
 
