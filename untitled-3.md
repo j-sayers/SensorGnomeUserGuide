@@ -8,30 +8,42 @@ In order to identify the tags that have been detected by the SG, the raw data mu
 _We use the term “detection data” to refer to the raw radio data recorded by a SensorGnome. However it’s important to remember that in most cases, the vast majority of the “detection data” present will be product of background radio noise and not actual tag signals._
 {% endhint %}
 
+Transferring via an FTP connection is the recommended way of copying the data files. That allows you to check the live status of the SG on the Web Interface without turning the SensorGnome off, and gives you a better sense of the state you are leaving the station in. If you cannot establish an FTP connection, there are a couple other options to copy the data; these are described later in this chapter.
+
 ### Where does a SensorGnome save detection data?
 
 Raspberry Pi and BeagleBone based SensorGnomes save their detection data in slightly different places. Usually, this is on the MicroSD card, but there are some subtle differences between the two that can be quite important.
 
 {% tabs %}
 {% tab title="Raspberry Pi" %}
-RPi SensorGnomes save detection data on the MicroSD card. This is the _only_ place where detection data can be found as the RPi has no internal storage of its own.
+RPi SensorGnomes save detection data on the MicroSD card. This is the _only_ place where detection data can be found as the RPi has no internal storage of its own. The software which runs the SG is also stored on the MicroSD card.
 
-#### Folder path:
+#### Detection data \(SGdata\) folder
 
-* via FTP \(e.g. with FileZilla\)
+* FTP connection \(e.g. in FileZilla\)
   * `/dev/sdcard/SGdata`
-* directly on the SD card when inserted into a computer
-  * 
+* Directly on MicroSD card when removed from powered-down RPi
+  * `/SGdata`
 {% endtab %}
 
 {% tab title="BeagleBone" %}
+A BeagleBone has its own internal storage; this is what the SG software is installed on. However it is a limited amount of storage \(only 2GB or 4GB, depending on the BB\), so detection data is usually stored on the MicroSD card.
 
+#### Detection data \(SGdata\) folder
+
+* FTP connection \(e.g. in FileZilla\)
+  * `/media/internal_SD_card/SGdata`
+* Shared network drive \(e.g. in Windows Explorer\)
+  * `\\192.168.7.2\data\internal_SD_card\SGdata`
+
+#### Internal detection data folder \(when MicroSD card is absent or can't be read\)
+
+* FTP connection \(e.g. in FileZilla\)
+  * **`/media/internal_system_memory/SGdata`**
+* Shared network drive \(e.g. in Windows Explorer\)
+  * **`\\192.168.7.2\data\internal_system_memory\SGdata`**
 {% endtab %}
 {% endtabs %}
-
-
-
-Transferring via an FTP connection is the recommended way of copying the data files. That allows you to check the live status of the SG on the Web Interface without turning the SensorGnome off, and gives you a better sense of the state you are leaving the station in. If you cannot establish an FTP connection, there are a couple other options to copy the data; these are described later in this chapter.
 
 ## Option 1: Transferring over FTP Connection
 
