@@ -38,7 +38,7 @@ This file is a compressed _.7z_ file. In order to uncompress it you will need 7z
 
 **2\)** Download [balenaEtcher](https://www.balena.io/etcher/?), a free and open-sourced program for creating disk images, and click “Select Image,” where you can select the the _.img_ file 
 
-**3\)** Select the MicroSD card in the next step, and then click “Flash!” 
+**3\)** Select the MicroSD card in the next step, and then click “Flash!”.
 
 ![The BB SG img file and the MicroSD card are both selected and ready to be flashed](.gitbook/assets/betcher%20%281%29.png)
 
@@ -46,18 +46,25 @@ This file is a compressed _.7z_ file. In order to uncompress it you will need 7z
 This will overwrite any data that happens to be on the target MicroSD card so make sure you have everything copied over that you need.
 {% endhint %}
 
+**4\)** Once the process is complete, you may get a computer popup warning that the MicroSD card is corrupted and needs to be formatted. This is expected as the file format is no longer compatible with a Windows or Mac computer.
 
+####  Updating / r**eimaging the BeagleBone**
 
-Once the process is complete, you may get a computer popup warning that the MicroSD card is corrupted and needs to be formatted. This is expected as the file format is no longer compatible with a Windows or Mac computer
+Once you have your image card, you can use it to update or reimage the BeagleBone SG.
 
-###  Updating / r**eimaging the BeagleBone**
+**1\)** Ensure that the BeagleBone is completely powered down. A BeagleBone has two possible power sources \(mini USB and “barrel jack”\); ensure that both are disconnected from power.
 
-1. Ensure that the BeagleBone is completely powered down \(both the Mini USB and “barrel jack” are capable of powering the BeagleBone\).
-2. Insert the image card into the BeagleBone and power on.
-3. The 4 blue LED lights above the mini USB connection on the BeagleBone will begin flashing in a sporadic pattern. After a few seconds, all 4 LED’s will flash on/off in unison several times. This indicates that the process of writing the software to the BB is beginning.
-4. The LEDs will begin flashing in a “crawling” or “wave” light pattern from one end to the other. This should continue for several minutes.
-5. When the process is complete, all 4 LED lights will remain on. You can now power down the BB and remove the installation card.
-6. Power up the BB again \(without the image card\) and visit the Web Interface to confirm everything worked.
+![Ensure that mini USB \(a\) and the barrel jack \(b\) ports are disconnected from power](.gitbook/assets/bbpower.jpg)
+
+**4\)** Insert the image card into the BeagleBone and power on.
+
+The 4 blue LED lights above the mini USB connection on the BeagleBone will begin flashing in a sporadic pattern. After a few seconds, all 4 LED’s will flash on/off in unison several times. This indicates that the process of writing the software to the BB is beginning.
+
+The LEDs will begin flashing in a “crawling” or “wave” light pattern from one end to the other. This should continue for several minutes.
+
+When the process is complete, all 4 LED lights will remain on. You can now power down the BB and remove the installation card.
+
+Power up the BB again \(without the image card\) and visit the Web Interface to confirm everything worked.
 {% endtab %}
 {% endtabs %}
 
