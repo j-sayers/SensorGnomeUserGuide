@@ -14,5 +14,6 @@
 * [Appendix: Overview of BeagleBone SG Hardware](appendix-overview-of-beaglebone-sg-hardware.md)
 * [Appendix: Installing BeagleBone drivers](appendix-installing-beaglebone-drivers.md)
 * [Appendix: Accessing BeagleBone as a network drive](appendix-accessing-beaglebone-as-a-network-drive.md)
+* [Appendix: Using the Rescue Image on a BeagleBone SG](appendix-using-the-rescue-image-on-a-beaglebone-sg.md)
 * [Appendix: Connecting to a BeagleBone using an Ethernet cable](appendix-connecting-to-a-beaglebone-using-an-ethernet-cable.md)
 

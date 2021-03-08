@@ -8,13 +8,13 @@ The recommended method of transferring the detection data and other files betwee
 
 {% tabs %}
 {% tab title="Raspberry Pi" %}
-#### **Raspberry Pi using Ethernet**
+#### **Raspberry Pi using an Ethernet cable**
 
 * host: `sftp://sgpi.local`
 * username: `root`
 * password: `root`
 
-#### **Raspberry Pi using WiFi Hotspot**
+#### **Raspberry Pi using the Wi-Fi Hotspot**
 
 * host: `sftp://192.168.7.2`
 * username: `root`
