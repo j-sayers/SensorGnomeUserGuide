@@ -26,10 +26,6 @@ _Note: Activating the WiFi hotspot will temporarily disable the connection to th
 
 ## Checking sync status on sensorgnome.org
 
-Connection status deployed on SensorGnome.org/status
-
-\_\_
-
 This page displays a master list of SensorGnomes that are, or have recently been, connected to the Internet.
 
 Within a minute or so of connecting to the Internet, an SG should check in with the SensorGnome.org server. Hit `CRTL F` in the browser and then type in the receiver serial number. You should see the recently connected receiver in this list. Data syncing usually occurs an hour after initial connection.
