@@ -1,4 +1,4 @@
-# CTT LifeTag Compatibility
+# CTT LifeTag compatibility \(dual-mode\)
 
 By default a SensorGnome is capable of detecting only Lotek Nanotags. However by applying a software patch a SensorGnome can also detect CTT LifeTags/ PowerTags. We refer to SGs that are listening for both tag types as “dual-mode” SensorGnomes. CTT compatibility is most reliably accomplished with a RPi SG. 
 
@@ -19,7 +19,7 @@ _Note: you will not be able to use the same dongles for CTT tags as you use for 
 7. Power down the SG and reboot the SG
 8. Connect to the SG and open the Web Interface. If you have a CTT compatibility dongle plugged in you should see it in the Web Interface
 
-   If successful you should see the CTT dongle attached in the “Devices” section. You will **not** see it in the “What I’m doing now” section. You may see CTT tag ID’s \(real tags, or even false positives due to noise\) in the “Live Known Tags” section. However this section, along with the “What I’m doing now” section, are only displayed if a FunCUBE dongle is attached.
+If successful you should see the CTT dongle attached in the “Devices” section. You will **not** see it in the “What I’m doing now” section. You may see CTT tag ID’s \(real tags, or even false positives due to noise\) in the “Live Known Tags” section. However this section, along with the “What I’m doing now” section, are only displayed if a FunCUBE dongle is attached.
 
-   _Note: it often requires two complete boot cycles of the SG for this process to succeed._
+_Note: it often requires two complete boot cycles of the SG for this process to succeed._
 

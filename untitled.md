@@ -2,15 +2,13 @@
 
 In order to download raw detection data, to check the SG’s live status in the Web Interface, or to apply a software patch, you must establish a connection between the SensorGnome and your computer. The actual method used will depend on whether you are using a RPi or BB SG, but the end result is similar in each case. Click on the appropriate tab below to switch between instructions for Raspberry Pi and BeagleBone SGs.
 
-## Connection steps for Raspberry Pi & BeagleBone SensorGnomes
-
 {% tabs %}
 {% tab title="Raspberry Pi" %}
 ### Raspberry Pi SensorGnome
 
 There are two methods available for connecting to a RPi SG: Wi-Fi Hotspot or Ethernet cable. Wi-Fi hotspot can be more convenient, but not every RPi SG is equipped with this functionality. Ethernet cable should work in every case \(provided you have iTunes installed on your computer, in the case of Windows users\).
 
-#### Option 1: Wi-Fi Hotspot
+### Option 1: Wi-Fi Hotspot
 
 The RPi that powers the SG is capable of producing a local Wi-Fi hotspot that a computer or smartphone can connect to. This doesn’t connect to the internet, but simply forms a network connection between the SG and your computer.
 
@@ -36,7 +34,7 @@ The disadvantage is that activating the Wi-Fi hotspot via the button can be fini
    * Navigate to `http://192.168.7.2`
    * You should now see the SensorGnome Web Interface
 
-#### Option 2: Ethernet Cable
+### Option 2: Ethernet Cable
 
 An Ethernet cable is usually the most reliable way of connecting to a RPi SG, and doesn’t depend on having a Wi-Fi hotspot activation button. No configuration is needed on the RPi. However some configuration may be required on your computer.
 
@@ -87,6 +85,6 @@ An inability to access the Web Interface may indicate issues with your SensorGno
   * `http://sgpi.local` if you are connecting with Ethernet
 * Make sure the cables you are using \(if applicable\) are connected properly
 * Reboot and restart both the computer and SG
-* Re-image the SG \(if it's a BeagleBone\) or try a clean software version \(if it's a Raspberry Pi\)
+* Re-image the SG \(if it's a BeagleBone\) or try clean software version \(if it's a Raspberry Pi\)
 * If you still cannot access the Web Interface, you will not be able to confirm that the SG is running properly. Don’t leave an SG deployed in the field in this condition unless you have no other option. There may still be a way of downloading data \(directly from the SD card for a RPi, or through a shared network drive for BB\).
 
