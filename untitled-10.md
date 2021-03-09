@@ -1,3 +1,7 @@
+---
+description: Photos and description of the inside of a typical Raspberry Pi SensorGnome
+---
+
 # Appendix: Overview of Raspberry Pi SG Hardware
 
 Ethernet port on the left, and the 4 USB ports of a Raspberry Pi
