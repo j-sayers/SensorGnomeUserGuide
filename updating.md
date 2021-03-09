@@ -48,7 +48,7 @@ This will overwrite any data that happens to be on the target MicroSD card so ma
 
 **4\)** Once the process is complete, you may get a computer popup warning that the MicroSD card is corrupted and needs to be formatted. This is expected as the file format is no longer compatible with a Windows or Mac computer.
 
-####  Updating / r**eimaging the BeagleBone**
+#### Updating / r**eimaging the BeagleBone**
 
 Once you have your image card, you can use it to update or reimage the BeagleBone SG.
 
@@ -58,13 +58,11 @@ Once you have your image card, you can use it to update or reimage the BeagleBon
 
 **4\)** Insert the image card into the BeagleBone and power on.
 
-The 4 blue LED lights above the mini USB connection on the BeagleBone will begin flashing in a sporadic pattern. After a few seconds, all 4 LED’s will flash on/off in unison several times. This indicates that the process of writing the software to the BB is beginning.
+**5\)** Once powered on, the 4 blue LED lights above the mini USB connection on the BeagleBone will begin flashing in a sporadic pattern. After a few seconds, all 4 LED’s will flash on/off in unison several times. This indicates that the process of writing the software to the BB is beginning. Then, the LEDs will begin flashing in a “crawling” or “wave” light pattern from one end to the other. This should continue for several minutes.
 
-The LEDs will begin flashing in a “crawling” or “wave” light pattern from one end to the other. This should continue for several minutes.
+**6\)** When the process is complete, all 4 LEDs will light up and remain on. You can now power down the BB and remove the installation card.
 
-When the process is complete, all 4 LED lights will remain on. You can now power down the BB and remove the installation card.
-
-Power up the BB again \(without the image card\) and visit the Web Interface to confirm everything worked.
+**7\)** Power up the BB again \(without the image card\) and visit the Web Interface to confirm everything is working
 {% endtab %}
 {% endtabs %}
 
