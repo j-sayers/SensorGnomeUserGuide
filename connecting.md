@@ -22,19 +22,23 @@ The Wi-Fi hotspot is convenient because, once a computer \(or smartphone\) has c
 
 The disadvantage is that activating the Wi-Fi hotspot via the button can be finicky. Sometimes it takes several tries, and sometimes it doesn’t work at all.
 
-1. Activate the Wi-Fi hotspot by double pressing the Wi-Fi button on the SG case. If properly activated the button will commence a slow on/off blinking pattern \(the actual pattern of the blinking may vary\).
-2. The Wi-Fi hotspot should soon appear in the list of available Wi-Fi networks to connect to. The name of the Wi-Fi Network and the password will be the same as the serial number of the RPi SG \(e.g. SG-A123RPI43D3\).
-   * It can take up to a minute for the Wi-Fi network to appear.
-   * The LED light in the button is usually bright enough to view in sunlight, but occasionally it is very faint and difficult to see
-   * The timing of the double press can be finicky and difficult to activate. If it doesn’t work, try it again.
-3. Connect to the new Wi-Fi network. The password is the same as the network name, which is the same as the serial number of the RPi SG. This is just a local network so there won’t be any internet once connected.
+**1\)** Activate the Wi-Fi hotspot by double pressing the Wi-Fi button on the SG case. If properly activated the button will commence a slow on/off blinking pattern \(the actual pattern of the blinking may vary\).
 
-   The network name and the password are both the same as the SG serial number
+**2\)** The Wi-Fi hotspot should soon appear in the list of available Wi-Fi networks to connect to. The name of the Wi-Fi Network and the password will be the same as the serial number of the RPi SG \(e.g. SG-A123RPI43D3\).
 
-4. After waiting 30-60 seconds, confirm that the connection is established by opening the Web Interface
-   * Open a web browser \(Firefox or Chrome\)
-   * Navigate to `http://192.168.7.2`
-   * You should now see the SensorGnome Web Interface
+* It can take up to a minute for the Wi-Fi network to appear.
+* The LED light in the button is usually bright enough to view in sunlight, but occasionally it is very faint and difficult to see
+* The timing of the double press can be finicky and difficult to activate. If it doesn’t work, try it again.
+
+**3\)** Connect to the new Wi-Fi network. The password is the same as the network name, which is the same as the serial number of the RPi SG. This is just a local network so there won’t be any internet once connected.
+
+![The network name and the password are both the same as the SG serial number](.gitbook/assets/wifi.png)
+
+**4\)** After waiting 30-60 seconds, confirm that the connection is established by opening the Web Interface
+
+* Open a web browser \(Firefox or Chrome\)
+* Navigate to `http://192.168.7.2`
+* You should now see the SensorGnome Web Interface
 
 #### Option 2: Ethernet Cable
 
@@ -44,12 +48,15 @@ An Ethernet cable is usually the most reliable way of connecting to a RPi SG, an
 
 If you use a Windows computer, ensure that iTunes is installed. Installing iTunes also installs a networking tool called Bonjour that the SG relies on to establish the connection. If you don’t want to install iTunes, you can install [Bonjour by itself directly from Apple](https://support.apple.com/kb/DL999?locale=en_CA). If you use a Mac computer, Bonjour should already be installed.
 
-1. Connect one end of the Ethernet cable to the Ethernet port on the Raspberry Pi and the other end to your computer
-   * Many newer computers do not have an Ethernet port. If yours lacks an Ethernet port, you can use an “Ethernet to USB adapter” and connect to one of your computer’s USB ports.
-2. After waiting 30-60 seconds, confirm that the connection is established by accessing the Web Interface
-   * Open a web browser \(Firefox or Chrome\)
-   * Navigate to `http://sgpi.local`
-   * You should now see the SensorGnome Web Interface
+**1\)** Connect one end of the Ethernet cable to the Ethernet port on the Raspberry Pi and the other end to your computer
+
+* Many newer computers do not have an Ethernet port. If yours lacks an Ethernet port, you can use an “Ethernet to USB adapter” and connect to one of your computer’s USB ports.
+
+**2\)** After waiting 30-60 seconds, confirm that the connection is established by accessing the Web Interface
+
+* Open a web browser \(Firefox or Chrome\)
+* Navigate to `http://sgpi.local`
+* You should now see the SensorGnome Web Interface
 {% endtab %}
 
 {% tab title="BeagleBone" %}

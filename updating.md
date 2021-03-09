@@ -12,15 +12,20 @@ For Raspberry Pi SensorGnomes, the software runs entirely off the MicroSD card; 
 Always ensure that the MicroSD card you use with an RPi SG has the software copied onto it. The RPi SG runs _exclusively_ from the software SD card, so if a blank SD card is used, the SG won't record any data \(though you may still still lights flashing on the RPi\).
 {% endhint %}
 
-1. Download the most recent Raspberry Pi SG software. Currently this is the October 12, 2018 version.
-   * Direct download link: [SGPI-2018-10-12\_LIWIXI.ZIP](https://public.sensorgnome.org/Raspberry_Pi_Sensorgnome/SGPI-2018-10-12_LIWIXI.ZIP)
-   * This is a compressed .zip file which will need to be “unzipped” prior to use. Most modern computers come equipped with the ability to handle .zip files.
-2. Insert a blank or recently formatted MicroSD into your computer.
-3. Copy the _entire_ contents of the .zip over to the _root level_ of MicroSD card. After copying over, the contents of the MicroSD card should look like the image below
+**1\)** Download the most recent Raspberry Pi SG software. Currently this is the October 12, 2018 version.
 
-   Copy the contents of the .zip file to the root level of the MicroSD card
+* Direct download link: [SGPI-2018-10-12\_LIWIXI.ZIP](https://public.sensorgnome.org/Raspberry_Pi_Sensorgnome/SGPI-2018-10-12_LIWIXI.ZIP)
+* This is a compressed .zip file which will need to be “unzipped” prior to use. Most modern computers come equipped with the ability to handle .zip files.
 
-4. You can now insert the MicroSD card into the slot in the RPi. Once the MicroSD card is in place, power up the RPi and proceed to connect to it and check the Web Interface.
+**2\)** Insert a blank or recently formatted MicroSD into your computer.
+
+**3\)** Copy the _entire_ contents of the .zip over to the _root level_ of MicroSD card. After copying over, the contents of the MicroSD card should look like the image below
+
+![Copy the contents of the .zip file onto the MicroSD card](.gitbook/assets/rpifolder.png)
+
+**4\)** Copy the contents of the .zip file to the root level of the MicroSD card
+
+**5\)** You can now insert the MicroSD card into the slot in the RPi. Once the MicroSD card is in place, power up the RPi and proceed to connect to it and check the Web Interface.
 
 ![The MicroSD card \(highlighted in red\) is inserted with the contacts facing up](.gitbook/assets/rpisdslot.jpg)
 {% endtab %}
