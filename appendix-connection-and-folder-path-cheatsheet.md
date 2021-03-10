@@ -1,4 +1,4 @@
-# Appendix I: Connection and folder path Cheetsheat
+# Appendix I: Connection and folder path Cheatsheet
 
 This is a complete reference of the network addresses and folder paths, organized by receiver type \(RPi vs BB\) and method of connection.
 
@@ -82,4 +82,3 @@ This is a complete reference of the network addresses and folder paths, organize
   * `\\192.168.7.2\root\boot\uboot\`
 {% endtab %}
 {% endtabs %}
-
