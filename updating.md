@@ -1,12 +1,16 @@
 # Updating Software
 
-One of the first steps in troubleshooting is to ensure that you have the most up-to-date software installed on your SensorGnome. Aside from ensuring your SG is up-to-date – this entire guide as based on the premise that you are using the most recent software – reinstalling the most recent software can resolve many issues. 
+One of the first steps in troubleshooting is to ensure that you have the most up-to-date software installed on your SensorGnome. Aside from ensuring your SG is up-to-date – this entire guide as based on the premise that you are using the most recent software – reinstalling the most recent software can resolve many issues.
 
 {% tabs %}
 {% tab title="Raspberry Pi" %}
 ### Raspberry Pi SensorGnome
 
 For Raspberry Pi SensorGnomes, the software runs entirely off the MicroSD card; if the proper software isn’t present on the MicroSD card, the RPi SG won’t function properly. This can cause issues for teams who are unaware of this – and who expect to be able to simply swap out one card without ensuring that the new card has the proper software on it. But it also makes updating the software with a clean installation very simple; all you need to do is copy the software files onto a blank SD card.
+
+{% hint style="warning" %}
+Certain SD cards models have failed when running on Rasperry Pis. To reduce the likelihood of an SD card failure, try to use [an SD card from this list of known models](https://elinux.org/RPi_SD_cards#Working_.2F_Non-working_SD_cards).
+{% endhint %}
 
 {% hint style="warning" %}
 Always ensure that the MicroSD card you use with an RPi SG has the software copied onto it. The RPi SG runs _exclusively_ from the software SD card, so if a blank SD card is used, the SG won't record any data \(though you may still still lights flashing on the RPi\).
@@ -33,7 +37,7 @@ Always ensure that the MicroSD card you use with an RPi SG has the software copi
 {% tab title="BeagleBone" %}
 ### BeagleBone SensorGnome
 
-The software that runs the BeagleBone SG is installed onto the internal storage of the BeagleBone. In order to upgrade or re-install the software you need to make a designated installation disk which contains the software image on a MicroSD card. This process is often referred to as _re-imaging_ the BeagleBone. Reimaging a BB SG will overwrite whatever existing software is already installed on the BB. However it will not overwrite any detection data present on the BB SG, so it can be a helpful first step in restoring a BB SG that you are having trouble connecting to. 
+The software that runs the BeagleBone SG is installed onto the internal storage of the BeagleBone. In order to upgrade or re-install the software you need to make a designated installation disk which contains the software image on a MicroSD card. This process is often referred to as _re-imaging_ the BeagleBone. Reimaging a BB SG will overwrite whatever existing software is already installed on the BB. However it will not overwrite any detection data present on the BB SG, so it can be a helpful first step in restoring a BB SG that you are having trouble connecting to.
 
 #### **Creating an image disk**
 
@@ -41,7 +45,7 @@ The software that runs the BeagleBone SG is installed onto the internal storage 
 
 This file is a compressed _.7z_ file. In order to uncompress it you will need 7zip installed. Your computer may already have this installed, but if not, [you can find it at this link](https://www.7-zip.org/). The uncompressed file will have an _.img_ extension.
 
-**2\)** Download [balenaEtcher](https://www.balena.io/etcher/?), a free and open-sourced program for creating disk images, and click “Select Image,” where you can select the the _.img_ file 
+**2\)** Download [balenaEtcher](https://www.balena.io/etcher/?), a free and open-sourced program for creating disk images, and click “Select Image,” where you can select the the _.img_ file
 
 **3\)** Select the MicroSD card in the next step, and then click “Flash!”.
 
@@ -70,4 +74,3 @@ Once you have your image card, you can use it to update or reimage the BeagleBon
 **7\)** Power up the BB again \(without the image card\) and visit the Web Interface to confirm everything is working
 {% endtab %}
 {% endtabs %}
-
