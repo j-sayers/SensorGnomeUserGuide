@@ -1,2 +1,2 @@
-# Appendix: Using the Rescue Image on a BeagleBone SG
+# Appendix VI: Using the Rescue Image on a BeagleBone SG
 

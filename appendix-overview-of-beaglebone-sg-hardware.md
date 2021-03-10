@@ -2,7 +2,7 @@
 description: Photos and description of the inside of a typical BeagleBone SensorGnome
 ---
 
-# Appendix: Overview of BeagleBone SG Hardware
+# Appendix III: Overview of BeagleBone SG Hardware
 
 ![Primary ports of BeagleBone SG](.gitbook/assets/bbports%20%281%29.jpg)
 
