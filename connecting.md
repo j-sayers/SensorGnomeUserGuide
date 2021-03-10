@@ -65,17 +65,18 @@ If you use a Windows computer, ensure that iTunes is installed. Installing iTune
 The recommended, and often only, method of connecting to a BeagleBone SG is with a USB cable. Specifically this is a cable with a “standard” USB jack on one end, and a Mini USB jack on the other end. These aren’t as commonly found in day-to-day usage as they used to be but can still be found easily and for affordable prices online. Purchase a few so that you have a couple extras available.
 
 {% hint style="info" %}
-Before connecting to a BeagleBone SG for the first time, it is likely you’ll need to install drivers. Instructions on how to do this can be found in the appendix. 
+Before connecting to a BeagleBone SG for the first time, it is likely you’ll need to install drivers. Instructions on how to do this can be found in [Appendix III](appendix-installing-beaglebone-drivers.md). 
 {% endhint %}
 
 ![Mini USB to Standard USB cable](.gitbook/assets/usbab.jpg)
 
-1. Connect the Mini USB end to the BeagleBone. The port is found on the same side as the 5V barrel jack and Ethernet port.
-   * The USB connection will also power the BB by itself if needed. However if a primary power supply is already plugged in to the barrel jack, you can simply plug in the USB cable while the BeagleBone is powered on.
+**1\)** Connect the Mini USB end to the BeagleBone. The port is found on the same side as the 5V barrel jack and Ethernet port.
+
+* The USB connection will also power the BB by itself if needed. However if a primary power supply is already plugged in to the barrel jack, you can simply plug in the USB cable while the BeagleBone is powered on.
 
 ![The Mini USB port used to connect to a BeagleBone](.gitbook/assets/bbusb.png)
 
-After 30 to 60 seconds, confirm that the connection is established by accessing the Web Interface
+**2\)** After 30 to 60 seconds, confirm that the connection is established by accessing the Web Interface
 
 1. * Open a web browser \(Firefox or Chrome\)
    * Navigate to `http://192.168.7.2`

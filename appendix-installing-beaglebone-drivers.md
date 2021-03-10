@@ -1,8 +1,6 @@
 # Appendix IV: Installing BeagleBone drivers
 
-The drivers for BeagleBone SensorGnomes can be found in the table below \(copied from the [BeagleBone homepage](http://beagleboard.org/getting-started)\). Find 
-
-On newer computers, such as those with Windows 10, the operating system blocks the installation of the BeagleBone drivers as they are “unsigned.” and there may be no informative error message as a result
+The drivers for BeagleBone SensorGnomes can be found in the table below \(copied from the [BeagleBone homepage](http://beagleboard.org/getting-started)\). 
 
 <table>
   <thead>
@@ -68,5 +66,35 @@ On newer computers, such as those with Windows 10, the operating system blocks t
   </tbody>
 </table>
 
-The way around this is to temporarily disable this security check. Instructions on how to do that [can be found here](https://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/). Option 2 is the simplest and the security measures will revert after the next reboot.
+On many newer computers, such as those with Windows 10, the operating system blocks the installation of the BeagleBone drivers as they are “unsigned.” The process may simply fail without an informative message.
+
+![Driver installation may fail because the drivers are unsigned](.gitbook/assets/drivererror.png)
+
+The way around this is to temporarily disable this security check. Instructions on how to do that [can be found here](https://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/). Option 2 is the simplest and the security measures will revert after the next reboot. The steps are summarized below
+
+**1\)** Hold down the Shift key while you click the “Restart” option in Windows. Your computer will restart into the Advanced Boot menu
+
+![](.gitbook/assets/htg1.png)
+
+2\) Select the “Troubleshoot” tile on the Choose an option screen that appears
+
+![](.gitbook/assets/htg2.png)
+
+3\) Select “Advanced options”
+
+![](.gitbook/assets/htg3.png)
+
+4\) Click the “Startup Settings” tile
+
+![](.gitbook/assets/htg4.png)
+
+5\) Click the “Restart” button to restart your PC into the Startup Settings screen
+
+![](.gitbook/assets/htg5.png)
+
+6\) Type “7” or “F7” at the Startup Settings screen to activate the “Disable driver signature enforcement” option
+
+![](.gitbook/assets/htg6.png)
+
+Your PC will boot with driver signature enforcement disabled and you’ll be able to install unsigned drivers. However, the next time you restart your computer, driver signature enforcement will be disabled—unless you go through this menu again. 
 
