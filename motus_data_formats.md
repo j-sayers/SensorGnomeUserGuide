@@ -1,8 +1,8 @@
-# Motus Data File Formats #
+# Motus Data File Formats
 
-## 1. File types ##
+## 1. File types
 
-### 1a. SensorGnome format ###
+### 1a. SensorGnome format
 
 This format is the default for units running the SensorGnome software (including for the SensorGnome component of the SensorStation). Each file contains individual pulses, gps readings, etc. The data can also be separated for each antenna, as well as for LifeTag detections only (type = ctt).
 
@@ -29,7 +29,7 @@ This format is the default for units running the SensorGnome software (including
 	ext: extension (typically txt)			
 	gz: indicates compressed files (other types of compressions are also supported: bz2, etc.)
 
-### 1b. SensorStation format ###
+### 1b. SensorStation format
 
 This format is the default for units running the SensorStation software. Data components are divided separate files: data, node data and gps. Data contains the 32-bit codes interpreted by the CTT dongles, node data contains detections from external node units and gps includes gps readings (only for the base station so far, not for nodes).
 
@@ -44,23 +44,23 @@ This format is the default for units running the SensorStation software. Data co
 	datetime : <yyyy-MM-dd_HHmmss>
 	ext : csv only so far
 	gz : indicates compressed files
-	
-### 1c. Lotek format ###
 
-This is the default format used by Lotek units. Each file contains a header and individual tag detections (not pulses, only putative tags). There are other formats 
+### 1c. Lotek format
+
+This is the default format used by Lotek units. Each file contains a header and individual tag detections (not pulses, only putative tags). There are other formats
 available for export from the Lotek units (e.g. binary), but we require the DTA format.
 
 	Filename format: <filename>.DTA
 
 	Example : OldCut0001.DAT
-	
+
 	filename : any arbitrary value provided by the user
 
 Filename: the file name is entirely determined by the user and doesn't contain useful information about its content.
 
-## 2. File content ##
+## 2. File content
 
-### 2a. SensorGnome format ###
+### 2a. SensorGnome format
 
 The following prefix can be found in sensorgnome files. Files of type *ctt* will only contain T and G prefix.
 
@@ -70,12 +70,12 @@ C : (GPS clock setting precision record: outlines the time the GPS was set (ts),
 	Example : C,1528750333.246,1,0.399892479
 	Example : C,1561257097.681,6,8.6e-7
 
-G : GPS data entry 
+G : GPS data entry
 
 	Format : G,<ts>,<lat>,<lon>,<alt>
 	Example : G,1526683597,-23.002083333,118.931118333,736.4
-	
-p : individual pulse on FunCube Dongles 
+
+p : individual pulse on FunCube Dongles
 
 	Format : p<port_num>,<ts>,<dfreq>,<sig>,<noise>
 	Example : p3,1526683680.8316,0.4,-35.4,-42.56
@@ -91,14 +91,14 @@ S : frequency setting record (see fields below for possible name values)
 	Example : S,946684811.251,3,agc_mode,0,0,
 
 T : LifeTag hit on CTT/CVRX dongle or SensorStation
-	
+
 	Format : T<port_num>,<ts>,<tag_code>
 	Example : T4,1557450282.889,04452182
-	
+
 Fields:
 
 	-m : antenna listening frequency (FunCube and FunCubePro)
-	-w : FunCube and FunCubePro parameter settings 
+	-w : FunCube and FunCubePro parameter settings
 	(see https://github.com/sensorgnome-org/sensorgnome-control/blob/77d8ba9b2cf1ba6d3eef895fe7e2155c3f6ccd73/master/usbaudio.js#L32)
 	alt : altitude (m)
 	dfreq : frequency offset (KHz)
@@ -114,8 +114,8 @@ Fields:
 	tag_code : 32-bit tag code (e.g. LifeTag)
 	ts : Unix timestamp (seconds)
 	value : arbitrary parameter value
-	
-### 2b. SensorStation (LifeTag) format ###
+
+### 2b. SensorStation (LifeTag) format
 
 SensorStation (LifeTag) files will contain headers specifying their content. No assumptions should be made about the order or the list of  fields included within those files. The formats below are those currently in use at the time of this document.
 
@@ -123,21 +123,21 @@ data (or raw-data) files:
 
 	Format : <Time>,<RadioId>,<TagId>,<TagRSSI>,<NodeId>
 	Format : <Time>,<RadioId>,<TagId>,<TagRSSI>,<NodeId>,<Validated>
-	
+
 	Example : 2019-07-16 20:18:39.845,3,6161527F,-96,
-	
+
 	Time : datetime (UTC) yyyy-MM-dd HH:mm:ss.sss
 	RadioId : Port number (numeric). Those ports are saved with a L prefix in the metadata and the data tables
 	TagId : tag number (e.g. AF7709D3)
 	TagRSSI : Received Signal Strenght Indication
 	NodeId : hex ID of the node that originally captured the signal (3-digit for old models. Should be unique in more recent models)
 	Validated : 0 or 1 to indicate whether the tag was considered valid by CTT algorithms (details unknown).
-	
+
 node-data files: meta information about the nodes
 
 	Format : <Time>,<RadioId>,<NodeId>,<NodeRSSI>,<Battery>,<Celcius>
 	Format : <Time>,<RadioId>,<NodeId>,<NodeRSSI>,<Battery>,<Celcius>,<RecordedAt>,<Firmware>,<SolarVolts>,<SolarCurrent>,<CumulativeSolarCurrent>,<Latitude>,<Longitude>
-	
+
 	Time : datetime (UTC) yyyy-MM-dd HH:mm:ss.sss when the data was received at the base station
 	RadioId : Port number (numeric). Those ports are saved with a L prefix in the metadata and the data tables
 	NodeRSSI : Received Signal Strenght Indication (node signal on the base station)
@@ -166,13 +166,12 @@ gps files: gps readings of the base station
 	quality : signal quality (units?)
 	mean lat : mean latitude
 	mean lon : mean longitude
-	n fixes : number of fixes used to calculate mean 
-	
-	
-### 2c. Lotek format ###
+	n fixes : number of fixes used to calculate mean
+
+
+### 2c. Lotek format
 
 Data segment: individual tag detections. We request that users export their DTA file using GMT times, but there is no guarantee. Hopefully, newer versions will format dates as ISO 8601 to include the time zone.
 
 	Format: <Date> <Time>    <Channel>  <Tag ID>    <Antenna>   <Power>
 	Example: 06/05/15  12:43:10.6489         0     393    A1+A2+A3+A4     131
-
