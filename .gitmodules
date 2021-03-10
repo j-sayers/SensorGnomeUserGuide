@@ -1,0 +1,3 @@
+[submodule "motusServer"]
+	path = motusServer
+	url = https://github.com/MotusWTS/motusServer
