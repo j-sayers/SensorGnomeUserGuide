@@ -15,8 +15,6 @@ At its core, a SensorGnome is powered by a mini computer – either a **Raspberr
 
 {% hint style="info" %}
 Throughout this document, we will often refer to a SensorGnome as an **SG**, and to the Raspberry Pi and BeagleBone as **RPi** and **BB,** respectively. For instance, a SensorGnome powered by a Raspberry Pi will be referred to as an **RPi SG.** 
-
-In places where the instructions differ between RPi and BB SensorGnomes, you may see the relevant sections separated. You can use the tabs at the top to toggle between the two.
 {% endhint %}
 
 In addition to the mini computer, the SG will include one or more “software-defined radios” which come in the form of a USB dongle. The dongles are the devices that take the raw radio signals from the antennas and convert it into a digital format that can be recognized and recorded by the RPi or SG computer.
@@ -39,7 +37,7 @@ A **BeagleBone** \(below\) has one Ethernet port in the centre flanked by a Mini
 
 _Note: there are two other receivers compatible with the Motus network: the SensorStation made by Cellular Tracking Technologies \(CTT\) and the SRX receivers made by Lotek. For guides on how to use these receivers, please consult CTT or Lotek respectively._
 
-##  Overview of typical workflow
+## Overview of typical workflow
 
 Generally each time you work with a SensorGnome – either deployed in the field or as a test on your desktop – you will perform the same basic steps below. 
 
@@ -52,4 +50,6 @@ Generally each time you work with a SensorGnome – either deployed in the field
 There are many similarities between Raspberry Pi and BeagleBone based SensorGnomes – in terms of the hardware, the software that powers them, and the process of using them typically follows the same outline. But there are also some key differences, particularly as it relates to the method of connecting to them and transferring data. 
 
 The steps above are described in detail in this guide, with an effort to presenting the commonalities between them. Where differences are found between RPi and BB SensorGnomes, they will be broken down into sub-sections.
+
+![Toggle between RPi and BB instructions using the tabs](.gitbook/assets/tabs.jpg)
 
