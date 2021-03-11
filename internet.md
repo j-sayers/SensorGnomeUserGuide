@@ -1,4 +1,4 @@
-# Data syncing over the Internet
+# Data Syncing over the Internet
 
 Configuring your SensorGnome to sync detection data automatically result in more up-to-date data, fewer trips to visit a station, and more timely identification \(and resolution\) of any issues the receiver. Wherever possible, SG's should be connected to the Internet.
 
