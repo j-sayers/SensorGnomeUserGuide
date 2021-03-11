@@ -15,6 +15,8 @@ At its core, a SensorGnome is powered by a mini computer – either a **Raspberr
 
 {% hint style="info" %}
 Throughout this document, we will often refer to a SensorGnome as an **SG**, and to the Raspberry Pi and BeagleBone as **RPi** and **BB,** respectively. For instance, a SensorGnome powered by a Raspberry Pi will be referred to as an **RPi SG.** 
+
+In places where the instructions differ between RPi and BB SensorGnomes, you may see the relevant sections separated. You can use the tabs at the top to toggle between the two.
 {% endhint %}
 
 In addition to the mini computer, the SG will include one or more “software-defined radios” which come in the form of a USB dongle. The dongles are the devices that take the raw radio signals from the antennas and convert it into a digital format that can be recognized and recorded by the RPi or SG computer.

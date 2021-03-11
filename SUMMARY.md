@@ -17,3 +17,4 @@
 * [Appendix VI: Using the Rescue Image on a BeagleBone SG](appendix_vi.md)
 * [Appendix VII: Connecting to a BeagleBone using an Ethernet cable](appendix_vii.md)
 * [Appendix VIII: Motus Data File Formats](motus_data_formats.md)
+

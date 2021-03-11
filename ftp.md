@@ -1,4 +1,4 @@
-# Establishing an FTP connection
+# Establishing an FTP Connection
 
 The recommended method of transferring the detection data and other files between the SG and your computer is with an FTP connection. We suggest the free and open-sourced FTP client [FileZilla](filezilla-project.org/), which is what these instructions here are based on, though any FTP client will do. 
 
