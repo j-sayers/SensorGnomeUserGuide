@@ -34,7 +34,7 @@ description: Photos and description of the inside of a typical BeagleBone Sensor
 Pay close attention to which ports on the USB hub you attach the dongles to. The port number is recorded along with the detection data and is used in determining the direction of the animals detected. The ports on the USB hub are labelled 1 through 7. If the label is missing, you can determine the numbering based on their position relative to the USB and power supply. 
 {% endhint %}
 
-![USB hub and associated cables](.gitbook/assets/usbhub%20%281%29.jpg)
+![USB hub and associated cables](.gitbook/assets/usbhub.jpg)
 
 The 7 USB ports on the hub can all be used to attach dongles to, but pay close attention to the number of each port and the antenna attached to it. The USB hub is supplied with 5V power, usually by way of a splitter \(with the other end supplying the BB with power\). It is attached to the BB with a standard [USB A &gt;  USB B cable](https://www.bhphotovideo.com/images/images2500x2500/Pearstone_USB_AB10_USB_2_0_Type_A_689978.jpg). 
 

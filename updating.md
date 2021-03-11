@@ -63,7 +63,7 @@ Once you have your image card, you can use it to update or reimage the BeagleBon
 
 **1\)** Ensure that the BeagleBone is completely powered down. A BeagleBone has two possible power sources \(mini USB and “barrel jack”\); ensure that both are disconnected from power.
 
-![Ensure that mini USB \(a\) and the barrel jack \(b\) ports are disconnected from power](.gitbook/assets/bbpower%20%281%29.jpg)
+![Ensure that mini USB \(a\) and the barrel jack \(b\) ports are disconnected from power](.gitbook/assets/bbpower%20%281%29%20%281%29.jpg)
 
 **4\)** Insert the image card into the BeagleBone and power on.
 
