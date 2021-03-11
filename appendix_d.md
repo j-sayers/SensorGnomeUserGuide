@@ -1,4 +1,4 @@
-# Appendix IV: Installing BeagleBone drivers
+# Appendix D: Installing BeagleBone drivers
 
 The drivers for BeagleBone SensorGnomes can be found in the table below \(copied from the [BeagleBone homepage](http://beagleboard.org/getting-started)\). 
 

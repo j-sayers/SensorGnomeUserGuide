@@ -1,4 +1,4 @@
-# Appendix I: Connection and folder path Cheetsheat
+# Appendix A: Connection and folder path Cheetsheat
 
 This is a complete reference of the network addresses and folder paths, organized by receiver type \(RPi vs BB\) and method of connection.
 

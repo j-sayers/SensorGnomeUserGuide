@@ -2,7 +2,7 @@
 description: Photos and description of the inside of a typical Raspberry Pi SensorGnome
 ---
 
-# Appendix II: Overview of Raspberry Pi SG Hardware
+# Appendix B: Overview of Raspberry Pi SG Hardware
 
 The numbering of the USB ports is very important when attaching antennas since this information is recording along with detection data and can be used to determine the direction and time of approach or departure of a tagged animal.
 

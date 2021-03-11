@@ -1,4 +1,4 @@
-# Appendix VIII: Motus Data File Formats
+# Appendix H: Motus Data File Formats
 
 ## 1. File types
 
