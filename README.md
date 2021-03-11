@@ -17,6 +17,8 @@ At its core, a SensorGnome is powered by a mini computer – either a **Raspberr
 Throughout this document, we will often refer to a SensorGnome as an **SG**, and to the Raspberry Pi and BeagleBone as **RPi** and **BB,** respectively. For instance, a SensorGnome powered by a Raspberry Pi will be referred to as an **RPi SG.** 
 {% endhint %}
 
+
+
 In addition to the mini computer, the SG will include one or more “software-defined radios” which come in the form of a USB dongle. The dongles are the devices that take the raw radio signals from the antennas and convert it into a digital format that can be recognized and recorded by the RPi or SG computer.
 
 The most commonly used dongle is the “FUNcube dongle,” and you will often hear all dongles simply referred to as “FUNcubes.” There will be one dongle for each antenna connected to the SG. The dongles, as with the antennas themselves, are specific to the frequency of the tags being detected: Lotek tags \(166, 150.1, or 151 MHz for Lotek nanotags depending on the geographic region; or 434 MHz for CTT tags worldwide\).
