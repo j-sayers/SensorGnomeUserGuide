@@ -18,19 +18,23 @@ description: Photos and description of the inside of a typical BeagleBone Sensor
 
 **b\)** MicroSD card slot. In the BB the card is inserted with the contacts facing down, and there is a slight click when properly inserted.
 
-![The primary components inside a typical BeagleBone SensorGnome](.gitbook/assets/bbsginternal%20%281%29.jpg)
+![](.gitbook/assets/bbsg.jpg)
 
 **a\)** BeagleBone mini computer. The colour of the case may vary but it will always be roughly the same size.
 
-**b\)** FUNcube dongles. The antenna cables would be attached to the loose ends. Note that the antennas must be plugged into a USB hub as the BB only has one standard USB port.
+**b\)** GPS antenna. This BB has a "GPS hat" attached to the BeagleBone itself, and only requires an external antenna. Many BB last the integrated GPS and require a USB GPS, which is plugged into the USB hub
 
-**c\)** USB hub. The power cable is not pictured, but would be attached on the left hand side. The ports are numbered 1-7 from top to bottom in this picture.
+**c\)** FUNcube dongles plugged into ports 1 and 2 of the USB hub. The antenna cables would be attached to the loose ends. Note that the antennas must be plugged into a USB hub as the BB only has one standard USB port.
 
-**d\)** This USB cable powers the GPS. This particular BB SG lacks an integrated “GPS hat” and uses the original USB GPS. The USB GPSs are prone to lapses in timekeeping, which can result in irretrievable data loss so in most cases they have been replaced with GPS hats, which have battery backup
+**d\)** USB hub. The USB hub is supplied with power by via a splitter coming from the main power source, with the other end supplying the BeagleBone. It is attached to the BB's only standard USB port.
 
-**e\)** Voltage converter. If powered by a solar panel and battery, as this SG is, the power coming in will be 12V. However the RPi only requires 5V, so a voltage converter is used to downgrade the current to the acceptable level. If powered directly by AC power, the wall adapter itself should output 5V, eliminating the need for a voltage converter.
+**e\)** Voltage converter and cable junction. If powered by a solar panel and battery, as this SG is, the power coming in will be 12V. However the RPi only requires 5V, so a voltage converter is used to downgrade the current to the acceptable level. If powered directly by AC power, the wall adapter itself should output 5V, eliminating the need for a voltage converter.
 
-![USB hub](.gitbook/assets/usbhub.jpg)
+{% hint style="warning" %}
+Pay close attention to which ports on the USB hub you attach the dongles to. The port number is recorded along with the detection data and is used in determining the direction of the animals detected. The ports on the USB hub are labelled 1 through 7. If the label is missing, you can determine the numbering based on their position relative to the USB and power supply. 
+{% endhint %}
 
-The top of the USB hub in this view includes the DV barrel jack power supply, as well as the USB port where the hub would be connected to the BeagleBone. Along the bottom the antenna USB ports are numbered from 1-7. 
+![USB hub and associated cables](.gitbook/assets/usbhub%20%281%29.jpg)
+
+The 7 USB ports on the hub can all be used to attach dongles to, but pay close attention to the number of each port and the antenna attached to it. The USB hub is supplied with 5V power, usually by way of a splitter \(with the other end supplying the BB with power\). It is attached to the BB with a standard [USB A &gt;  USB B cable](https://www.bhphotovideo.com/images/images2500x2500/Pearstone_USB_AB10_USB_2_0_Type_A_689978.jpg). 
 
