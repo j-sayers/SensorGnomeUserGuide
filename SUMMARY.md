@@ -5,6 +5,7 @@
 * [The Web Interface](webinterface.md)
 * [Establishing an FTP Connection](ftp.md)
 * [Copying Detection Data](detectiondata.md)
+* [Uploading Detection Data](uploading-detection-data.md)
 * [Updating Software](updating.md)
 * [CTT LifeTag Compatibility \(dual-mode\)](dualmode.md)
 * [Data Syncing over the Internet](internet.md)
