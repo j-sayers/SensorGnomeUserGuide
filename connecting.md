@@ -1,6 +1,6 @@
 # Connecting to your SensorGnome
 
-In order to download raw detection data, to check the SG’s live status in the Web Interface, or to apply a software patch, you must establish a connection between the SensorGnome and your computer. The actual method used will depend on whether you are using a RPi or BB SG, but the end result is similar in each case. Click on the appropriate tab below to switch between instructions for Raspberry Pi and BeagleBone SGs.
+In order to copy detection data from the SG, to check the SG’s live status in the Web Interface, or to apply a software patch, you must establish a connection between the SensorGnome and your computer. The actual method used will depend on whether you are using a RPi or BB SG, but the end result is similar in each case. Click on the appropriate tab below to switch between instructions for Raspberry Pi and BeagleBone SGs.
 
 ## Connection steps for Raspberry Pi & BeagleBone SensorGnomes
 
@@ -78,9 +78,9 @@ Before connecting to a BeagleBone SG for the first time, it is likely you’ll n
 
 **2\)** After 30 to 60 seconds, confirm that the connection is established by accessing the Web Interface
 
-1. * Open a web browser \(Firefox or Chrome\)
-   * Navigate to `http://192.168.7.2`
-   * You should now see the SensorGnome Web Interface
+* Open a web browser \(Firefox or Chrome\) 
+* Navigate to [http://192.168.7.2](http://192.168.7.2) 
+* You should now see the SensorGnome Web Interface
 {% endtab %}
 {% endtabs %}
 
@@ -93,10 +93,11 @@ An inability to access the Web Interface may indicate issues with your SensorGno
 * Try a different connection method if you have the option
 * Bonjour Browser \(placeholder to expand on this…\)
 * Ensure you are using the correct URL for that SG and connection type
-  * `http://192.168.7.2` if you are connecting with WiFi Hotspot
+  * `http://192.168.7.2` if you are connecting with Wi-Fi Hotspot
   * `http://sgpi.local` if you are connecting with Ethernet
 * Make sure the cables you are using \(if applicable\) are connected properly
 * Reboot and restart both the computer and SG
+* If you just need to download data there a few other methods of getting this \(see copying detection data section\)
 * Re-image the SG \(if it's a BeagleBone\) or try a clean software version \(if it's a Raspberry Pi\)
-* If you still cannot access the Web Interface, you will not be able to confirm that the SG is running properly. Don’t leave an SG deployed in the field in this condition unless you have no other option. There may still be a way of downloading data \(directly from the SD card for a RPi, or through a shared network drive for BB\).
+* If you still cannot access the Web Interface, you will not be able to confirm that the SG is running properly. Don’t leave an SG deployed in the field in this condition unless you have no other option. 
 
