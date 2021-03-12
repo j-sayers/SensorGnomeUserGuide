@@ -4,15 +4,6 @@
 
 If you have a BeagleBone which no longer boots or to which you can no longer connect, you can use one of the "rescue" images to burn a micro SD card, and boot from that. The SG will then operate as normal, but will not re-image the internal flash memory.
 
-```text
-If you have a BBB which no longer boots or to which you can no longer
-connect, you can use one of the "rescue" images to burn a micro SD
-card, and boot from that.  The SG will then operate as normal,
-but will not re-image the internal flash memory.
-```
-
-### More details
-
 Normally, BeagleBone computers store their software on an internal flash storage device, but sometimes the internal storage is corrupted and does not allow new software to be written to it. In this case, you will not be able to use your SensorGnome unless you use a **rescue image**. This is a software image which remains on the SD card rather than being installed in the internal storage. This functions in much the same way as would a Raspberry Pi which also stores its software on the SD card. The important part here is that the SD card with the rescue image must remain in the device at all times.
 
 ## Making a rescue image
