@@ -6,7 +6,7 @@
 * [Establishing an FTP Connection](ftp.md)
 * [Copying Detection Data](detectiondata.md)
 * [Uploading Detection Data](uploading-detection-data.md)
-* [Updating Software](updating.md)
+* [Establishing an FTP Connection](uploaddata.md)
 * [Data Syncing over the Internet](internet.md)
 * [CTT LifeTag Compatibility \(dual-mode\)](dualmode.md)
 * [Appendix A: Connection and folder path Cheetsheat](appendix_a.md)
