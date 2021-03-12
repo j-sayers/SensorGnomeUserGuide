@@ -13,8 +13,6 @@ A SensorGnome is an automated radio receiver, designed to detect and record radi
 
 At its core, a SensorGnome is powered by a mini computer – either a **Raspberry Pi** or a **BeagleBone**. The mini computer runs the software that listens for and records the radio data picked up by the antennas. In addition to the mini computer, a SensorGnome will have one or more USB dongles -- "software-defined radios" -- that take the raw radio signals from the antennas and convert it into a digital form that can be recognized and recorded by the mini computer. Finally, the SensorGnome will include a GPS and power supply, all of which is typically housed in a heavy-duty plastic case. 
 
-
-
 _For a more detailed description of the components of a SensorGnome, and how they fit together, please refer to the Appendix._
 
 {% hint style="info" %}

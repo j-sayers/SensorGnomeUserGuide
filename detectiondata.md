@@ -103,12 +103,12 @@ In normal operating conditions a BeagleBone SG saves detection data on a MicroSD
 
 There are two methods of accessing the internal storage of a BB:
 
-1\) Accessing the BeagleBone as a **shared network drive** in Windows Explorer or the Mac equivalent. Here you can view and manipulate files just as you would on your computer.
+**1\)** Accessing the BeagleBone as a **shared network drive** in Windows Explorer or the Mac equivalent. Here you can view and manipulate files just as you would on your computer.
 
 * Internal storage folder path
   * **`\\192.168.7.2\data\internal_system_memory\SGdata`**
 
-2\) Running the BB SG with a "**Rescue Image**", which is a bootable software card. Once the BB is running, you can connect to it with an FTP connection and view the Web Interface as you normally would.
+**2\)** Running the BB SG with a "**Rescue Image**", which is a bootable software card. Once the BB is running, you can connect to it with an FTP connection and view the Web Interface as you normally would.
 
 * Internal storage folder path
   * `/media/internal_system_memory/SGdata`
