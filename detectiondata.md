@@ -5,7 +5,7 @@ The raw radio data that the SensorGnome records consists of the individual radio
 In order to identify the tags that have been detected by the SG, the raw data must be copied from the SG and uploaded to the Motus server, where it is processed and cross-referenced against a database of known deployed tags. Many newer stations, and in particular Motus stations powered by CTT SensorStations, are connected to the internet and sync their data to the Motus server on an automated schedule. However the majority of Motus stations still require a physical visit in order to download data from the receiver. 
 
 {% hint style="info" %}
-_We use the term “detection data” to refer to the raw radio data recorded by a SensorGnome. However it’s important to remember that in most cases, the vast majority of the “detection data” present will be product of background radio noise and not actual tag signals._
+We use the term “detection data” to refer to the raw radio data recorded by a SensorGnome. However it’s important to remember that in most cases, the vast majority of the “detection data” present will be product of background radio noise and not actual tag signals.
 {% endhint %}
 
 ### Where does a SensorGnome save detection data?
@@ -41,7 +41,7 @@ Sometimes a BeagleBone is unable to recognize or write to a MicroSD card. In thi
 #### Internal detection data folder \(when MicroSD card is absent or can't be read\)
 
 * FTP connection \(e.g. in FileZilla\)
-  * **`/media/internal_system_memory/SGdata`**
+  * `/media/internal_system_memory/SGdata`
 * Shared network drive \(e.g. in Windows Explorer\)
   * **`\\192.168.7.2\data\internal_system_memory\SGdata`**
 {% endtab %}
@@ -97,7 +97,19 @@ For Raspberry Pi SGs, make sure that the card you are replacing has the SG softw
 
 **6\)** Power on the SG. Check the Web Interface after you are done to confirm everything is working properly.
 
-## Option 3: Accessing the SG as a shared network drive \(BeagleBone only\)
+## Option 3: Copying detection data stored internally \(BeagleBone only\)
 
-See Appendix for information about accessing files on a BB SG via a shared network drive.
+In normal operating conditions a BeagleBone SG saves detection data on a MicroSD card. However there are occasions where the card cannot be read by the BB, or the card is absent altogether. In these cases, the BeagleBone SG will revert to storing detection data on its internal storage. This works in the short term, but the internal storage space on a BB is limited, and when the storage is full the BB may cease functioning altogether. For this reason, always delete the data stored internally after you have copied it. 
+
+There are two methods of accessing the internal storage of a BB:
+
+1\) Accessing the BeagleBone as a **shared network drive** in Windows Explorer or the Mac equivalent. Here you can view and manipulate files just as you would on your computer.
+
+* Internal storage folder path
+  * **`\\192.168.7.2\data\internal_system_memory\SGdata`**
+
+2\) Running the BB SG with a "**Rescue Image**", which is a bootable software card. Once the BB is running, you can connect to it with an FTP connection and view the Web Interface as you normally would.
+
+* Internal storage folder path
+  * `/media/internal_system_memory/SGdata`
 

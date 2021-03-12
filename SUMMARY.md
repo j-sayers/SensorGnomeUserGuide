@@ -7,9 +7,8 @@
 * [Copying Detection Data](detectiondata.md)
 * [Uploading Detection Data](uploading-detection-data.md)
 * [Updating Software](updating.md)
-* [CTT LifeTag Compatibility \(dual-mode\)](dualmode.md)
 * [Data Syncing over the Internet](internet.md)
-* [Loading local tag database](tagdb.md)
+* [CTT LifeTag Compatibility \(dual-mode\)](dualmode.md)
 * [Appendix A: Connection and folder path Cheetsheat](appendix_a.md)
 * [Appendix B: Overview of Raspberry Pi SG Hardware](appendix_b.md)
 * [Appendix C: Overview of BeagleBone SG Hardware](appendix_c.md)
@@ -18,4 +17,5 @@
 * [Appendix F: Using the Rescue Image on a BeagleBone SG](appendix_f.md)
 * [Appendix G: Connecting to a BeagleBone using an Ethernet cable](appendix_g.md)
 * [Appendix H: Motus Data File Formats](appendix_h.md)
+* [Appendix I: Loading local tag database](tagdb.md)
 

@@ -12,7 +12,7 @@ For Raspberry Pi SensorGnomes, the software runs entirely off the MicroSD card; 
 Certain SD cards models have failed when running on Rasperry Pis. To reduce the likelihood of an SD card failure, try to use [an SD card from this list of known models](https://elinux.org/RPi_SD_cards#Working_.2F_Non-working_SD_cards).
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 Always ensure that the MicroSD card you use with an RPi SG has the software copied onto it. The RPi SG runs _exclusively_ from the software SD card, so if a blank SD card is used, the SG won't record any data \(though you may still still lights flashing on the RPi\).
 {% endhint %}
 
