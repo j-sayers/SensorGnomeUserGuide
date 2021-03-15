@@ -70,7 +70,7 @@ On many newer computers, such as those with Windows 10, the operating system blo
 
 ![Driver installation may fail because the drivers are unsigned](.gitbook/assets/drivererror.png)
 
-The way around this is to temporarily disable this security check. Instructions on how to do that [can be found here](https://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/). Option 2 is the simplest and the security measures will revert after the next reboot. The steps are summarized below
+The way around this is to temporarily disable this security check. Instructions on how to do that [can be found here](https://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/). Option 2 is the simplest and the security measures will revert after the next reboot. The steps are summarized below.
 
 **1\)** Hold down the Shift key while you click the “Restart” option in Windows. Your computer will restart into the Advanced Boot menu
 
