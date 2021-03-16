@@ -8,5 +8,3 @@ Once configured, you can navigate the file structure as you would any other driv
 
 
 
-**I’m unsure about Mac?**
-

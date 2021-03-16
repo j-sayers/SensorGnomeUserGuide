@@ -17,4 +17,5 @@
 * [Appendix F: Connecting to a BeagleBone using an Ethernet cable](appendix_f.md)
 * [Appendix G: Motus Data File Formats](appendix_g.md)
 * [Appendix H: Loading local tag database](appendix_h.md)
+* [Appendix I: How to build a SensorGnome](appendix_i.md)
 
