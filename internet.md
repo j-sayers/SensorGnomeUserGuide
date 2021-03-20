@@ -30,7 +30,7 @@ You can check the sync status of your networked SensorGnome by visiting [sensorg
 
 Within a minute or so of connecting to the Internet, an SG should check in with the SensorGnome.org server. Hit `CRTL F` in the browser and then type in the receiver serial number. You should see the recently connected receiver in this list. Data syncing usually occurs an hour after initial connection.
 
-The true test for whether your station is syncing properly is to check if recent data has made it to the Motus database. The quickest way of doing this is 
+This is the first place to check to see if a recenetly connected SG seems to be properly connected to the Internet. However the true test for whether your station is syncing properly is to check if recent data has made it to the Motus database. The quickest way of doing this is on the [receiver map](https://motus.org/data/receiversMap?lang=en), which by default shows all the currently active Motus stations in the network.
 
 
 
