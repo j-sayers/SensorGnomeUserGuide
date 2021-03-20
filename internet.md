@@ -24,13 +24,15 @@ The Wi-Fi network you wish to use must be configured with WPA2 security. This is
 
 _Note: Activating the WiFi hotspot will temporarily disable the connection to the Internet. One the WiFi hotspot turns off, the connection to the Internet will be re-established._
 
-## Checking sync status on sensorgnome.org
+## Checking sync status on sensorgnome.org/status
 
 You can check the sync status of your networked SensorGnome by visiting [sensorgnome.org/status](http://www.sensorgnome.org/status). This page displays a master list of SensorGnomes that are, or have recently been, connected to the Internet.
 
-Within a minute or so of connecting to the Internet, an SG should check in with the SensorGnome.org server. Hit `CRTL F` in the browser and then type in the receiver serial number. You should see the recently connected receiver in this list. Data syncing usually occurs an hour after initial connection.
+![www.sensorgnome.org/status](.gitbook/assets/sgstatus.jpg)
 
-This is the first place to check to see if a recenetly connected SG seems to be properly connected to the Internet. However the true test for whether your station is syncing properly is to check if recent data has made it to the Motus database. The quickest way of doing this is on the [receiver map](https://motus.org/data/receiversMap?lang=en), which by default shows all the currently active Motus stations in the network.
+The list is is long as it includes receivers from all projects, and deployment names don't always appear \(especially if the deployment is a test deployment\) so the simplest way of finding your SensorGnome is to hit `CRTL F` in the browser and then type in the receiver **serial number**. 
 
+Within a minute or so of connecting to the Internet, an SG will show up on this list. The time of the last  fData syncing usually occurs an hour after initial connection.
 
+This is the first place to check to see if a recently connected SG seems to be properly connected to the Internet. However the true test for whether your station is syncing properly is to check if recent data has made it to the Motus database. The quickest way of doing this is on the [receiver map](https://motus.org/data/receiversMap?lang=en), which by default shows all the currently active Motus stations in the network.
 
