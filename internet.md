@@ -32,7 +32,11 @@ You can check the sync status of your networked SensorGnome by visiting [sensorg
 
 The list is is long as it includes receivers from all projects, and deployment names don't always appear \(especially if the deployment is a test deployment\) so the simplest way of finding your SensorGnome is to hit `CRTL F` in the browser and then type in the receiver **serial number**. 
 
-Within a minute or so of connecting to the Internet, an SG will show up on this list. The time of the last  fData syncing usually occurs an hour after initial connection.
+The middle column shows the time of the most recent data sync \(in UTC/GMT time\). For a properly functioning station, this should be within the last few hours. 
+
+The first column -- most recent connect/disconnect time is mos useful immediately after powering up or connecting an SG for the first time. Within a minute or so of connecting to the Internet, an SG will show up on this list and you should see the recent time displayed. The first sync won't be attempted for another hour or two \(the time displayed in the last column\), so check back in later to confirm that data is actually being synced. 
 
 This is the first place to check to see if a recently connected SG seems to be properly connected to the Internet. However the true test for whether your station is syncing properly is to check if recent data has made it to the Motus database. The quickest way of doing this is on the [receiver map](https://motus.org/data/receiversMap?lang=en), which by default shows all the currently active Motus stations in the network.
+
+![Use the receiver map to quickly check how up-to-date a SensorGnome is](.gitbook/assets/popup.jpg)
 
