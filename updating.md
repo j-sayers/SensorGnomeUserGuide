@@ -1,4 +1,4 @@
-# Updating Software
+# Updating SensorGnome Software
 
 One of the first steps in troubleshooting is to ensure that you have the most up-to-date software installed on your SensorGnome. Aside from ensuring your SG is up-to-date – this entire guide as based on the premise that you are using the most recent software – reinstalling the most recent software can resolve many issues.
 
