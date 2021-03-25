@@ -25,23 +25,27 @@ Power is supplied to a RPi through the Micro USB port. This port only supplies p
 
 ![The primary components inside a typical Raspberry Pi SensorGnome](.gitbook/assets/sginternal.jpg)
 
-1. The Raspberry Pi. The colour of the RPi case may vary between SG’s but they will also be roughly the same size
-2. Two FunCUBE Dongles. A Raspberry Pi SG can accommodate up to 4 dongles plugged directly into the RPi. In order to accommodate additional antennas, a USB hub would be required. The cables from the antennas will plug into the free end of the dongles.
-3. This is the inside view of the button used to activate the WiFi hotspot.
-4. GPS antenna. When deployed in the field, this end of the antenna would be outside the SG case, and attached to something that had a clear view of the sky. The other is attached to the Raspberry Pi by way of the gold-coloured “SMA” port on the top right corner.
-5. Voltage converter. If powered by a solar panel and battery, as this SG is, the power coming in will be 12V. However the RPi only requires 5V, so a voltage converter is used to downgrade the current to the acceptable level. If powered directly by AC power, the wall adapter itself should output 5V, eliminating the need for a voltage converter.
+**a\)** The Raspberry Pi. The colour of the RPi case may vary between SG’s but they will also be roughly the same size
+
+**b\)** Two FunCUBE Dongles. A Raspberry Pi SG can accommodate up to 4 dongles plugged directly into the RPi. In order to accommodate additional antennas, a USB hub would be required. The cables from the antennas will plug into the free end of the dongles.
+
+**c\)** This is the inside view of the button used to activate the WiFi hotspot.
+
+**d\)** GPS antenna. When deployed in the field, this end of the antenna would be outside the SG case, and attached to something that had a clear view of the sky. The other is attached to the Raspberry Pi by way of the gold-coloured “SMA” port on the top right corner.
+
+**e\)** Voltage converter. If powered by a solar panel and battery, as this SG is, the power coming in will be 12V. However the RPi only requires 5V, so a voltage converter is used to downgrade the current to the acceptable level. If powered directly by AC power, the wall adapter itself should output 5V, eliminating the need for a voltage converter.
 
 ## BeagleBone SG
 
+![](.gitbook/assets/bbports3.jpg)
 
+**a\)** SMA port for attaching GPS antenna. This particular BeagleBone is outfitted with an integrated "GPS hat" and requires an external antenna. Some older BeagleBones lack an integrated GPS and will not have this port 
 
-![Primary ports of BeagleBone SG](.gitbook/assets/bbports%20%281%29.jpg)
+**b\)** 5V barrel jack port. This is where the primary power supply is plugged in when deployed in the field
 
-**a\)** Mini USB port. This is the main port used to connect a BB to your computer. It also supplies enough power to power the BB on its own if needed
+**c\)** Ethernet port. Most often used for automatic syncing of detection data to the Motus server.
 
-**b\)** Ethernet Port. Most often used for automatic syncing of detection data to the Motus server.
-
-**c\)** 5V barrel jack port. This is where the primary power supply is plugged in when deployed in the field
+**d\)** Mini USB port. This is the main port used to connect a BB to your computer. It also supplies enough power to power the BB on its own if needed
 
 ![Secondary ports of a BeagleBone](.gitbook/assets/bbports2%20%281%29.jpg)
 
