@@ -2,6 +2,10 @@
 
 The Web Interface is where you can check the live status of your SensorGnome, to ensure that all the components are present and running as they should. As such, it’s a crucial part of any site visit, and checking it should be **the first and last thing you do** whenever you work with your SensorGnome. 
 
+{% hint style="warning" %}
+In  order to access the Web Interface, you must first _connect to your SensorGnome_. This process is described in detail in the [previous chapter](http://docs.motus.org/sensorgnome/connecting).
+{% endhint %}
+
 {% hint style="danger" %}
 If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option \(better to leave a SensorGnome that _may not_ be working, than leave no SensorGnome at all!\).
 {% endhint %}
