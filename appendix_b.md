@@ -6,13 +6,13 @@ description: Photos and description of the inside of a typical Raspberry Pi Sens
 
 The numbering of the USB ports is very important when attaching antennas since this information is recording along with detection data and can be used to determine the direction and time of approach or departure of a tagged animal.
 
-![Ethernet port on the left, and the 4 USB ports of a Raspberry Pi](.gitbook/assets/rpiports.jpg)
+![](.gitbook/assets/rpiports.jpg)
 
 The MicroSD card slot is on the opposite side as the USB and Ethernet Ports. The card is inserted with the contacts facing up, and there is no click or other indicator when the card is inserted. On some cases the the MicroSD is so deeply recessed that it cannot be removed without tweezers.
 
-![MicroSD card slot on a Raspberry Pi](.gitbook/assets/rpisdslot.jpg)
+![MicroSD card is inserted with the gold contacts facing up](.gitbook/assets/rpisdslot.jpg)
 
-Power is supplied to a RPi through the Micro USB port. This port only supplies power and is not used to communicate with a computer.
+Power is supplied to a RPi through the Micro USB port. This port only supplies power and is not used to communicate with a computer. 
 
 ![Micro USB port on a Raspberry Pi](.gitbook/assets/rpi5v.jpg)
 

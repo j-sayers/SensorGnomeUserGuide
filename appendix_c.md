@@ -1,40 +1,100 @@
----
-description: Photos and description of the inside of a typical BeagleBone SensorGnome
----
+# Appendix C: Installing BeagleBone drivers
 
-# Appendix C: Overview of BeagleBone SG Hardware
+The drivers for BeagleBone SensorGnomes can be found in the table below \(copied from the [BeagleBone homepage](http://beagleboard.org/getting-started)\). 
 
-![Primary ports of BeagleBone SG](.gitbook/assets/bbports%20%281%29.jpg)
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Operating System</th>
+      <th style="text-align:left">USB Drivers</th>
+      <th style="text-align:left">Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p>Windows (64-bit)</p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p>Windows (32-bit)</p>
+      </td>
+      <td style="text-align:left">
+        <p><a href="https://beagleboard.org/static/Drivers/Windows/BONE_D64.exe">64-bit installer</a>
+        </p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p><a href="https://beagleboard.org/static/Drivers/Windows/BONE_DRV.exe">32-bit installer</a>
+        </p>
+      </td>
+      <td style="text-align:left">
+        <p>If in doubt, try the 64-bit installer first.</p>
+        <ul>
+          <li><b>Note #1:</b> Windows Driver Certification warning may pop up two or
+            three times. Click &quot;Ignore&quot;, &quot;Install&quot; or &quot;Run&quot;</li>
+          <li><b>Note #2:</b> To check if you&apos;re running 32 or 64-bit Windows see
+            this: <a href="https://support.microsoft.com/kb/827218">support.microsoft.com/kb/827218</a>.</li>
+          <li><b>Note #3:</b> On systems without the latest service release, you may
+            get an error (0xc000007b). In that case, please install the following and
+            retry: <a href="https://www.microsoft.com/en-us/download/confirmation.aspx?id=13523">www.microsoft.com/en-us/download/confirmation.aspx?id=13523</a>.</li>
+          <li><b>Note #4:</b> You may need to reboot Windows.</li>
+          <li><b>Note #5:</b> These drivers have been tested to work up to Windows 10</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Mac OS X</td>
+      <td style="text-align:left"><a href="https://beagleboard.org/static/Drivers/MacOSX/RNDIS/HoRNDIS.pkg">Network</a>
+        <br
+        /><a href="https://beagleboard.org/static/Drivers/MacOSX/FTDI/EnergiaFTDIDrivers2.2.18.pkg">Serial</a>
+        <br
+        />
+      </td>
+      <td style="text-align:left">Install both sets of drivers.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Linux</td>
+      <td style="text-align:left"><a href="https://beagleboard.org/static/Drivers/Linux/FTDI/mkudevrule.sh">mkudevrule.sh</a>
+      </td>
+      <td style="text-align:left">Driver installation isn&apos;t required, but you might find a few udev
+        rules helpful.</td>
+    </tr>
+  </tbody>
+</table>
 
-**a\)** Mini USB port. This is the main port used to connect a BB to your computer. It also supplies enough power to power the BB on its own if needed
+On many newer computers, such as those with Windows 10, the operating system blocks the installation of the BeagleBone drivers as they are “unsigned.” The process may simply fail without an informative message.
 
-**b\)** Ethernet Port. Most often used for automatic syncing of detection data to the Motus server.
+![Driver installation may fail because the drivers are unsigned](.gitbook/assets/drivererror.png)
 
-**c\)** 5V barrel jack port. This is where the primary power supply is plugged in when deployed in the field
+The way around this is to temporarily disable this security check. Instructions on how to do that [can be found here](https://www.howtogeek.com/167723/how-to-disable-driver-signature-verification-on-64-bit-windows-8.1-so-that-you-can-install-unsigned-drivers/). Option 2 is the simplest and the security measures will revert after the next reboot. The steps are summarized below.
 
-![Secondary ports of a BeagleBone](.gitbook/assets/bbports2%20%281%29.jpg)
+**1\)** Hold down the Shift key while you click the “Restart” option in Windows. Your computer will restart into the Advanced Boot menu
 
-**a\)** Standard USB port. Typically the USB Hub will be attached here as the BB only has one standard USB port. FUNcubes and other dongles are then plugged in to the USB hub. This port is not used for communication between the computer and BB.
+![](.gitbook/assets/htg1.png)
 
-**b\)** MicroSD card slot. In the BB the card is inserted with the contacts facing down, and there is a slight click when properly inserted.
+2\) Select the “Troubleshoot” tile on the Choose an option screen that appears
 
-![](.gitbook/assets/bbsg.jpg)
+![](.gitbook/assets/htg2.png)
 
-**a\)** BeagleBone mini computer. The colour of the case may vary but it will always be roughly the same size.
+3\) Select “Advanced options”
 
-**b\)** GPS antenna. This BB has a "GPS hat" attached to the BeagleBone itself, and only requires an external antenna. Many BB last the integrated GPS and require a USB GPS, which is plugged into the USB hub
+![](.gitbook/assets/htg3.png)
 
-**c\)** FUNcube dongles plugged into ports 1 and 2 of the USB hub. The antenna cables would be attached to the loose ends. Note that the antennas must be plugged into a USB hub as the BB only has one standard USB port.
+4\) Click the “Startup Settings” tile
 
-**d\)** USB hub. The USB hub is supplied with power by via a splitter coming from the main power source, with the other end supplying the BeagleBone. It is attached to the BB's only standard USB port.
+![](.gitbook/assets/htg4.png)
 
-**e\)** Voltage converter and cable junction. If powered by a solar panel and battery, as this SG is, the power coming in will be 12V. However the RPi only requires 5V, so a voltage converter is used to downgrade the current to the acceptable level. If powered directly by AC power, the wall adapter itself should output 5V, eliminating the need for a voltage converter.
+5\) Click the “Restart” button to restart your PC into the Startup Settings screen
 
-{% hint style="warning" %}
-Pay close attention to which ports on the USB hub you attach the dongles to. The port number is recorded along with the detection data and is used in determining the direction of the animals detected. The ports on the USB hub are labelled 1 through 7. If the label is missing, you can determine the numbering based on their position relative to the USB and power supply. 
-{% endhint %}
+![](.gitbook/assets/htg5.png)
 
-![USB hub and associated cables](.gitbook/assets/usbhub.jpg)
+6\) Type “7” or “F7” at the Startup Settings screen to activate the “Disable driver signature enforcement” option
 
-The 7 USB ports on the hub can all be used to attach dongles to, but pay close attention to the number of each port and the antenna attached to it. The USB hub is supplied with 5V power, usually by way of a splitter \(with the other end supplying the BB with power\). It is attached to the BB with a standard [USB A &gt;  USB B cable](https://www.bhphotovideo.com/images/images2500x2500/Pearstone_USB_AB10_USB_2_0_Type_A_689978.jpg). 
+![](.gitbook/assets/htg6.png)
+
+Your PC will boot with driver signature enforcement disabled and you’ll be able to install unsigned drivers. However, the next time you restart your computer, driver signature enforcement will be disabled—unless you go through this menu again. 
 

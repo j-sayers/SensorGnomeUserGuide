@@ -1,12 +1,21 @@
-# Appendix E: Accessing BeagleBone as a network drive
+# Appendix E: Using the Rescue Image on a BeagleBone SG
 
-Once a BeagleBone is connected to your computer, you can access it as a shared network drive either in Windows Explorer or the Mac equivalent. Through this method you can copy detection data as well as modify configuration files. It may also be possible to access data files on a BB even if you cannot access the Web Interface or create an FTP connection. It’s a useful backup method, but it usually involves some initial configuration. 
+## Why a rescue image?
 
-There are instructions on doing that for Windows here: [https://www.windowscentral.com/how-access-files-network-devices-using-smbv1-windows-10](https://www.windowscentral.com/how-access-files-network-devices-using-smbv1-windows-10)
+If you have a BeagleBone which no longer boots or to which you can no longer connect, you can use one of the "rescue" images to burn a micro SD card, and boot from that. The SG will then operate as normal, but will not re-image the internal flash memory.
 
-Once configured, you can navigate the file structure as you would any other drive by entering the following in the address bar.
+Normally, BeagleBone computers store their software on an internal flash storage device, but sometimes the internal storage is corrupted and does not allow new software to be written to it. In this case, you will not be able to use your SensorGnome unless you use a **rescue image**. This is a software image which remains on the SD card rather than being installed in the internal storage. This functions in much the same way as would a Raspberry Pi which also stores its software on the SD card. The important part here is that the SD card with the rescue image must remain in the device at all times.
 
+## Making a rescue image
 
+This is done in much the same way as a regular software image for the BeagleBone, it's just a different file. 
 
-**I’m unsure about Mac?**
+1. Download and unzip the rescue image here: [sensorgnome\_rescue\_image\_2017-03-06\_15-33-00.img.7z](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_rescue_image_2017-03-06_15-33-00.img.7z)
+   * If you don't have 7Zip, you can download it here: [https://www.7-zip.org/](https://www.7-zip.org/)
+2. Download [balenaEtcher](https://www.balena.io/etcher/?), a free and open-sourced program for creating disk images, and click “Select Image,” where you can select the the _.img_ file
+3. Select the MicroSD card in the next step, and then click “Flash!”.
+4. Once flashing has completed, safely remove the card from your computer.
+5. Make sure the BeagleBone is powered off and then insert the SD card.
+6. Power on the BeagleBone and give it a minute or two to boot.
+7. Once booting is complete, you're good to go!
 
