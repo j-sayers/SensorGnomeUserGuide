@@ -3,7 +3,7 @@
 By default a SensorGnome is capable of detecting only Lotek Nanotags. However by applying a software patch a SensorGnome can also detect CTT LifeTags/ PowerTags. We refer to SGs that are listening for both tag types as “dual-mode” SensorGnomes. 
 
 {% hint style="info" %}
-_Note: you will not be able to use the same dongles for CTT tags as you use for Lotek tags. For CTT-compatible dongles, contact_ [_CTT_ ](https://store.celltracktech.com/products/lifetag-motus-adapter)_or Birds Canada._
+_You will not be able to use the same dongles for CTT tags as you use for Lotek tags. For CTT-compatible dongles, contact_ [_CTT_ ](https://store.celltracktech.com/products/lifetag-motus-adapter)_or Birds Canada._
 {% endhint %}
 
 **1\)** Download the CTT compatibility patch from the link below
@@ -13,7 +13,7 @@ _Note: you will not be able to use the same dongles for CTT tags as you use for 
 
 **2\)** Rename the downloaded file to `sensorgnome_update.tar.bz2`
 
-**3\)** Navigate to the `uboot`folder of your SG, either via an [FTP connection](http://docs.motus.org/sensorgnome/ftp), directly on the MicroSD card \(RPi only\), or as a shared network drive \(BB only\).
+**3\)** Navigate to the `uboot`folder of your SG
 
 {% tabs %}
 {% tab title="Raspberry Pi " %}
