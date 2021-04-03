@@ -47,7 +47,7 @@ If you keep a copy of the Raspberry Pi SG software on your computer, you can sim
 
 If the process was successful you should see any attached CTT dongles in the "Devices" pane of the Web Interface. However, they will **not** be displayed in the "What I'm doing now" pane. Additionally, both of these panes will _only_ be displayed if there is a Nanotag-compatible dongle, such as a FUNcube dongle, attached.
 
-It's possibl that you will also see CTT tag IDs in the Live Known Tags section. These may be the signals of actual tags in the vicinity, or they be the product of background radio noise that happens to resolve to a tag ID, which is still useful in confirming that the SG is in fact listening for CTT tags. CTT tag hits will never show up in the Live Pulses Pane as this pane only displays radio pulses consistent with Lotek tag signals.
+It's possible that you will also see CTT tag IDs in the Live Known Tags section. These may be the signals of actual tags in the vicinity, or they be the product of background radio noise that happens to resolve to a tag ID, which is still useful in confirming that the SG is in fact listening for CTT tags. CTT tag hits will never show up in the Live Pulses Pane as this pane only displays radio pulses consistent with Lotek tag signals.
 
  
 
