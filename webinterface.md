@@ -27,7 +27,7 @@ The SensorGnome keeps track of when and how often it reboots, and keeps an inter
 Finally, the **GPS location and time** are displayed. Time is displayed in UTC/GMT time so there is a good chance it will be offset from your local time zone. In addition to logging the precise location of the receiver, the GPS also has a role in keeping time. Whenever an SG reboots, the internal clock will reset to 2000-01-01 and start counting from there. It is the GPS that corrects this to the proper current so that accurate timekeeping is maintained. Sometimes when a receiver is found to be recording data when the time and/or location are not properly set, it may be possible retroactively correct them. But often, any data recorded during this period will be lost. Therefore it is critical to confirm the status of these during site visits.
 
 {% hint style="danger" %}
-Do not leave an SG in the field if you do not see the correct time \(in UTC/GMT time zone\) and GPS location. Even the SG is collecting data, the detections will be of little use without the time and location.
+Do not leave an SG in the field if you do not see the correct time \(in UTC/GMT time zone\) and GPS location. Even if the SG is collecting data, the detections will be of little use without the time and location.
 {% endhint %}
 
 ## Pulses and Tags pane
@@ -53,7 +53,7 @@ The **What I’m doing now** section displays important information about the do
 
 CTT dongles \(434 MHz worldwide\) will only be shown in the lower section when plugged in; they will not be displayed in the top section, whereas FUNcube dongles should be displayed in both sections.
 
-You’ll also see the amount of storage space that has been filled on the MicroSD card. In the example above, only 7% of the nominal 32 GB has been used. In normal operating conditions it will take multiple years to fill up a 32 GB card with data, but it’s important to keep an eye on.
+You’ll also see the amount of storage space that has been filled on the MicroSD card. In the example above, only 7% of the nominal 32 GB has been used. In normal operating conditions it will take multiple years to fill up a 32 GB card with data, but it’s important to keep an eye on. 
 
 Raspberry Pi SGs only save detection data on the MicroSD card as they have no internal storage. BeagleBone SGs do have internal memory; this is what the SG software is installed on. However in most cases, a MicroSD card is used to store the detection data since the BB only has 2GB or 4GB of internal storage. There are situations where the BB SG does not recognize the MicroSD card and will save detection data to the internal memory. In these cases, you will see the storage reported as 2 GB or 4 GB, depending on how much onboard storage that particular SG has.
 

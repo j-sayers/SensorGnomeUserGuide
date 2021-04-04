@@ -17,7 +17,7 @@ _You will not be able to use the same dongles for CTT tags as you use for Lotek 
 
 {% tabs %}
 {% tab title="Raspberry Pi " %}
-#### Raspberry Pi _uboot_ folder \(configuration files\)
+#### Raspberry Pi _****uboot_ **folder \(configuration files\)**
 
 * FTP connection \(e.g. in FileZilla\)
   * `/dev/sdcard/uboot`
