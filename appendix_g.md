@@ -1,3 +1,9 @@
+---
+description: >-
+  This page describes the information contained in the file name and contents
+  for the three receivers supported by the Motus system
+---
+
 # Appendix G: Motus Data File Formats
 
 ## 1. File types
