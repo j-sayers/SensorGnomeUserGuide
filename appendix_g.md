@@ -73,7 +73,7 @@ Filename: the file name is entirely determined by the user and doesn't contain u
 
 ### 2a. SensorGnome format
 
-The following prefix can be found in sensorgnome files. Files of type _ctt_ will only contain T and G prefix.
+The following prefix can be found in SensorGnome files. Files of type _ctt_ will only contain T and G prefix.
 
 C : \(GPS clock setting precision record: outlines the time the GPS was set \(ts\), the precision it was set to \(prec\), and the time elapsed in running the time \(elapsed\)\)
 
