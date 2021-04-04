@@ -36,7 +36,7 @@ _You will not be able to use the same dongles for CTT tags as you use for Lotek 
 {% endtabs %}
 
 {% hint style="info" %}
-If you keep a copy of the Raspberry Pi SG software on your computer, you can simply copy in the CTT patch into the _uboot_ folder on your computer \(once renamed to "sensorgnome\_update.tar.bz2"\). Now every time you load this software onto a Raspberry Pi, it will be dual mode by default.
+If you keep a copy of the Raspberry Pi SG software on your computer, you can simply copy in the renamed CTT patch into the _uboot_ folder on your computer. Now every time you load this software onto a Raspberry Pi, it will be dual mode by default.
 {% endhint %}
 
 **4\)** Copy the renamed software patch into this folder
