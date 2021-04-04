@@ -8,7 +8,7 @@ The simplest method of syncing data over the internet is to plug the BB or RPi i
 
 **1\)** Connect an Ethernet cable that is non-password-protected to the SG.
 
-**2\)** Confirm that the SG has checked in with the Motus server on sensorgnome.org/status, then check in again several hours later to confirm that data syncing is occurring.
+**2\)** [Confirm that the SG has checked in with the Motus server on sensorgnome.org/status, then check in again several hours later to confirm that data syncing is occurring.](http://docs.motus.org/sensorgnome/internet#status)
 
 ## Option 2: Wi-Fi 
 
@@ -44,7 +44,7 @@ The Wi-Fi network you wish to use must be configured with WPA2 security. This is
 
 **3\)** Ensure that the changes have been saved to the SG, then power down and reboot
 
-**4\)** Confirm that the SG has checked in with the Motus server on sensorgnome.org/status, then check in again several hours later to confirm that data syncing is occurring.
+**4\)** [Confirm that the SG has checked in with the Motus server on sensorgnome.org/status, then check in again several hours later to confirm that data syncing is occurring.](http://docs.motus.org/sensorgnome/internet#status)
 
 _Note: Activating the WiFi hotspot will temporarily disable the connection to the Internet. One the WiFi hotspot turns off, the connection to the Internet will be re-established._
 
