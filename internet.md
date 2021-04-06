@@ -54,7 +54,7 @@ You can check the sync status of your networked SensorGnome by visiting [sensorg
 
 ![www.sensorgnome.org/status](.gitbook/assets/sgstatus.jpg)
 
-The list is is long as it includes receivers from all projects, and deployment names don't always appear \(especially if the deployment is a test deployment\) so the simplest way of finding your SensorGnome is to hit `CRTL F` in the browser and then type in the receiver **serial number**. 
+The list is is long as it includes receivers from all projects, and deployment names don't always appear \(especially if the deployment is a test deployment\) so the simplest way of finding your SensorGnome is to hit `CTRL F` in the browser and then type in the receiver **serial number**. 
 
 The middle column shows the time of the most recent data sync \(in UTC/GMT time\). For a properly functioning station, this should be within the last few hours. 
 
