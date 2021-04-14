@@ -10,7 +10,14 @@ Once configured, you can navigate the file structure as you would any other driv
 
 ![Navigate to \\192.168.7.2 in the address bar](.gitbook/assets/networkdrv.png)
 
-The folder structure will look a bit different than in FileZilla and you will see three folders 
+The folder structure will look a bit different than in FileZilla and you will see three folders: boot, data, root. There is overlap between these folders and you will find the same detection data in both data and root folders. However configuration files can only modified in the root folder.
+
+* **Detection data \(SGdata\) folder on the MicroSD card**
+  * `\\192.168.7.2\root\media\internal_SD_card\SGdata`
+* **Internal detection data folder \(when MicroSD card is absent or can't be read\)**
+  * `\\192.168.7.2\root\media\internal_system_memory\SGdata`
+* _**uboot**_ **folder \(configuration files\)**
+  *  `\\192.168.7.2\root\boot\uboot\`
 
 ### Mapping the networked drive
 

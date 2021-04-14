@@ -72,9 +72,9 @@ This is a complete reference of the network addresses and folder paths, organize
 * FTP connection \(e.g. in FileZilla\)
   * `/media/internal_system_memory/SGdata`
 * Shared network drive \(e.g. in Windows Explorer\)
-  * **`\\192.168.7.2\data\internal_system_memory\SGdata`**
+  * `\\192.168.7.2\root\media\internal_system_memory\SGdata`
 
-#### uboot folder \(configuration files\)
+#### _uboot_ folder \(configuration files\)
 
 * FTP connection \(e.g. in FileZilla\)
   * `/boot/uboot`
