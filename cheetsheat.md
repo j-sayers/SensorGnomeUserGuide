@@ -65,12 +65,12 @@ This is a complete reference of the network addresses and folder paths, organize
 * FTP connection \(e.g. in FileZilla\)
   * `/media/internal_SD_card/SGdata`
 * Shared network drive \(e.g. in Windows Explorer\)
-  * `\\192.168.7.2\data\internal_SD_card\SGdata`
+  * `\\192.168.7.2\root\media\internal_SD_card\SGdata`
 
 #### Internal detection data folder \(when MicroSD card is absent or can't be read\)
 
 * FTP connection \(e.g. in FileZilla\)
-  * **`/media/internal_system_memory/SGdata`**
+  * `/media/internal_system_memory/SGdata`
 * Shared network drive \(e.g. in Windows Explorer\)
   * **`\\192.168.7.2\data\internal_system_memory\SGdata`**
 

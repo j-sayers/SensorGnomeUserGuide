@@ -13,6 +13,7 @@ Below is a list of items to have on hand for a field visit to a SensorGnome.
   * [Raspberry Pi software](https://public.sensorgnome.org/Raspberry_Pi_Sensorgnome/SGPI-2018-10-12_LIWIXI.ZIP)
   * [BeagleBone software image](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_image_2017-03-06_15-33-00.img.7z)
   * [BeagleBone rescue image](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_rescue_image_2017-03-06_15-33-00.img.7z)
+* [7-Zip](https://www.7-zip.org/) or other archiving software that can extract compressed files such as .7zip
 * [FileZilla ](https://filezilla-project.org)or similar FTP client installed on your computer
 * [BalenaEtcher](https://www.balena.io/etcher/), or other software to create image disks installed on your computer
 
