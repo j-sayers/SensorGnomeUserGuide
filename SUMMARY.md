@@ -18,4 +18,5 @@
 * [Appendix G: Motus Data File Formats](appendix_g.md)
 * [Appendix H: Loading local tag database](appendix_h.md)
 * [Appendix I: How to build a SensorGnome](appendix_i.md)
+* [Appendix J: Field visit check list](appendix-j-field-visit-check-list.md)
 
