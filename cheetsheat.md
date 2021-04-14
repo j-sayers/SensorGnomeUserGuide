@@ -56,7 +56,7 @@ This is a complete reference of the network addresses and folder paths, organize
   * username: `root`
   * password: `root`
 * Ethernet Cable \(network must first be configured\)
-  * host: `sftp://notsure!!!`
+  * host: `sftp://192.168.9.2`
   * username: `root`
   * password: `root`
 
