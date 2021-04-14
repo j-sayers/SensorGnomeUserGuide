@@ -12,3 +12,17 @@ Once configured, you can navigate the file structure as you would any other driv
 
 The folder structure will look a bit different than in FileZilla and you will see three folders 
 
+### Mapping the networked drive
+
+You can save time in the future by "mapping" this new drive so it can be accessed more easily. Ensure that the BeagleBone is connected to your computer then open Windows Explorer. Click "This PC", then click "Map network drive".
+
+![](.gitbook/assets/mapdrive.jpg)
+
+After selecting "Map network" drive you will be be able to assign a drive letter as shortcut to drive. It's most convenient to map the drive to `\\192.168.7.2\root` as that will allow you to download detection and modify configuration files.
+
+![](.gitbook/assets/mapdrive2.jpg)
+
+Once configured, you can access the folder by clicking on the link in Windows Explorer.
+
+![](.gitbook/assets/mapdrive3.jpg)
+

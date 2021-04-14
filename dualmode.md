@@ -13,11 +13,11 @@ _You will not be able to use the same dongles for CTT tags as you use for Lotek 
 
 **2\)** Rename the downloaded file to `sensorgnome_update.tar.bz2`
 
-**3\)** Navigate to the `uboot`folder of your SG
+**3\)** Connect to the SG and navigate to the `uboot`folder 
 
 {% tabs %}
 {% tab title="Raspberry Pi " %}
-#### Raspberry Pi _****uboot_ **folder \(configuration files\)**
+#### Raspberry Pi _****uboot_ **folder** 
 
 * FTP connection \(e.g. in FileZilla\)
   * `/dev/sdcard/uboot`
@@ -26,7 +26,7 @@ _You will not be able to use the same dongles for CTT tags as you use for Lotek 
 {% endtab %}
 
 {% tab title="BeagleBone" %}
-#### BeagleBone _uboot_ folder \(configuration files\)
+#### BeagleBone _uboot_ folder 
 
 * FTP connection \(e.g. in FileZilla\)
   * `/boot/uboot`
