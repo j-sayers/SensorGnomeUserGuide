@@ -1,4 +1,4 @@
 # Appendix F: Connecting to a BeagleBone using an Ethernet cable
 
-Placeholder section
+{% embed url="https://www.youtube.com/watch?v=L0uhbUnng8E" %}
 
