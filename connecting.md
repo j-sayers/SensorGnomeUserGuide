@@ -79,7 +79,7 @@ Before connecting to a BeagleBone SG for the first time, it is likely you’ll n
 **2\)** After 30 to 60 seconds, confirm that the connection is established by accessing the Web Interface
 
 * Open a web browser \(Firefox or Chrome\) 
-* Navigate to [http://192.168.7.2](http://192.168.7.2) 
+* Navigate to `http://192.168.7.2` 
 * You should now see the SensorGnome Web Interface
 {% endtab %}
 {% endtabs %}
