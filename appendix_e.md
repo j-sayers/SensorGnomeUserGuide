@@ -19,3 +19,5 @@ This is done in much the same way as a regular software image for the BeagleBone
 6. Power on the BeagleBone and give it a minute or two to boot.
 7. Once booting is complete, you're good to go
 
+![A BeagleBone SG running from Rescue Image will show &quot;UNKNOWN&quot; as the software release](.gitbook/assets/rescueimage.jpg)
+
