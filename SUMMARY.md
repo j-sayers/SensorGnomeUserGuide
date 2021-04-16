@@ -8,15 +8,17 @@
 * [Uploading Detection Data](uploading-detection-data.md)
 * [Updating SensorGnome Software](updating.md)
 * [Data Syncing over the Internet](internet.md)
-* [CTT LifeTag Compatibility \(dual-mode\)](dualmode.md)
-* [Appendix A: Connection and folder path Cheetsheat](cheetsheat.md)
-* [Appendix B: Anatomy of a SensorGnome](anatomy.md)
-* [Appendix C: Installing BeagleBone drivers](appendix_c.md)
-* [Appendix D: Accessing BeagleBone as a network drive](appendix_d.md)
-* [Appendix E: Recovering a locked BeagleBone Black](appendix_e.md)
-* [Appendix F: Connecting to a BeagleBone using an Ethernet cable](appendix_f.md)
-* [Appendix G: Motus Data File Formats](appendix_g.md)
-* [Appendix H: Loading local tag database](appendix_h.md)
-* [Appendix I: How to build a SensorGnome](appendix_i.md)
-* [Appendix J: Field visit check list](appendix-j-field-visit-check-list.md)
+
+## Appendices
+
+* [CTT LifeTag Compatibility \(dual-mode\)](appendices/dualmode.md)
+* [Connection and folder path Cheetsheat](appendices/cheetsheat.md)
+* [Anatomy of a SensorGnome](appendices/anatomy.md)
+* [Installing BeagleBone drivers](appendices/bbdrivers.md)
+* [Accessing BeagleBone as a network drive](appendices/networkdrive.md)
+* [Recovering a locked BeagleBone Black](appendices/recoverbb.md)
+* [Connecting to a BeagleBone using an Ethernet cable](appendices/bbethernet.md)
+* [Motus Data File Formats](appendices/fileformats.md)
+* [Loading local tag database](appendices/localtagdb.md)
+* [How to build a SensorGnome](appendices/buildsg.md)
 
