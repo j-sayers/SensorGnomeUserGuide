@@ -14,7 +14,7 @@ You can quickly tell if a BeagleBone Black isn’t taking the image if the ‘cr
 Often times you will find corrupted data in the internal storage. This can appear as regular data, except there are an excessive number of files and they are all empty. It is not worth downloading these files – just delete the folder entirely.
 {% endhint %}
 
-The BeagleBone Black keeps its operating system in its internal storage which is more robust than an external SD card; however, sometimes it can get filled up with error logs and detection data if the SD card malfunctions. This causes critical processes to no longer function, resulting in no data collection. In this state, the BeagleBone cannot be fixed by re-imaging it. Instead, files must first be deleted off its internal storage. If all else fails, you can still operate your SensorGnome with just the 'rescue' image on an SD card. Follow the steps below to recover your BeagleBone**.**
+The BeagleBone Black keeps its operating system in its internal storage which is more robust than an external SD card; however, sometimes it can get filled up with error logs and detection data if the SD card malfunctions. This causes critical processes to no longer function, resulting in no data collection. In this state, the BeagleBone cannot be fixed by re-imaging it. Instead, files must first be deleted off its internal storage. 
 
 1. If you are able to connect via FileZilla
 2. If you can't connect via FileZilla
