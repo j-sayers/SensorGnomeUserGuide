@@ -16,7 +16,7 @@
 * [Anatomy of a SensorGnome](appendices/anatomy.md)
 * [Installing BeagleBone drivers](appendices/bbdrivers.md)
 * [Accessing BeagleBone as a network drive](appendices/networkdrive.md)
-* [Recovering a locked BeagleBone Black](appendices/rescue.md)
+* [Recovering a locked BeagleBone](appendices/rescue.md)
 * [Connecting to a BeagleBone using an Ethernet cable](appendices/bbethernet.md)
 * [Motus Data File Formats](appendices/fileformats.md)
 * [Loading local tag database](appendices/localtagdb.md)
