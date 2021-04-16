@@ -79,7 +79,7 @@ Before connecting to a BeagleBone SG for the first time, it is likely you’ll n
 **2\)** After 30 to 60 seconds, confirm that the connection is established by accessing the Web Interface
 
 * Open a web browser \(Firefox or Chrome\) 
-* Navigate to [http://192.168.7.2](http://192.168.7.2) 
+* Navigate to `http://192.168.7.2` 
 * You should now see the SensorGnome Web Interface
 {% endtab %}
 {% endtabs %}
@@ -91,13 +91,11 @@ An inability to access the Web Interface may indicate issues with your SensorGno
 * Sometimes it takes a while for the connection to the SG to be established, especially for the Ethernet connection which may take up to a minute to establish. If you do not see the Web Interface, wait several seconds before trying again.
 * If you try to access the Web Interface before the connection to the SG has been fully established, some browsers will automatically replace the `http://` prefix with `www.`. Confirm that the URL in the address bar begins with `http://` before trying again.
 * Try a different connection method if you have the option
-* Bonjour Browser \(placeholder to expand on this…\)
+* Use Bonjour Browser to get the IP address of a connected RPi SG \(placeholder to expand on this…\)
 * Ensure you are using the correct URL for that SG and connection type
-  * `http://192.168.7.2` if you are connecting with Wi-Fi Hotspot
-  * `http://sgpi.local` if you are connecting with Ethernet
-* Make sure the cables you are using \(if applicable\) are connected properly
+* Make sure the cables you are using \(if applicable\) are connected properly. Try different cables if you have them
 * Reboot and restart both the computer and SG
-* If you just need to download data there a few other methods of getting this \(see copying detection data section\)
 * Re-image the SG \(if it's a BeagleBone\) or try a clean software version \(if it's a Raspberry Pi\)
+* If you just need to download data there a few other methods of getting this \(see copying detection data section\)
 * If you still cannot access the Web Interface, you will not be able to confirm that the SG is running properly. Don’t leave an SG deployed in the field in this condition unless you have no other option. 
 

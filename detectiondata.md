@@ -47,9 +47,13 @@ Sometimes a BeagleBone is unable to recognize or write to a MicroSD card. In thi
 {% endtab %}
 {% endtabs %}
 
-Transferring via an FTP connection is the recommended way of copying the data files. That allows you to check the live status of the SG on the Web Interface without turning the SensorGnome off, and gives you a better sense of the state you are leaving the station in. If you cannot establish an FTP connection, there are a couple other options to copy the data; these are described later in this chapter.
+{% hint style="info" %}
+When you copy the detection data onto your computer, put it in a folder with a meaningful name that contains both the name of the station/site and the date the station was visited. The ensures that you can easily recognize the data on your computer and find notification emails \(and the handy links they contain\) in your email.
+{% endhint %}
 
 ## Option 1: Transferring over FTP Connection
+
+Transferring via an FTP connection is the recommended way of copying the data files. That allows you to check the live status of the SG on the Web Interface without turning the SensorGnome off, and gives you a better sense of the state you are leaving the station in. If you cannot establish an FTP connection, there are a couple other options to copy the data; these are described later in this chapter.
 
 **1\)** Connect to your SensorGnome using the instructions above. Confirm you are connected by accessing the Web Interface. If you cannot access the Web Interface there is a very good chance you will not be able to establish an FTP connection either.
 

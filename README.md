@@ -31,7 +31,7 @@ Generally each time you work with a SensorGnome – either deployed in the field
 
 There are many similarities between Raspberry Pi and BeagleBone based SensorGnomes – in terms of the hardware, the software that powers them, and the process of using them typically follows the same outline. But there are also some key differences, particularly as it relates to the method of connecting to them and transferring data. 
 
-The steps above are described in detail in this guide, with an effort to presenting the commonalities between the two receiver types. Where differences are found between RPi and BB SensorGnomes, they will be broken down into sub-sections. Additional tasks, which aren't necessarily performed on a regular basis, are provided in various appendices.
+The steps above are described in detail in this guide, with an effort to presenting the commonalities between the two receiver types. Where differences are found between RPi and BB SensorGnomes, they will be broken down into sub-sections. Additional tasks, which aren't necessarily performed on a regular basis, are provided in various appendices. 
 
 ![Toggle between RPi and BB instructions using the tabs](.gitbook/assets/tabs.jpg)
 
