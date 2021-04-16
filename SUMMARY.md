@@ -14,6 +14,7 @@
 * [Appendix C: Installing BeagleBone drivers](appendix_c.md)
 * [Appendix D: Accessing BeagleBone as a network drive](appendix_d.md)
 * [Appendix E: Using the Rescue Image on a BeagleBone SG](appendix_e.md)
+* [Recovering a locked BeagleBone Black](recovering-a-locked-beaglebone-black.md)
 * [Appendix F: Connecting to a BeagleBone using an Ethernet cable](appendix_f.md)
 * [Appendix G: Motus Data File Formats](appendix_g.md)
 * [Appendix H: Loading local tag database](appendix_h.md)
