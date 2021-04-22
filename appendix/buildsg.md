@@ -1,4 +1,4 @@
-# Appendix I: How to build a SensorGnome
+# How to build a SensorGnome
 
 \[placeholder section\]
 

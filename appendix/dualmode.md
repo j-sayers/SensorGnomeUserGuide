@@ -1,4 +1,4 @@
-# CTT LifeTag Compatibility \(dual-mode\)
+# CTT LifeTag compatibility \(dual-mode\)
 
 By default a SensorGnome is capable of detecting only Lotek Nanotags. However by applying a software patch a SensorGnome can also detect CTT LifeTags/ PowerTags. We refer to SGs that are listening for both tag types as “dual-mode” SensorGnomes. 
 
@@ -49,7 +49,7 @@ If the process was successful you should see any attached CTT dongles in the "De
 
 It's possible that you will also see CTT tag IDs in the Live Known Tags section. These may be the signals of actual tags in the vicinity, or they be the product of background radio noise that happens to resolve to a tag ID, which is still useful in confirming that the SG is in fact listening for CTT tags. CTT tag hits will never show up in the Live Pulses Pane as this pane only displays radio pulses consistent with Lotek tag signals.
 
-![Web Interface of dual-mode SG. Note: there may not be any CTT tag IDs in the Live Known Tags section ](.gitbook/assets/cttdongle.png)
+![Web Interface of dual-mode SG. Note: there may not be any CTT tag IDs in the Live Known Tags section ](../.gitbook/assets/cttdongle.png)
 
 {% hint style="info" %}
 It sometimes requires two complete boot cycles of the SG for this process to succeed, so if you don't see your CTT dongle even though you have both a FUNcube and CTT dongle attached, reboot and try again.

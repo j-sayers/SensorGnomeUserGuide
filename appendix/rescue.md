@@ -4,7 +4,9 @@ description: >-
   try these steps.
 ---
 
-# Recovering a locked BeagleBone Black
+# Recovering a BeagleBone that can no longer be reimaged
+
+If you are unable to re-image your BeagleBone Black using the regular method, try these steps.
 
 {% hint style="info" %}
 You can quickly tell if a BeagleBone Black isn’t taking the image if the ‘crawl’ LED sequence is very short \(~10 seconds\).
@@ -14,8 +16,7 @@ You can quickly tell if a BeagleBone Black isn’t taking the image if the ‘cr
 Often times you will find corrupted data in the internal storage. This can appear as regular data, except there are an excessive number of files and they are all empty. It is not worth downloading these files – just delete the folder entirely.
 {% endhint %}
 
-The BeagleBone Black keeps its operating system in its internal storage which is more robust than an external SD card; however, sometimes it can get filled up with error logs and detection data if the SD card malfunctions. This causes critical processes to no longer function, resulting in no data collection. In this state, the BeagleBone cannot be fixed by re-imaging it. Instead, files must first be deleted off its internal storage. If all else fails, you can still operate your SensorGnome with just the 'rescue' image on an SD card. Follow the steps below to recover your BeagleBone**.**  
-
+The BeagleBone Black keeps its operating system in its internal storage which is more robust than an external SD card; however, sometimes it can get filled up with error logs and detection data if the SD card malfunctions. This causes critical processes to no longer function, resulting in no data collection. In this state, the BeagleBone cannot be fixed by re-imaging it. Instead, files must first be deleted off its internal storage. 
 
 1. If you are able to connect via FileZilla
 2. If you can't connect via FileZilla
@@ -60,12 +61,11 @@ The BeagleBone Black keeps its operating system in its internal storage which is
 17. Again, this folder may contain VALID data that hasn’t previously been downloaded – if the files appear normal \(and are not empty\), download them to your laptop and upload them to Motus as you normally would.
 18. Once data has been downloaded, delete the contents of this folder.
 
-![Oversized files in the folder &apos;./tmp/introot/var/log&apos;](.gitbook/assets/0.png)
-
+![Oversized files in the folder &apos;./tmp/introot/var/log&apos;](../.gitbook/assets/0.png)
 
 ## If all else fails
 
-Sometimes none of the above steps will work in which case you will have to resort to using the rescue image long term. This is undesireable because storing the operating system on the SD card makes the system more volunerable to permanent crashes. Nonetheless, it _does_ work for an indeterminate amount of time \(days, weeks, maybe months\) and can be done if you're in a pinch.
+Sometimes none of the above steps will work in which case you will have to resort to using the rescue image long term. This is undesirable because storing the operating system on the SD card makes the system more vulnerable to permanent crashes. Nonetheless, it _does_ work for an indeterminate amount of time \(days, weeks, maybe months\) and works well if you're in a pinch.
 
 ### Making a rescue image
 
@@ -78,6 +78,9 @@ This is done in much the same way as a regular software image for the BeagleBone
 4. Once flashing has completed, safely remove the card from your computer.
 5. Make sure the BeagleBone is powered off and then insert the SD card.
 6. Power on the BeagleBone and give it a minute or two to boot.
-7. Once booting is complete, you're good to go
+7. After a minute or two, connect to the BB SG and check the Web Interface
 
-![A BeagleBone SG running from Rescue Image will show &quot;UNKNOWN&quot; as the software release](.gitbook/assets/rescueimage.jpg)
+![A BeagleBone SG running from Rescue Image will show &quot;UNKNOWN&quot; as the software release](../.gitbook/assets/rescueimage.jpg)
+
+A BB SG with a rescue image will record data to same path on the MicroSD card as a normal BB will. But if the card fails or can no longer be read, there is no backup internal memory to use and the BB will simply stop recording.
+

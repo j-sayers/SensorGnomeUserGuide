@@ -1,4 +1,4 @@
-# Appendix B: Anatomy of a SensorGnome
+# Anatomy of a SensorGnome
 
 ## What's inside a SensorGnome?
 
@@ -13,17 +13,17 @@ Both RPi and BB SensorGnome consists of the same core components:
 
 The numbering of the USB ports is very important when attaching antennas since this information is recording along with detection data and can be used to determine the direction and time of approach or departure of a tagged animal.
 
-![](.gitbook/assets/rpiports.jpg)
+![](../.gitbook/assets/rpiports.jpg)
 
 The MicroSD card slot is on the opposite side as the USB and Ethernet Ports. The card is inserted with the contacts facing up, and there is no click or other indicator when the card is inserted. On some cases the the MicroSD is so deeply recessed that it cannot be removed without tweezers.
 
-![MicroSD card is inserted with the gold contacts facing up](.gitbook/assets/rpisdslot.jpg)
+![MicroSD card is inserted with the gold contacts facing up](../.gitbook/assets/rpisdslot.jpg)
 
 Power is supplied to a RPi through the Micro USB port. This port only supplies power and is not used to communicate with a computer. 
 
-![Micro USB port on a Raspberry Pi](.gitbook/assets/rpi5v.jpg)
+![Micro USB port on a Raspberry Pi](../.gitbook/assets/rpi5v.jpg)
 
-![The primary components inside a typical Raspberry Pi SensorGnome](.gitbook/assets/sginternal.jpg)
+![The primary components inside a typical Raspberry Pi SensorGnome](../.gitbook/assets/sginternal.jpg)
 
 **a\)** The Raspberry Pi. The colour of the RPi case may vary between SG’s but they will also be roughly the same size
 
@@ -37,7 +37,7 @@ Power is supplied to a RPi through the Micro USB port. This port only supplies p
 
 ## BeagleBone SG
 
-![](.gitbook/assets/bbports3.jpg)
+![](../.gitbook/assets/bbports3.jpg)
 
 **a\)** SMA port for attaching GPS antenna. This particular BeagleBone is outfitted with an integrated "GPS hat" and requires an external antenna. Some older BeagleBones lack an integrated GPS and will not have this port 
 
@@ -47,13 +47,13 @@ Power is supplied to a RPi through the Micro USB port. This port only supplies p
 
 **d\)** Mini USB port. This is the main port used to connect a BB to your computer. It also supplies enough power to power the BB on its own if needed
 
-![Secondary ports of a BeagleBone](.gitbook/assets/bbports2%20%281%29.jpg)
+![Secondary ports of a BeagleBone](../.gitbook/assets/bbports2%20%281%29.jpg)
 
 **a\)** Standard USB port. Typically the USB Hub will be attached here as the BB only has one standard USB port. FUNcubes and other dongles are then plugged in to the USB hub. This port is not used for communication between the computer and BB.
 
 **b\)** MicroSD card slot. In the BB the card is inserted with the contacts facing down, and there is a slight click when properly inserted.
 
-![](.gitbook/assets/bbsg.jpg)
+![](../.gitbook/assets/bbsg.jpg)
 
 **a\)** BeagleBone mini computer. The colour of the case may vary but it will always be roughly the same size.
 
@@ -69,7 +69,7 @@ Power is supplied to a RPi through the Micro USB port. This port only supplies p
 Pay close attention to which ports on the USB hub you attach the dongles to. The port number is recorded along with the detection data and is used in determining the direction of the animals detected. The ports on the USB hub are labelled 1 through 7. If the label is missing, you can determine the numbering based on their position relative to the USB and power supply. 
 {% endhint %}
 
-![USB hub and associated cables](.gitbook/assets/usbhub%20%281%29%20%281%29.jpg)
+![USB hub and associated cables](../.gitbook/assets/usbhub%20%281%29%20%281%29.jpg)
 
 The 7 USB ports on the hub can all be used to attach dongles to, but pay close attention to the number of each port and the antenna attached to it. The USB hub is supplied with 5V power, usually by way of a splitter \(with the other end supplying the BB with power\). It is attached to the BB with a standard [USB A &gt;  USB B cable](https://www.bhphotovideo.com/images/images2500x2500/Pearstone_USB_AB10_USB_2_0_Type_A_689978.jpg). 
 
