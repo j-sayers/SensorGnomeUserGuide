@@ -16,4 +16,4 @@ Below is a list of items to have on hand for a field visit to a SensorGnome.
 * [7-Zip](https://www.7-zip.org/) or other archiving software that can extract compressed files such as .7zip
 * [FileZilla ](https://filezilla-project.org)or similar FTP client installed on your computer
 * [BalenaEtcher](https://www.balena.io/etcher/), or other software to create image disks installed on your computer
-
+* Firefox or Chrome browser
