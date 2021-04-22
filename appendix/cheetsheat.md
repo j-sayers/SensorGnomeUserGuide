@@ -1,4 +1,4 @@
-# Connection and folder path Cheetsheat
+# Connection and folder path cheetsheat
 
 This is a complete reference of the network addresses and folder paths, organized by receiver type \(RPi vs BB\) and method of connection.
 

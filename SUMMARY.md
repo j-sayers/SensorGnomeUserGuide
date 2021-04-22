@@ -11,7 +11,7 @@
 
 ## Appendix
 
-* [Connection and folder path Cheetsheat](appendix/cheetsheat.md)
+* [Connection and folder path cheetsheat](appendix/cheetsheat.md)
 * [CTT LifeTag Compatibility \(dual-mode\)](appendix/dualmode.md)
 * [Anatomy of a SensorGnome](appendix/anatomy.md)
 * [Installing BeagleBone drivers](appendix/bbdrivers.md)
