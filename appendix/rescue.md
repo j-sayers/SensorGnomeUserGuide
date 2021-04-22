@@ -6,6 +6,8 @@ description: >-
 
 # Recovering a locked BeagleBone
 
+If you are unable to re-image your BeagleBone Black using the regular method, try these steps.
+
 {% hint style="info" %}
 You can quickly tell if a BeagleBone Black isn’t taking the image if the ‘crawl’ LED sequence is very short \(~10 seconds\).
 {% endhint %}
