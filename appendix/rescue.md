@@ -4,7 +4,7 @@ description: >-
   try these steps.
 ---
 
-# Recovering a locked BeagleBone
+# Recovering a BeagleBone that can no longer be reimaged
 
 If you are unable to re-image your BeagleBone Black using the regular method, try these steps.
 
