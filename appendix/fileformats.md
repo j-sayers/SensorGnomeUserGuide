@@ -4,7 +4,7 @@ description: >-
   for the three receivers supported by the Motus system
 ---
 
-# Motus Data File Formats
+# Motus data file formats
 
 ## 1. File types
 

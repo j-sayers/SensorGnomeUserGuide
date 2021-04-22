@@ -1,6 +1,6 @@
-# Appendix J: Field visit check list
+# What to bring on a site visit
 
-Below is a list of items to have on hand for a field visit to a SensorGnome. 
+Below is a list of items to have on hand for a field visit to a SensorGnome.
 
 * Laptop
 * Mini USB to USB cable \(for connecting to BeagleBone\)
@@ -17,3 +17,4 @@ Below is a list of items to have on hand for a field visit to a SensorGnome.
 * [FileZilla ](https://filezilla-project.org)or similar FTP client installed on your computer
 * [BalenaEtcher](https://www.balena.io/etcher/), or other software to create image disks installed on your computer
 * Firefox or Chrome browser
+

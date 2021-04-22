@@ -12,13 +12,14 @@
 ## Appendix
 
 * [Connection and folder path cheetsheat](appendix/cheetsheet.md)
-* [CTT LifeTag Compatibility \(dual-mode\)](appendix/dualmode.md)
+* [CTT LifeTag compatibility \(dual-mode\)](appendix/dualmode.md)
 * [Anatomy of a SensorGnome](appendix/anatomy.md)
 * [Installing BeagleBone drivers](appendix/bbdrivers.md)
 * [Accessing BeagleBone as a network drive](appendix/networkdrive.md)
 * [Recovering a BeagleBone that can no longer be reimaged](appendix/rescue.md)
 * [Connecting to a BeagleBone using an Ethernet cable](appendix/bbethernet.md)
-* [Motus Data File Formats](appendix/fileformats.md)
+* [Motus data file formats](appendix/fileformats.md)
 * [Loading local tag database](appendix/localtagdb.md)
 * [How to build a SensorGnome](appendix/buildsg.md)
 * [What to bring on a site visit](appendix/whattobring.md)
+

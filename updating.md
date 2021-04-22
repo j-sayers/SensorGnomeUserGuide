@@ -53,7 +53,7 @@ This file is a compressed _.7z_ file. In order to uncompress it you will need 7z
 This will overwrite any data that happens to be on the target MicroSD card so make sure you have everything copied over that you need.
 {% endhint %}
 
-![The BB SG img file and the MicroSD card are both selected and ready to be flashed](.gitbook/assets/betcher%20%281%29%20%282%29%20%282%29%20%282%29.png)
+![The BB SG img file and the MicroSD card are both selected and ready to be flashed](.gitbook/assets/betcher%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29.png)
 
 **4\)** Once the process is complete, you may get a computer popup warning that the MicroSD card is corrupted and needs to be formatted. This is expected as the file format is no longer compatible with a Windows or Mac computer.
 
@@ -63,7 +63,7 @@ Once you have your image card, you can use it to update or reimage the BeagleBon
 
 **1\)** Ensure that the BeagleBone is completely powered down. A BeagleBone has two possible power sources \(mini USB and “barrel jack”\); ensure that both are disconnected from power.
 
-![Ensure that mini USB \(a\) and the barrel jack \(b\) ports are disconnected from power](.gitbook/assets/bbpower%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29.jpg)
+![Ensure that mini USB \(a\) and the barrel jack \(b\) ports are disconnected from power](.gitbook/assets/bbpower%20%281%29%20%282%29%20%282%29%20%282%29%20%282%29%20%282%29.jpg)
 
 **4\)** Insert the image card into the BeagleBone and power on.
 
