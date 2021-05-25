@@ -11,19 +11,23 @@ description: >-
 
 A SensorGnome is an automated radio receiver, designed to detect and record radio signals transmitted by wildlife tracking tags, without the need for any person to be present. 
 
+At its core, a SensorGnome is powered by a mini computer – either a **Raspberry Pi** or a **BeagleBone**. The mini computer runs the software that listens for and records the radio data picked up by the antennas. In addition to the mini computer, a SensorGnome will have one or more USB dongles -- "software-defined radios" -- that take the raw radio signals from the antennas and convert it into a digital form that can be recognized and recorded by the mini computer. Finally, the SensorGnome will include a GPS and power supply, all of which is typically housed in a heavy-duty plastic case.
+
+_For a more detailed description of the components of a SensorGnome, and how they fit together, please refer to the_ [_Appendix_](https://app.gitbook.com/@motus/s/sensorgnome/~/diff/drafts/-MZ4ola3hAcwEqpN3XNh/appendix/anatomy)_._
+
+{% hint style="info" %}
+Throughout this document, we will often refer to a SensorGnome as an **SG**, and to the Raspberry Pi and BeagleBone as **RPi** and **BB,** respectively. For instance, a SensorGnome powered by a Raspberry Pi will be referred to as an **RPi SG.**
+{% endhint %}
+
 ## How to use this guide
 
 Generally each time you work with a SensorGnome – either deployed in the field or as a test on your desktop – you will perform the same basic steps below. 
 
-**1\)** Connect the SensorGnome to your computer
-
-**2\)** Open the Web Interface in a browser to check the SG's initial status
-
-**3\)** Establish an FTP connection to download detection data or modify configuration files. 
-
-**4\)** Confirm status once again on the Web Interface \(and take a photo or screenshot\)
-
-**5\)** Disconnect from the SensorGnome
+1. \*\*\*\*[**Connect**](connecting.md) the SensorGnome to your computer
+2. Open [**the Web Interface**](webinterface.md) in a browser to check the SG's initial status
+3. Establish an [**FTP connection** ](ftp.md)to download detection data or modify configuration files.
+4. Confirm status once again on the Web Interface \(and take a photo or screenshot\)
+5. Disconnect from the SensorGnome.
 
 There are many similarities between Raspberry Pi and BeagleBone based SensorGnomes – in terms of the hardware, the software that powers them, and the process of using them typically follows the same outline. But there are also some key differences, particularly as it relates to the method of connecting to them and transferring data. 
 
