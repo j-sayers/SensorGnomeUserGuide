@@ -1,4 +1,4 @@
-# Copying Detection Data
+# Downloading detection data
 
 The raw radio data that the SensorGnome records consists of the individual radio pulses detected, as well as some associated information, such as the precise time each pulse was detected, the USB port \(e.g. antenna\) it was detected on, and the strength of the signal. The data for each pulse is written on its own line in a text file, and then at the end of each hour the text file is compressed into a _.gz_ file. All the detection files are then moved into a folder for each day that the SG was recording \(recall that the SG keeps time in UTC/GMT time\).
 

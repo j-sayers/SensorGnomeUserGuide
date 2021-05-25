@@ -1,14 +1,22 @@
 # What to bring on a site visit
 
-Below is a list of items to have on hand for a field visit to a SensorGnome.
+Below is a list of items to have on hand for a field visit to a SensorGnome. A few of these items are specific to RPi or BB SensorGnomes, but most apply to both.
 
-* Laptop
+### **Laptop**
+
+### Cables
+
+
+
 * Mini USB to USB cable \(for connecting to BeagleBone\)
 * MicroSD card reader or adapter as most computers do not have a MicroSD slot
 * Spare MicroSD card or two
 * Ethernet Cable
   * Ethernet &gt; USB adapter if your computer doesn't have an Ethernet Port
 * Micro USB to USB cable \(for powering Pi with a laptop\)
+
+
+
 * Copies of the SensorGnome software on your computer
   * [Raspberry Pi software](https://public.sensorgnome.org/Raspberry_Pi_Sensorgnome/SGPI-2018-10-12_LIWIXI.ZIP)
   * [BeagleBone software image](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_image_2017-03-06_15-33-00.img.7z)

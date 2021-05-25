@@ -1,4 +1,4 @@
-# Uploading Detection Data
+# Uploading detection data
 
 Detection data recording by the SG represents individual radio pulses and does not include any information about the tags that might have transmitted the signals.
 
