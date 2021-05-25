@@ -16,12 +16,21 @@ This works by using a local version of the tag finder algorithm \([`find_tags_un
 
 ### Steps
 
-1. Download the tag database from your [project's tag management pages ](http://motus.org/data/project/tags)on Motus. ![](../.gitbook/assets/download-tag-database.png) 
+1. Download the tag database from your [project's tag management pages ](http://motus.org/data/project/tags)on Motus.  
    * If there are multiple files to choose from, pick the last file in the list for the most recent set of tags.
+
+![](../.gitbook/assets/download-tag-database.png)
+
+
+
 2. Connect to your SensorGnome with a computer using 'root' as both the username _and_ password and navigate to the [`uboot`](https://docs.motus.org/sensorgnome/appendix/cheatsheet#uboot-folder-configuration-files)folder.
+
 3. Rename the files `SG_tag_database.sqlite` and `SG_tag_database.csv` with the suffix ‘old’, or delete them all together.
+
 4. Copy the tag database you just downloaded from _motus.org_ into the `uboot` folder. Rename the file to `SG_tag_database.sqlite`
+
 5. Reboot the SensorGnome.
+
 6. Load [the SensorGnome's web interface](../webinterface.md) and scroll down to near the bottom of the page where it says "Tag Database" and verify the list of tags includes tags from your project.
 
 You are done! You can now view the ["live known tags" pane](../webinterface.md#pulses-and-tags-pane) at the top of the page to check whether your tags are being detected by this station.
