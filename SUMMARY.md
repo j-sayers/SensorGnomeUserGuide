@@ -11,7 +11,7 @@
 
 ## Appendix
 
-* [What to bring on a site visit](appendix/whattobring.md)
+<!-- * [What to bring on a site visit](appendix/whattobring.md) -->
 * [Connection and folder path cheatsheet](appendix/cheatsheet.md)
 * [CTT LifeTag compatibility \(dual-mode\)](appendix/dualmode.md)
 * [Anatomy of a SensorGnome](appendix/anatomy.md)
