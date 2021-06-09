@@ -25,7 +25,7 @@ This works by using a local version of the tag finder algorithm \([`find_tags_un
 
 2. Connect to your SensorGnome with a computer using 'root' as both the username _and_ password and navigate to the [`uboot`](https://docs.motus.org/sensorgnome/appendix/cheatsheet#uboot-folder-configuration-files)folder.
 
-3. Rename the files `SG_tag_database.sqlite` and `SG_tag_database.csv` with the suffix ‘old’, or delete them all together.
+3. Rename the files `SG_tag_database.sqlite` with the suffix ‘old’, or delete them all together.
 
 4. Copy the tag database you just downloaded from _motus.org_ into the `uboot` folder. Rename the file to `SG_tag_database.sqlite`
 
