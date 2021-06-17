@@ -27,7 +27,7 @@ The SensorGnome keeps track of when and how often it reboots, and keeps an inter
 Finally, the **GPS location and time** are displayed. Time is displayed in UTC/GMT time so there is a good chance it will be offset from your local time zone. In addition to logging the precise location of the receiver, the GPS also has a role in keeping time. Whenever an SG reboots, the internal clock will reset to 2000-01-01 and start counting from there. It is the GPS that corrects this to the proper current so that accurate timekeeping is maintained. Sometimes when a receiver is found to be recording data when the time and/or location are not properly set, it may be possible retroactively correct them. But often, any data recorded during this period will be lost. Therefore it is critical to confirm the status of these during site visits.
 
 {% hint style="danger" %}
-Do not leave an SG in the field if you do not see the correct time \(in UTC/GMT time zone\) and GPS location. Even if the SG is collecting data, the detections will be of little use without the time and location.
+Do not leave an SG in the field if you do not see the correct time \(in UTC/GMT time zone\), GPS location, and "PPS present" indicated. Even if the SG is collecting data, the detections will be of little use without the time and location.
 {% endhint %}
 
 ## Pulses and Tags pane
@@ -60,4 +60,13 @@ Raspberry Pi SGs only save detection data on the MicroSD card as they have no in
 {% hint style="info" %}
 It's a good idea to get in the habit of taking a photo or screenshot of the Web Interface prior to finishing up at a station. This is very useful as a record of visits, and as a reference for the state of the station over time.
 {% endhint %}
+
+## The Web Interface on a SensorStation
+
+The SensorStation \(SS\) has its own web interface feature that allows you to view various aspects of the SS status including live CTT tag "beeps", location and time, as well as many other controls and diagnostic tools. For more information, [refer to CTT's documentation](https://cellular-tracking-technologies.github.io/ctt_documentation/v2-SensorStation-User-Guide.html#the-sensorstation-web-interface).
+
+The SS also allows you to view a version of the SensorGnome Web Interface described above. This is accessed by first visiting the SS web interface at `http://sensorstation.local` while connected with an Ethernet cable, and then clicking the button at the bottom of the page. The general layout is very similar to what you would see on a SensorGnome, with a couple key differences:
+
+* The SS will also say "PPS missing" next to the time. On a SG this would be cause for concern, but on an SS it can be ignored.
+* Currently it is not possible to load a [local tag database](appendix/localtagdb.md) onto an SS, so there will never be anything in the Live Known Tags pane.
 
