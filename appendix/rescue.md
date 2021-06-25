@@ -63,7 +63,7 @@ The BeagleBone Black keeps its operating system in its internal storage which is
 
 ![Oversized files in the folder &apos;./tmp/introot/var/log&apos;](../.gitbook/assets/0.png)
 
-## If all else fails
+## Running a BB SG from the rescue image
 
 Sometimes none of the above steps will work in which case you will have to resort to using the rescue image long term. This is undesirable because storing the operating system on the SD card makes the system more vulnerable to permanent crashes. Nonetheless, it _does_ work for an indeterminate amount of time \(days, weeks, maybe months\) and works well if you're in a pinch.
 
