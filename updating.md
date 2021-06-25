@@ -37,7 +37,7 @@ Always ensure that the MicroSD card you use with an RPi SG has the software copi
 {% tab title="BeagleBone" %}
 ## BeagleBone SensorGnome
 
-The software that runs the BeagleBone SG is installed onto the internal storage of the BeagleBone. In order to upgrade or re-install the software you need to make a designated installation disk which contains the software image on a MicroSD card. This process is often referred to as _re-imaging_ the BeagleBone. Reimaging a BB SG will overwrite whatever existing software is already installed on the BB. However it will not overwrite any detection data present on the BB SG, so it can be a helpful first step in restoring a BB SG that you are having trouble connecting to.
+The software that runs the BeagleBone SG is installed onto the internal storage of the BeagleBone. In order to upgrade or re-install the software you need to make a designated installation disk which contains the software image on a MicroSD card. This process is often referred to as _re-imaging_ the BeagleBone. Re-imaging a BB SG will overwrite whatever existing software is already installed on the BB. However it will not overwrite any detection data present on the BB SG, so it can be a helpful first step in restoring a BB SG that you are having trouble connecting to.
 
 ### **Creating an image disk**
 
