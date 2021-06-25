@@ -8,7 +8,7 @@ In order to copy detection data from the SG, to check the SG’s live status in 
 {% tab title="Raspberry Pi" %}
 ### Raspberry Pi SensorGnome
 
-There are two methods available for connecting to a RPi SG: Wi-Fi Hotspot or Ethernet cable. Wi-Fi hotspot can be more convenient, but not every RPi SG is equipped with this functionality. Ethernet cable should work in every case \(provided you have iTunes installed on your computer, in the case of Windows users\).
+There are two methods available for connecting to a RPi SG: Wi-Fi Hotspot or Ethernet cable. The Wi-Fi hotspot can be more convenient, but not every RPi SG is equipped with this functionality. Ethernet cable should work in every case \(provided you have iTunes installed on your computer, in the case of Windows users\).
 
 #### Option 1: Wi-Fi Hotspot
 
@@ -50,7 +50,7 @@ If you use a Windows computer, ensure that iTunes is installed. Installing iTune
 
 **1\)** Connect one end of the Ethernet cable to the Ethernet port on the Raspberry Pi and the other end to your computer
 
-* Many newer computers do not have an Ethernet port. If yours lacks an Ethernet port, you can use an “Ethernet to USB adapter” and connect to one of your computer’s USB ports.
+* Many newer computers do not have an Ethernet port. If yours lacks an Ethernet port, you can use an “Ethernet to USB adapter” to connect to one of your computer’s USB ports.
 
 **2\)** After waiting 30-60 seconds, confirm that the connection is established by accessing the Web Interface
 
@@ -98,4 +98,5 @@ An inability to access the Web Interface may indicate issues with your SensorGno
 * Re-image the SG \(if it's a BeagleBone\) or try a clean software version \(if it's a Raspberry Pi\)
 * If you just need to download data there a few other methods of getting this \(see copying detection data section\)
 * If you still cannot access the Web Interface, you will not be able to confirm that the SG is running properly. Don’t leave an SG deployed in the field in this condition unless you have no other option. 
+  * For BeagleBone SG's you can try making a "rescue image" and running the SG directly from the software card. More details on making a rescue image can be found [here](appendix/rescue.md#running-a-bb-sg-from-the-rescue-image).
 
