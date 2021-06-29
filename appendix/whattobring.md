@@ -1,8 +1,10 @@
 # What to bring on a site visit
 
-Below is a list of items to have on hand for a field visit to a SensorGnome. A few of these items are specific to RPi or BB SensorGnomes, but most apply to both.
+Below is a list of items to have on hand for a field visit to a SensorGnome. A few of these items are specific to RPi or BB SensorGnomes, but most apply to both. Unless you are certain you will only deal with one type of SG, it's a good idea to have all the items on hand.
 
 ### **Laptop**
+* Firefox or Chrome browsers installed
+* A method to read MicroSD cards. Your computer may have a designated slot, but most don't. A USB card reader compatible with MicroSD cards will cost about $10-20 online if you don't have one.
 
 ### Cables
 
