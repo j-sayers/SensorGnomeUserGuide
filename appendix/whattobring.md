@@ -1,16 +1,16 @@
 # What to bring
 
-Before you go into the field to check a station, it's important to have a few key items on hand. Some of these are absolutely essential while others can save you future time and headaches if you have them with you at a site and can resolve issues while there.
+Before you visit a SensorGnome, it's important to have a few key items on hand. Some of these are absolutely essential while others can save you future time and headaches if you have them with you at a site and can resolve issues while there.
 
-The following list is broken down by receiver type. Essential, or very important, items are indicated with **solid circles** while optional \(but often useful\) items are represented by **hollow circles**.
+The following list is broken down by receiver type. Essential, or very important, items are indicated with **solid circles** while optional \(but often useful\) items are represented by **hollow circles**. 
 
 | **Item / software** | **Raspberry Pi** | **BeagleBone** |
 | :--- | :---: | :---: |
 | Laptop \(with battery fully charged\) | ⚫ | ⚫ |
 | iTunes \(not needed on Mac\) | ⚫ | ⚪ |
 | [FileZilla](https://filezilla-project.org/) \(or similar FTP client\) | ⚫ | ⚫ |
-| [Mini USB to Standard USB cable](https://www.ugreenstore.com/product/mini-usb-cable/) \(technically a Minti Type-B to USB Type A cable\) |  | ⚫ |
-| [Micro USB to Standard USB cable](https://www.ugreenstore.com/product/micro-usb-cable-charger/) \(technically a to USB Type A cable\) | ⚪ |  |
+| [Mini USB to Standard USB cable](https://www.ugreenstore.com/product/mini-usb-cable/) \(technically a Mini Type-B to USB Type A cable\) |  | ⚫ |
+| [Micro USB to Standard USB cable](https://www.ugreenstore.com/product/micro-usb-cable-charger/) \(technically a Micro Type-B to USB Type A cable\) | ⚪ |  |
 | Ethernet cable \(and an Ethernet-to-USB adapter if your laptop does not have an ethernet port\) | ⚫ | ⚪ |
 | [BeagleBone SG full software image](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_image_2017-03-06_15-33-00.img.7z) \(saved on your computer\) |  | ⚫ |
 | [BeagleBone SG rescue image](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_rescue_image_2017-03-06_15-33-00.img.7z) \(saved on your computer\) |  | ⚫ |
