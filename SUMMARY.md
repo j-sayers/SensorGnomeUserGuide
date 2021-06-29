@@ -11,6 +11,7 @@
 
 ## Appendix
 
+* [What to bring](appendix/what-to-bring.md)
 * [Connection and folder path cheatsheet](appendix/cheatsheet.md)
 * [CTT LifeTag compatibility \(dual-mode\)](appendix/dualmode.md)
 * [Anatomy of a SensorGnome](appendix/anatomy.md)
