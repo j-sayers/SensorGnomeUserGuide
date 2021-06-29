@@ -4,9 +4,11 @@ Before you go into the field to check a station, it's important to have a few ke
 
 The following list is broken down by receiver type. Essential items are solid circles and optional \(but often useful\) items are hollow circles. 
 
-| Item | Raspberry Pi | BeagleBone |
+| Item | **Raspberry Pi** | **BeagleBone** |
 | :--- | :--- | :--- |
-| Laptop | ⚫ | ⚫ |
+| Laptop \(with battery fully charged\) | ⚫ | ⚫ |
+| iTunes | ⚫ | ⚪ |
+| FileZilla \(or simlar FTP client\) |  |  |
 
 
 
