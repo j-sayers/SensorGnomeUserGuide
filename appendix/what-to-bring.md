@@ -8,7 +8,7 @@ The following list is broken down by receiver type. Essential items are indicate
 | :--- | :--- | :--- |
 | Laptop \(with battery fully charged\) | ⚫ | ⚫ |
 | iTunes | ⚫ | ⚪ |
-| FileZilla \(or simlar FTP client\) |  |  |
+| FileZilla \(or similar FTP client\) |  |  |
 
 
 
