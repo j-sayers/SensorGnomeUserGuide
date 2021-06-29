@@ -66,6 +66,8 @@ The drivers for BeagleBone SensorGnomes can be found in the table below \(copied
   </tbody>
 </table>
 
+## If installation fails
+
 On many newer computers, such as those with Windows 10, the operating system blocks the installation of the BeagleBone drivers as they are “unsigned.” The process may simply fail without an informative message.
 
 ![Driver installation may fail because the drivers are unsigned](../.gitbook/assets/drivererror.png)
