@@ -51,3 +51,7 @@ A **BeagleBone** \(below\) has one Ethernet port in the centre flanked by a Mini
 There are two other receivers compatible with the Motus network: the SensorStation made by Cellular Tracking Technologies \(CTT\) and the SRX receivers made by Lotek. For guides on how to use these receivers, please refer visit [CTT ](https://store.celltracktech.com/pages/installation-guides)or [Lotek](https://fccid.io/FW9SRX800/User-Manual/User-Manual-2328127), respectively.
 {% endhint %}
 
+{% hint style="danger" %}
+Before going out into the field for the first time, make sure you have looked over the ["What to bring"](appendix/whattobring.md) checklist to ensure that you have all the cables and software required to use \(and troubleshoot\) a SensorGnome.
+{% endhint %}
+
