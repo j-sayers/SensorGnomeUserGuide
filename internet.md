@@ -24,6 +24,10 @@ Connecting over a Wi-Fi network is also an option. In this case a bit of configu
   * `/dev/sdcard/uboot`
 * Directly on MicroSD card when removed from powered-down RPi
   * `/uboot`
+
+{% hint style="danger" %}
+If an RPi SG is connected to the internet, make sure you _don't_ use a MicroSD card that came from another SensorGnome. This may result in data not syncing properly. Always use a new software card that does not contain any existing data files from another receiver.
+{% endhint %}
 {% endtab %}
 
 {% tab title="BeagleBone" %}
