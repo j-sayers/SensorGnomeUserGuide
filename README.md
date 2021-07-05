@@ -52,6 +52,8 @@ There are two other receivers compatible with the Motus network: the SensorStati
 {% endhint %}
 
 {% hint style="danger" %}
-Before going out into the field for the first time, make sure you have looked over the ["What to bring"](appendix/whattobring.md) checklist to ensure that you have all the cables and software required to use \(and troubleshoot\) a SensorGnome. 
+If you have never used a SensorGnome before, give yourself plenty of time before going out into the field to familiarize yourself with the equipment and the instructions. And if at all possible, confirm that the computer you will be using _can_ connect to a BeagleBone or Raspberry Pi SG. 
+
+We also have a ["What to bring"](appendix/whattobring.md) checklist to help ensure that you have all the cables and software required to use \(and troubleshoot\) a SensorGnome on hand before getting there.
 {% endhint %}
 
