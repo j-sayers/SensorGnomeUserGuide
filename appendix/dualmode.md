@@ -8,8 +8,8 @@ _You will not be able to use the same dongles for CTT tags as you use for Lotek 
 
 **1\)** Download the CTT compatibility patch from the link below
 
-* **Raspberry Pi.**  [2019-11-12-rpi\_ctt\_dongle.tar.bz2](https://s3.amazonaws.com/media.celltracktech.com/sensorgnome/raspberry/2019-11-12-rpi_ctt_dongle.tar.bz2)
-* **BeagleBone.** BB SG's are capable of dual-mode function, but currently some steps on the back-end are required to enable this. If you wish to make a BB SG dual-mode, please [contact Motus](mailto:motus@birdscanada.org) and we will assist you.
+* **Raspberry Pi.**  [2021-07-09-rpi\_ctt.tar.bz2](https://s3.amazonaws.com/media.celltracktech.com/sensorgnome/raspberry/2021-07-09-rpi_ctt.tar.bz2)
+* **BeagleBone.** [2018-12-06\_sensorgnome\_beagle\_ctt\_update.tar.bz2](https://s3.amazonaws.com/media.celltracktech.com/sensorgnome/beaglebone/updates/2018-12-06_sensorgnome_beagle_ctt_update.tar.bz2). Dual-mode function for BB SG's has not been fully implemented. It works, but there are some steps required on the back-end to enable this. If you wish to make a BB SG dual-mode, please [contact Motus](mailto:motus@birdscanada.org) and we will assist you.
 
 **2\)** Rename the downloaded file to `sensorgnome_update.tar.bz2`
 
