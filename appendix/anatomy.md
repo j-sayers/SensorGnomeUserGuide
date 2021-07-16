@@ -39,7 +39,7 @@ The RPi itself has only two primary LED lights -- one red and one green. These a
 
 ![](../.gitbook/assets/rpiled1.jpg)
 
-The attached GPS had also has an indicator light, in this case a red LED. It does not light up consistently but instead blinks occasionally.
+The attached GPS had also has an indicator light, in this case a red LED. It does not light up consistently but instead blinks occasionally. If you are having trouble connecting and the green light never illuminates, you may need a [fresh software card.](../updating.md)
 
 ![](../.gitbook/assets/rpigps.jpg)
 
