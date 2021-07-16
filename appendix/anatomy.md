@@ -5,11 +5,15 @@
 Both RPi and BB SensorGnome consists of the same core components:
 
 * Raspberry Pi or BeagleBone mini computer. This runs the software that records the raw radio pulse data.
-* FUNcube USB dongles or other "software defined radios". These take the analog radio signals coming from the antennas and convert them into a digitial format 
+* FUNcube USB dongles or other "software defined radios". These take the analog radio signals coming from the antennas and convert them into a digital format 
 * GPS. This records the precise location of the SG, as well as ensures the the precise time is always set on the SensorGnome
 * Associated power supply 
 
-## Raspberry Pi SG
+## Raspberry Pi SensorGnome
+
+### Raspberry Pi
+
+#### Ports and slots
 
 The numbering of the USB ports is very important when attaching antennas since this information is recording along with detection data and can be used to determine the direction and time of approach or departure of a tagged animal.
 
@@ -23,6 +27,30 @@ Power is supplied to a RPi through the Micro USB port. This port only supplies p
 
 ![Micro USB port on a Raspberry Pi](../.gitbook/assets/rpi5v.jpg)
 
+#### Lights
+
+LED lights can be useful in determining if the unit has power and if it is functioning properly. The RPi has fewer lights and they are less information than a BeagleBone, but they can still be helpful.
+
+{% hint style="info" %}
+There are many different cases used to house the Raspberry Pi. Not all of them even permit a clear view of the lights.
+{% endhint %}
+
+The RPi itself has only two primary LED lights -- one red and one green. These are visible on the bottom right hand corner of the side that hosts the MicroSD slot. The red light indicates power, while the green light indicates CPU activity. The red light should always be on if sufficient is supplied, whereas the green light will flash sporadically
+
+![](../.gitbook/assets/rpiled1.jpg)
+
+The attached GPS had also has an indicator light, in this case a red LED. It does not light up consistently but instead blinks occasionally.
+
+![](../.gitbook/assets/rpigps.jpg)
+
+Lastly, there are two indicator lights on the bottom of the Ethernet port. When the Ethernet cable is attached to a computer these lights should be on or flashing consistently.
+
+![](../.gitbook/assets/rpiethernet.jpg)
+
+### GPS
+
+### Fully assembled RPi SensorGnome
+
 ![The primary components inside a typical Raspberry Pi SensorGnome](../.gitbook/assets/sginternal.jpg)
 
 **a\)** The Raspberry Pi. The colour of the RPi case may vary between SG’s but they will also be roughly the same size
@@ -31,11 +59,15 @@ Power is supplied to a RPi through the Micro USB port. This port only supplies p
 
 **c\)** This is the inside view of the button used to activate the WiFi hotspot.
 
-**d\)** GPS antenna. When deployed in the field, this end of the antenna would be outside the SG case, and attached to something that had a clear view of the sky. The other is attached to the Raspberry Pi by way of the gold-coloured “SMA” port on the top right corner.
+**d\)** GPS antenna. When deployed in the field, this end of the antenna would be outside the SG case, and attached to something that had a clear view of the sky. The other end is attached to the Raspberry Pi by way of the gold-coloured “SMA” port on the top right corner of this particular RPi.
 
 **e\)** Voltage converter. If powered by a solar panel and battery, as this SG is, the power coming in will be 12V. However the RPi only requires 5V, so a voltage converter is used to downgrade the current to the acceptable level. If powered directly by AC power, the wall adapter itself should output 5V, eliminating the need for a voltage converter.
 
-## BeagleBone SG
+## BeagleBone SensorGnome
+
+### BeagleBone
+
+#### Ports and slots
 
 ![](../.gitbook/assets/bbports3.jpg)
 
@@ -52,6 +84,12 @@ Power is supplied to a RPi through the Micro USB port. This port only supplies p
 **a\)** Standard USB port. Typically the USB Hub will be attached here as the BB only has one standard USB port. FUNcubes and other dongles are then plugged in to the USB hub. This port is not used for communication between the computer and BB.
 
 **b\)** MicroSD card slot. In the BB the card is inserted with the contacts facing down, and there is a slight click when properly inserted.
+
+#### Lights
+
+### GPS
+
+### Fully assembled BB SensorGnome
 
 ![](../.gitbook/assets/bbsg.jpg)
 
