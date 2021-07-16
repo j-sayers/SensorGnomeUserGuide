@@ -32,7 +32,7 @@ Power is supplied to a RPi through the Micro USB port. This port only supplies p
 LED lights can be useful in determining if the unit has power and if it is functioning properly. The RPi has fewer lights and they are less information than a BeagleBone, but they can still be helpful.
 
 {% hint style="info" %}
-There are many different cases used to house the Raspberry Pi. Not all of them even permit a clear view of the lights.
+There are many different cases used to house the Raspberry Pi. Not all of them permit a clear view of the lights.
 {% endhint %}
 
 The RPi itself has only two primary LED lights -- one red and one green. These are visible on the bottom right hand corner of the side that hosts the MicroSD slot. The red light indicates power, while the green light indicates CPU activity. The red light should always be on if sufficient is supplied, whereas the green light will flash sporadically
