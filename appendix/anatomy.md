@@ -67,7 +67,7 @@ Lastly, there are two indicator lights on the bottom of the Ethernet port. When 
 
 ### BeagleBone
 
-#### Ports and slots
+#### Ports and slots <a id="bb-ports-and-slots"></a>
 
 ![](../.gitbook/assets/bbports3.jpg)
 
@@ -85,9 +85,9 @@ Lastly, there are two indicator lights on the bottom of the Ethernet port. When 
 
 **b\)** MicroSD card slot. In the BB the card is inserted with the contacts facing down, and there is a slight click when properly inserted.
 
-#### Lights
+#### Lights <a id="bb-lights"></a>
 
-### GPS
+### GPS <a id="bb-gps"></a>
 
 ### Fully assembled BB SensorGnome
 
