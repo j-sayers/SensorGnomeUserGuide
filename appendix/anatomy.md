@@ -55,7 +55,7 @@ Lastly, there are two indicator lights on the bottom of the Ethernet port. When 
 
 **a\)** The Raspberry Pi. The colour of the RPi case may vary between SG’s but they will also be roughly the same size
 
-**b\)** Two FunCUBE Dongles. A Raspberry Pi SG can accommodate up to 4 dongles plugged directly into the RPi. In order to accommodate additional antennas, a USB hub would be required. The cables from the antennas will plug into the free end of the dongles.
+**b\)** FunCUBE Dongles. A Raspberry Pi SG can accommodate up to 4 dongles plugged directly into the RPi. In order to accommodate additional antennas, a USB hub would be required. The cables from the antennas will plug into the free end of the dongles.
 
 **c\)** This is the inside view of the button used to activate the WiFi hotspot.
 
