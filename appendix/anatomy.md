@@ -37,11 +37,11 @@ There are many different cases used to house the Raspberry Pi. Not all of them p
 
 The RPi itself has only two primary LED lights -- one red and one green. These are visible on the bottom right hand corner of the side that hosts the MicroSD slot. The red light indicates power, while the green light indicates CPU activity. The red light should always be on if sufficient is supplied, whereas the green light will flash sporadically
 
-![](../.gitbook/assets/rpiled1.jpg)
+![The red light will be solid as long as adequate power is supplied; the green light will flash with CPU activity](../.gitbook/assets/rpiled1.jpg)
 
 The attached GPS had also has an indicator light, in this case a red LED. It does not light up consistently but instead blinks occasionally. If you are having trouble connecting and the green light never illuminates, you may need a [fresh software card.](../updating.md)
 
-![](../.gitbook/assets/rpigps.jpg)
+![The red LED on top of the GPS hat will blink with long gaps between](../.gitbook/assets/rpigps.jpg)
 
 Lastly, there are two indicator lights on the bottom of the Ethernet port. When the Ethernet cable is attached to a computer these lights should be on or flashing consistently.
 
