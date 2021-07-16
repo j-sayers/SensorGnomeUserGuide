@@ -13,7 +13,7 @@ Both RPi and BB SensorGnome consists of the same core components:
 
 ### Raspberry Pi
 
-#### Ports and slots
+#### Ports and slots <a id="rpi-ports-and-slots"></a>
 
 The numbering of the USB ports is very important when attaching antennas since this information is recording along with detection data and can be used to determine the direction and time of approach or departure of a tagged animal.
 
@@ -27,7 +27,7 @@ Power is supplied to a RPi through the Micro USB port. This port only supplies p
 
 ![Micro USB port on a Raspberry Pi](../.gitbook/assets/rpi5v.jpg)
 
-#### Lights
+#### Lights <a id="rpi-lights"></a>
 
 LED lights can be useful in determining if the unit has power and if it is functioning properly. The RPi has fewer lights and they are less information than a BeagleBone, but they can still be helpful.
 
@@ -47,7 +47,7 @@ Lastly, there are two indicator lights on the bottom of the Ethernet port. When 
 
 ![](../.gitbook/assets/rpiethernet.jpg)
 
-### GPS
+### GPS <a id="rpi-gps"></a>
 
 ### Fully assembled RPi SensorGnome
 
