@@ -105,5 +105,5 @@ An inability to access the Web Interface may indicate issues with your SensorGno
 * Re-image the SG \(if it's a BeagleBone\) or try a clean software version \(if it's a Raspberry Pi\). Instructions can be found in the [updating SG software section](updating.md).
 * If you just need to download data there a few other methods of getting this as a temporary solution \(see [downloading detection data section](downloading.md)\)
 * If you still cannot access the Web Interface, you will not be able to confirm that the SG is running properly. Don’t leave an SG deployed in the field in this condition unless you have no other option. 
-  * For BeagleBone SG's you can try making a "rescue image" and running the SG directly from the software card. More details on making a rescue image can be found [here](appendix/rescue.md#running-a-bb-sg-from-the-rescue-image).
+  * For BeagleBone SG's you can make a "rescue image" and running the SG directly from the software card. More details on making a rescue image can be found [here](appendix/rescue.md#running-a-bb-sg-from-the-rescue-image).
 
