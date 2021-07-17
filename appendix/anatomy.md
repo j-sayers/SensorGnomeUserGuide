@@ -4,7 +4,7 @@
 
 Both RPi and BB SensorGnome consists of the same core components:
 
-* Raspberry Pi or BeagleBone mini computer. This runs the software that records the raw radio pulse data.
+* Raspberry Pi or BeagleBone mini computer. This runs the software that records the raw radio pulse data. A BeagleBone SG will also include a USB hub as the BB only has one standard USB port.
 * FUNcube USB dongles or other "software defined radios". These take the analog radio signals coming from the antennas and convert them into a digital format 
 * GPS. This records the precise location of the SG, as well as ensures the the precise time is always set on the SensorGnome
 * Associated power supply 
