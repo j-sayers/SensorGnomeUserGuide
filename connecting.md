@@ -92,7 +92,7 @@ Before connecting to a BeagleBone SG for the first time, it is likely you’ll n
 
 An inability to access the Web Interface may indicate issues with your SensorGnome. However there are a number of other potential causes. Here are a few suggestions as part of the troubleshooting process if you are running into issues. 
 
-* Sometimes it takes a while for the connection to the SG to be established, especially for the RPi Ethernet connection which may take up to a minute to establish. If you do not see the Web Interface, wait several seconds before trying again.
+* Sometimes it takes a while for the connection to the SG to be established, especially for the RPi Ethernet connection which may take _up to a minute_ to establish. If you do not see the Web Interface, wait several seconds before trying again.
 * Ensure you are using the correct URL for that SensorGnome and connection method
 * If you try to access the Web Interface before the connection to the SG has been fully established, some browsers will automatically replace the `http://` prefix with `www.`. Confirm that the URL in the address bar does not include `www.` before trying again. 
 * Try a different connection method if you have the option
@@ -102,7 +102,7 @@ An inability to access the Web Interface may indicate issues with your SensorGno
 * Reboot and restart both the computer and SG
 * Try a different computer if you have one available. Preferably one that you've confirmed can actually connect to this type of SG
 * Try a different internet browser
-* Use Bonjour Browser to get the IP address of a connected RPi SG \(placeholder to expand on this…\)
+* Use [Bonjour Browser ](appendix/bonjourbrowser.md)to get the IP address of a connected Raspberry Pi SG 
 * Re-image the SG \(if it's a BeagleBone\) or try a clean software version \(if it's a Raspberry Pi\). Instructions can be found in the [updating SG software section](updating.md).
 * If you just need to download data there a few other methods of getting this as a temporary solution \(see [downloading detection data section](downloading.md)\)
 * If you still cannot access the Web Interface, you will not be able to confirm that the SG is running properly. Don’t leave an SG deployed in the field in this condition unless you have no other option. 

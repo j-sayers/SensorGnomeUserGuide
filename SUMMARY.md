@@ -19,7 +19,7 @@
 * [Recovering a BeagleBone that can no longer be reimaged](appendix/rescue.md)
 * [Accessing BeagleBone as a network drive](appendix/networkdrive.md)
 * [Connecting to a BeagleBone using an Ethernet cable](appendix/bbethernet.md)
-* [Using Bonjour Browser to find the IP address](appendix/using-bonjour-browser-to-find-the-ip-address.md)
+* [Using Bonjour Browser to find the IP address](appendix/bonjourbrowser.md)
 * [Uploading a local tag database](appendix/localtagdb.md)
 * [How to build a SensorGnome](appendix/buildsg.md)
 * [Reflash FUNcube dongle firmware](appendix/fcdfirmware.md)
