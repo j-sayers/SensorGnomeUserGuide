@@ -102,6 +102,7 @@ An inability to access the Web Interface may indicate issues with your SensorGno
 * Reboot and restart both the computer and SG
 * Try a different computer if you have one available. Preferably one that you've confirmed can actually connect to this type of SG
 * Try a different internet browser
+* Check your power supply. Both the [RPi ](appendix/anatomy.md#rpi-lights)and [BB ](appendix/anatomy.md#bb-lights)have diagnostic LED lights to make visual confirmation of power supply easier. 
 * Use [Bonjour Browser ](appendix/bonjourbrowser.md)to get the IP address of a connected Raspberry Pi SG 
 * Re-image the SG \(if it's a BeagleBone\) or try a clean software version \(if it's a Raspberry Pi\). Instructions can be found in the [updating SG software section](updating.md).
 * If you just need to download data there a few other methods of getting this as a temporary solution \(see [downloading detection data section](downloading.md)\)
