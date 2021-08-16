@@ -25,6 +25,8 @@ _FUNcube Dongles tuned to the wrong frequency \(left; ports 1 and 2\) compared t
 * [**Bootloader**](http://www.funcubedongle.com/MyImages/FCHIDBL2.001.zip)
 * [**Firmware**](http://www.funcubedongle.com/MyImages/FCD2.20.03.48.pro.bin)
 
+## Steps
+
 1. Download and unzip the above software.
 2. Plug the FUNcube dongle in and run the **frequency control program**.
 3. You should see something like this:
