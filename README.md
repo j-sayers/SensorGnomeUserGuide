@@ -35,6 +35,10 @@ The steps above are described in detail in this guide, with an effort to present
 
 ![Toggle between RPi and BB instructions using the tabs](.gitbook/assets/tabs.jpg)
 
+{% hint style="info" %}
+This document may be modified or updated over time as we try to improve the guides. Previous links _should_ be appropriately redirected, but if you've already read the guide and just want to find a key point, use the search function.
+{% endhint %}
+
 ## What kind of SensorGnome do I have?
 
 The BeagleBone and Raspberry Pi computers may be housed in a variety of cases that may have different colours and labels on them. However they are easily differentiated by the ports that they have, as shown in the images below. 
