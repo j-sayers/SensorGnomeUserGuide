@@ -70,3 +70,11 @@ The SS also allows you to view a version of the SensorGnome Web Interface descri
 * The SS will also say "PPS missing" next to the time. On an SG this would be cause for concern, but on an SS it can be ignored.
 * Currently it is not possible to load a [local tag database](appendix/localtagdb.md) onto an SS, so there will never be anything in the Live Known Tags pane.
 
+## Overview of entire page
+
+Below is a screenshot of the entire Web Interface to give you a sense for how it appears it with all sections present.
+
+
+
+
+
