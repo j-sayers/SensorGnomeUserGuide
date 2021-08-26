@@ -67,6 +67,6 @@ The SensorStation \(SS\) has its own web interface feature that allows you to vi
 
 The SS also allows you to view a version of the SensorGnome Web Interface described above. This is accessed by first visiting the SS web interface at `http://sensorstation.local` while connected with an Ethernet cable, and then clicking the button at the bottom of the page. The general layout is very similar to what you would see on a SensorGnome, with a couple key differences:
 
-* The SS will also say "PPS missing" next to the time. On a SG this would be cause for concern, but on an SS it can be ignored.
+* The SS will also say "PPS missing" next to the time. On an SG this would be cause for concern, but on an SS it can be ignored.
 * Currently it is not possible to load a [local tag database](appendix/localtagdb.md) onto an SS, so there will never be anything in the Live Known Tags pane.
 
