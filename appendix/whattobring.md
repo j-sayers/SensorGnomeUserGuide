@@ -20,10 +20,10 @@ The following checklist is broken down by receiver type. Essential, or very impo
 | Ethernet cable \(and an Ethernet-to-USB adapter if your laptop does not have an Ethernet port\) | ⚫ | ⚪ |
 | [BeagleBone SG full software image](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_image_2017-03-06_15-33-00.img.7z) \(saved on your computer\) |  | ⚫ |
 | [BeagleBone SG rescue image](https://public.sensorgnome.org/Beaglebone_Sensorgnome_Images/sensorgnome_rescue_image_2017-03-06_15-33-00.img.7z) \(saved on your computer\) |  | ⚫ |
-| [BeagleBone SG CTT compatibility patch](https://s3.amazonaws.com/media.celltracktech.com/sensorgnome/beaglebone/updates/2018-12-06_sensorgnome_beagle_ctt_update.tar.bz2) \(saved on your computer\) |  | ⚪ |
+| [BeagleBone SG CTT compatibility patch](https://s3.amazonaws.com/media.celltracktech.com/sensorgnome/raspberry/2021-07-09-rpi_ctt.tar.bz2) \(saved on your computer\) |  | ⚪ |
 | [BeagleBone drivers installed](bbdrivers.md) |  | ⚫ |
 | [Raspberry Pi SG software](https://public.sensorgnome.org/Raspberry_Pi_Sensorgnome/SGPI-2018-10-12_LIWIXI.ZIP) \(saved on your computer\) | ⚫ |  |
-| [Raspberry Pi SG CTT compatibility patch](https://s3.amazonaws.com/media.celltracktech.com/sensorgnome/raspberry/2019-11-12-rpi_ctt_dongle.tar.bz2) \(saved on your computer\) | ⚪ |  |
+| Raspberry Pi SG CTT compatibility patch \(saved on your computer\) | ⚪ |  |
 | [Balena Etcher](https://www.balena.io/etcher/) \(or similar image writing software\) |  | ⚫ |
 | [7zip](https://www.7-zip.org/) \(your computer may already be able to read and extract compressed .7zip files, but if not, you'll need this to use any of the SG software files\) | ⚪ | ⚪ |
 | Spare MicroSD cards \(may not be necessary but very helpful to have\) | ⚪ | ⚪ |
