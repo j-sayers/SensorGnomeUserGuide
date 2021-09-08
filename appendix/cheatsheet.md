@@ -46,7 +46,7 @@ This is a complete reference of the network addresses and folder paths, organize
 
 * USB \(mini USB to standard USB\)
   * `http://192.168.7.2`
-* Ethernet cable \(network must first be configured\)
+* Ethernet cable 
   * `http://192.168.9.2`
 
 ### Establishing FTP connection \(e.g. with FileZilla\)
