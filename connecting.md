@@ -94,11 +94,11 @@ Before connecting to a BeagleBone SG for the first time, it is likely you’ll n
 
 #### Option 2: Ethernet cable 
 
-You should require no extra configuration to connect to a BB SG using an Ethernet cable, provided your network adapter is set to optain IP addresses automatically, which is the default for most computers.
+You should require no extra configuration to connect to a BB SG using an Ethernet cable, provided your network adapter is set to obtain IP addresses automatically, which is the default for most computers.
 
 ![Ethernet cable](.gitbook/assets/ethernet.jpg)
 
-**1\)** Power on the BB
+**1\)** Ensure the BB is powered on 
 
 **2\)** Connect the Ethernet cable to both the BB and the computer.
 
