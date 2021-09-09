@@ -66,6 +66,8 @@ If you use a Windows computer, ensure that iTunes is installed. Installing iTune
 {% tab title="BeagleBone" %}
 ### BeagleBone SensorGnome
 
+Option 1: Mini USB cable
+
 The recommended, and often only, method of connecting to a BeagleBone SG is with a USB cable. Specifically this is a cable with a “standard” USB jack on one end, and a Mini USB jack on the other end. These aren’t as commonly found in day-to-day usage as they used to be but can still be found easily and for affordable prices online. Purchase a few so that you have a couple extras available.
 
 {% hint style="warning" %}
