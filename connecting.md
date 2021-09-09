@@ -52,11 +52,13 @@ An Ethernet cable is usually the most reliable way of connecting to a RPi SG, an
 
 If you use a Windows computer, ensure that iTunes is installed. Installing iTunes also installs a networking tool called Bonjour that the SG relies on to establish the connection. If you don’t want to install iTunes, you can install [Bonjour by itself directly from Apple](https://support.apple.com/kb/DL999?locale=en_CA). If you use a Mac computer, Bonjour should already be installed.
 
-**1\)** Connect one end of the Ethernet cable to the Ethernet port on the Raspberry Pi and the other end to your computer
+**1\)** Power on the RPi
+
+**2\)** Connect one end of the Ethernet cable to the Ethernet port on the Raspberry Pi and the other end to your computer
 
 * Many newer computers do not have an Ethernet port. If yours lacks an Ethernet port, you can use an “Ethernet to USB adapter” to connect to one of your computer’s USB ports.
 
-**2\)** After waiting 30-60 seconds, confirm that the connection is established by accessing the Web Interface
+**3\)** After waiting 30-60 seconds, confirm that the connection is established by accessing the Web Interface
 
 * Open a web browser \(Firefox or Chrome\)
 * Navigate to `http://sgpi.local`
@@ -66,9 +68,11 @@ If you use a Windows computer, ensure that iTunes is installed. Installing iTune
 {% tab title="BeagleBone" %}
 ### BeagleBone SensorGnome
 
-Option 1: Mini USB cable
+There are two options for connecting to a BeagleBone SG: USB cable and Ethernet cable. Ethernet may be easier overall as it should require no configuration; however it isn't currently as well tested as the USB cable.
 
-The recommended, and often only, method of connecting to a BeagleBone SG is with a USB cable. Specifically this is a cable with a “standard” USB jack on one end, and a Mini USB jack on the other end. These aren’t as commonly found in day-to-day usage as they used to be but can still be found easily and for affordable prices online. Purchase a few so that you have a couple extras available.
+#### Option 1: Mini USB cable
+
+The USB cable used is a Mini USB to USB cable. These aren’t as commonly found in day-to-day usage as they used to be but can still be found easily and for affordable prices online. Purchase a few so that you have a couple extras available.
 
 {% hint style="warning" %}
 Before connecting to a BeagleBone SG for the first time, it is likely you’ll need to install drivers. Instructions on how to do this can be found in the [Appendix](appendix/bbdrivers.md). 
@@ -84,11 +88,31 @@ Before connecting to a BeagleBone SG for the first time, it is likely you’ll n
 
 **2\)** After 30 to 60 seconds, confirm that the connection is established by accessing the Web Interface
 
+* Open a web browser \(Firefox or Chrome\)
+* Navigate to `http://192.168.7.2`
+* You should now see the SensorGnome Web Interface
+
+#### Option 2: Ethernet cable 
+
+You should require no extra configuration to connect to a BB SG using an Ethernet cable, provided your network adapter is set to optain IP addresses automatically, which is the default for most computers.
+
+![Ethernet cable](.gitbook/assets/ethernet.jpg)
+
+**1\)** Power on the BB
+
+**2\)** Connect the Ethernet cable to both the BB and the computer.
+
+* Many newer computers do not have an Ethernet port. If yours lacks an Ethernet port, you can use an “Ethernet to USB adapter” to connect to one of your computer’s USB ports.
+
+**2\)** After up to 60 seconds, confirm that the connection is established by accessing the Web Interface
+
 * Open a web browser \(Firefox or Chrome\) 
-* Navigate to `http://192.168.7.2` 
+* Navigate to `http://192.168.9.2` 
 * You should now see the SensorGnome Web Interface
 {% endtab %}
 {% endtabs %}
+
+
 
 ##  Troubleshooting the Connection
 
@@ -96,7 +120,7 @@ An inability to access the Web Interface may indicate issues with your SensorGno
 
 * Sometimes it takes a while for the connection to the SG to be established, especially for the RPi Ethernet connection which may take _up to a minute_ to establish. If you do not see the Web Interface, wait several seconds before trying again.
 * Ensure you are using the correct URL for that SensorGnome and connection method
-* If you try to access the Web Interface before the connection to the SG has been fully established, some browsers will automatically replace the `http://` prefix with `www.`. Confirm that the URL in the address bar does not include `www.` before trying again. 
+* If you try to access the Web Interface before the connection to the SG has been fully established, some browsers will automatically replace the `http://` prefix with `www.`. Confirm that the URL in the address bar does not include `www.` before trying again.
 * Try a different connection method if you have the option
 * Make sure the cables you are using are connected properly. Try different cables if you have them.
 * Try a different USB port if applicable
