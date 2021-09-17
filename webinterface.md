@@ -32,7 +32,7 @@ Do not leave an SG in the field if you do not see the correct time \(in UTC/GMT 
 
 ## Pulses and Tags pane
 
-![The &#x201C;Live Pulses&#x201D; pane](.gitbook/assets/webinterface2.png)
+![The &#x201C;Live Pulses&#x201D; pane. If you do not see this, your SG is likely not recording!](.gitbook/assets/webinterface2.png)
 
 The **Live Pulses** pane will show all radio pulses detected by the receiver in real time. Unless you have a test tag on hand this is most likely just to be background radio noise. Background radio noise is a common occurrence and most sites will show at least something here. But the amount of activity will vary; some stations are so “noisy” there is a steady stream of pulses coming in, whereas others may go minutes or even days without recording pulses. The dongle/antenna that detected the pulse is also printed to the screen. The presence of pulses can help you confirm that your receiver and all antennas/dongles are functioning properly.
 
@@ -43,7 +43,13 @@ The **Live Known Tags** pane may display two outputs:
 
 To the right of the Live Pulses and Live Known Tags panes is the Live Parameter Changes pane. This isn't generally of much use to the average user so isn't discussed here.
 
-Collectively, these three panes will only be displayed if a recognized Lotek compatible dongle is attached to the receiver. In other words, if you _only_ have a CTT compatible dongle plugged in, and no FUNcube or Lotek-compatible dongle attached, you will not see these panes. If you do have Lotek compatible dongels attached and you do not see these panes, there is either a problem with the dongle\(s\), with one of the USB connections, or something else is preventing the SG from recognizing the dongles. Adjusting the connections, as well as rebooting the SG may help. The SG generally will recognize a dongle if it is hot-plugged \(plugged in while the SG is running\) but it’s best to plug the dongles in while the SG is off, and then power it on when all the peripherals attached.
+Collectively, these three panes will only be displayed if a recognized Lotek compatible dongle is attached to the receiver. In other words, if you _only_ have a CTT compatible dongle plugged in, and no FUNcube or Lotek-compatible dongle attached, you will not see these panes. 
+
+If you do have Lotek compatible dongles attached and you do not see these panes, there is either a problem with the dongle\(s\), with one of the USB connections, or something else is preventing the SG from recognizing the dongles. Adjusting the connections, as well as rebooting the SG may help. The SG generally will recognize a dongle if it is hot-plugged \(plugged in while the SG is running\) but it’s best to plug the dongles in while the SG is off, and then power it on when all the peripherals attached.
+
+{% hint style="danger" %}
+If you do not see the Pulses and Tags pane or any dongles in the What I'm Doing Now pane, your SG is not recording data.
+{% endhint %}
 
 ## What I'm Doing Now and Devices panes
 
