@@ -68,14 +68,10 @@ If you use a Windows computer, ensure that iTunes is installed. Installing iTune
 {% tab title="BeagleBone" %}
 ### BeagleBone SensorGnome
 
-There are two options for connecting to a BeagleBone SG: USB cable and Ethernet cable. Ethernet may be easier overall as it should require no configuration; however it isn't currently as well tested as the USB cable.
-
-#### Option 1: Mini USB cable
-
-The USB cable used is a Mini USB to USB cable. These aren’t as commonly found in day-to-day usage as they used to be but can still be found easily and for affordable prices online. Purchase a few so that you have a couple extras available.
+USB cable is usually the preferred method of connecting to a BeagleBone SG. The USB cable used is a Mini USB to USB cable. These aren’t as commonly found in day-to-day usage as they used to be but can still be found easily and for affordable prices online. Purchase a few so that you have a couple extras available.
 
 {% hint style="warning" %}
-Before connecting to a BeagleBone SG for the first time, it is likely you’ll need to install drivers. Instructions on how to do this can be found in the [Appendix](appendix/bbdrivers.md). 
+Before connecting to a BeagleBone SG for the first time, it is likely you’ll need to install drivers. Instructions on how to do this can be found in the [Appendix](appendix/bbdrivers.md).
 {% endhint %}
 
 ![Mini USB to Standard USB cable](.gitbook/assets/usbab.jpg)
@@ -91,32 +87,12 @@ Before connecting to a BeagleBone SG for the first time, it is likely you’ll n
 * Open a web browser \(Firefox or Chrome\)
 * Navigate to `http://192.168.7.2`
 * You should now see the SensorGnome Web Interface
-
-#### Option 2: Ethernet cable 
-
-You should require no extra configuration to connect to a BB SG using an Ethernet cable, provided your network adapter is set to obtain IP addresses automatically, which is the default for most computers.
-
-![Ethernet cable](.gitbook/assets/ethernet.jpg)
-
-**1\)** Ensure the BB is powered on 
-
-**2\)** Connect the Ethernet cable to both the BB and the computer.
-
-* Many newer computers do not have an Ethernet port. If yours lacks an Ethernet port, you can use an “Ethernet to USB adapter” to connect to one of your computer’s USB ports.
-
-**2\)** After up to 60 seconds, confirm that the connection is established by accessing the Web Interface
-
-* Open a web browser \(Firefox or Chrome\) 
-* Navigate to `http://192.168.9.2` 
-* You should now see the SensorGnome Web Interface
 {% endtab %}
 {% endtabs %}
 
+## Troubleshooting the Connection
 
-
-##  Troubleshooting the Connection
-
-An inability to access the Web Interface may indicate issues with your SensorGnome. However there are a number of other potential causes. Here are a few suggestions as part of the troubleshooting process if you are running into issues. 
+An inability to access the Web Interface may indicate issues with your SensorGnome. However there are a number of other potential causes. Here are a few suggestions as part of the troubleshooting process if you are running into issues.
 
 * Sometimes it takes a while for the connection to the SG to be established, especially for the RPi Ethernet connection which may take _up to a minute_ to establish. If you do not see the Web Interface, wait several seconds before trying again.
 * Ensure you are using the correct URL for that SensorGnome and connection method
