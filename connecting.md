@@ -22,25 +22,25 @@ An RPi SG with the ability to create a hotspot will have a silver button somewhe
 
 ![The Wi-Fi Hotspot activation button](.gitbook/assets/wifibutton.png)
 
-The Wi-Fi hotspot is convenient because, once a computer \(or smartphone\) has connected once to that particular RPi SG, it will not require any additional configuration and all further interactions with that SG can be performed by pressing the Wi-Fi button and leaving the SG case itself closed.
+The Wi-Fi hotspot is convenient because, once a computer (or smartphone) has connected once to that particular RPi SG, it will not require any additional configuration and all further interactions with that SG can be performed by pressing the Wi-Fi button and leaving the SG case itself closed.
 
 The disadvantage is that activating the Wi-Fi hotspot via the button can be finicky. Sometimes it takes several tries, and sometimes it doesn’t work at all.
 
-**1\)** Activate the Wi-Fi hotspot by double pressing the Wi-Fi button on the SG case. If properly activated the button will commence a slow on/off blinking pattern \(the actual pattern of the blinking may vary\).
+**1)** Activate the Wi-Fi hotspot by double pressing the Wi-Fi button on the SG case. If properly activated the button will commence a slow on/off blinking pattern (the actual pattern of the blinking may vary).
 
-**2\)** The Wi-Fi hotspot should soon appear in the list of available Wi-Fi networks to connect to. The name of the Wi-Fi Network and the password will be the same as the serial number of the RPi SG \(e.g. SG-A123RPI43D3\).
+**2)** The Wi-Fi hotspot should soon appear in the list of available Wi-Fi networks to connect to. The name of the Wi-Fi Network and the password will be the same as the serial number of the RPi SG (e.g. SG-A123RPI43D3).
 
 * It can take up to a minute for the Wi-Fi network to appear.
 * The LED light in the button is usually bright enough to view in sunlight, but occasionally it is very faint and difficult to see
 * The timing of the double press can be finicky and difficult to activate. If it doesn’t work, try it again.
 
-**3\)** Connect to the new Wi-Fi network. The password is the same as the network name, which is the same as the serial number of the RPi SG. This is just a local network so there won’t be any internet once connected.
+**3)** Connect to the new Wi-Fi network. The password is the same as the network name, which is the same as the serial number of the RPi SG. This is just a local network so there won’t be any internet once connected.
 
 ![The network name and the password are both the same as the SG serial number](.gitbook/assets/wifi.png)
 
-**4\)** After waiting 30-60 seconds, confirm that the connection is established by opening the Web Interface
+**4)** After waiting 30-60 seconds, confirm that the connection is established by opening the Web Interface
 
-* Open a web browser \(Firefox or Chrome\)
+* Open a web browser (Firefox or Chrome)
 * Navigate to `http://192.168.7.2`
 * You should now see the SensorGnome Web Interface
 
@@ -50,17 +50,17 @@ An Ethernet cable is usually the most reliable way of connecting to a RPi SG, an
 
 ![Ethernet cable](.gitbook/assets/ethernet.jpg)
 
-If you use a Windows computer, ensure that iTunes is installed. Installing iTunes also installs a networking tool called Bonjour that the SG relies on to establish the connection. If you don’t want to install iTunes, you can install [Bonjour by itself directly from Apple](https://support.apple.com/kb/DL999?locale=en_CA). If you use a Mac computer, Bonjour should already be installed.
+If you use a Windows computer, ensure that iTunes is installed. Installing iTunes also installs a networking tool called Bonjour that the SG relies on to establish the connection. If you don’t want to install iTunes, you can install [Bonjour by itself directly from Apple](https://support.apple.com/kb/DL999?locale=en\_CA). If you use a Mac computer, Bonjour should already be installed.
 
-**1\)** Power on the RPi
+**1)** Power on the RPi
 
-**2\)** Connect one end of the Ethernet cable to the Ethernet port on the Raspberry Pi and the other end to your computer
+**2)** Connect one end of the Ethernet cable to the Ethernet port on the Raspberry Pi and the other end to your computer
 
 * Many newer computers do not have an Ethernet port. If yours lacks an Ethernet port, you can use an “Ethernet to USB adapter” to connect to one of your computer’s USB ports.
 
-**3\)** After waiting 30-60 seconds, confirm that the connection is established by accessing the Web Interface
+**3)** After waiting 30-60 seconds, confirm that the connection is established by accessing the Web Interface
 
-* Open a web browser \(Firefox or Chrome\)
+* Open a web browser (Firefox or Chrome)
 * Navigate to `http://sgpi.local`
 * You should now see the SensorGnome Web Interface
 {% endtab %}
@@ -76,15 +76,15 @@ Before connecting to a BeagleBone SG for the first time, it is likely you’ll n
 
 ![Mini USB to Standard USB cable](.gitbook/assets/usbab.jpg)
 
-**1\)** Connect the Mini USB end to the BeagleBone. The port is found on the same side as the 5V barrel jack and Ethernet port.
+**1)** Connect the Mini USB end to the BeagleBone. The port is found on the same side as the 5V barrel jack and Ethernet port.
 
 * The USB connection will also power the BB by itself if needed. However if a primary power supply is already plugged in to the barrel jack, you can simply plug in the USB cable while the BeagleBone is powered on.
 
 ![The Mini USB port used to connect to a BeagleBone](.gitbook/assets/bbusb.png)
 
-**2\)** After 30 to 60 seconds, confirm that the connection is established by accessing the Web Interface
+**2)** After 30 to 60 seconds, confirm that the connection is established by accessing the Web Interface
 
-* Open a web browser \(Firefox or Chrome\)
+* Open a web browser (Firefox or Chrome)
 * Navigate to `http://192.168.7.2`
 * You should now see the SensorGnome Web Interface
 {% endtab %}
@@ -104,10 +104,9 @@ An inability to access the Web Interface may indicate issues with your SensorGno
 * Reboot and restart both the computer and SG
 * Try a different computer if you have one available. Preferably one that you've confirmed can actually connect to this type of SG
 * Try a different internet browser
-* Check your power supply. Both the [RPi ](appendix/anatomy.md#rpi-lights)and [BB ](appendix/anatomy.md#bb-lights)have diagnostic LED lights to make visual confirmation of power supply easier. 
-* Use [Bonjour Browser ](appendix/bonjourbrowser.md)to get the IP address of a connected Raspberry Pi SG 
-* Re-image the SG \(if it's a BeagleBone\) or try a clean software version \(if it's a Raspberry Pi\). Instructions can be found in the [updating SG software section](updating.md).
-* If you just need to download data there a few other methods of getting this as a temporary solution \(see [downloading detection data section](downloading.md)\)
-* If you still cannot access the Web Interface, you will not be able to confirm that the SG is running properly. Don’t leave an SG deployed in the field in this condition unless you have no other option. 
+* Check your power supply. Both the [RPi ](appendix/anatomy.md#rpi-lights)and [BB ](appendix/anatomy.md#bb-lights)have diagnostic LED lights to make visual confirmation of power supply easier.&#x20;
+* Use [Bonjour Browser ](appendix/bonjourbrowser.md)to get the IP address of a connected Raspberry Pi SG&#x20;
+* Re-image the SG (if it's a BeagleBone) or try a clean software version (if it's a Raspberry Pi). Instructions can be found in the [updating SG software section](updating.md).
+* If you just need to download data there a few other methods of getting this as a temporary solution (see [downloading detection data section](downloading.md))
+* If you still cannot access the Web Interface, you will not be able to confirm that the SG is running properly. Don’t leave an SG deployed in the field in this condition unless you have no other option.&#x20;
   * For BeagleBone SG's you can make a "rescue image" and run the SG directly from the software card. More details on making a rescue image can be found [here](appendix/rescue.md#running-a-bb-sg-from-the-rescue-image).
-

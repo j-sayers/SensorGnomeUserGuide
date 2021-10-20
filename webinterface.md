@@ -1,13 +1,13 @@
 # The Web Interface
 
-The Web Interface is where you can check the live status of your SensorGnome, to ensure that all the components are present and running as they should. As such, it’s a crucial part of any site visit, and checking it should be **the first and last thing you do** whenever you work with your SensorGnome. 
+The Web Interface is where you can check the live status of your SensorGnome, to ensure that all the components are present and running as they should. As such, it’s a crucial part of any site visit, and checking it should be **the first and last thing you do** whenever you work with your SensorGnome.&#x20;
 
 {% hint style="warning" %}
 In  order to access the Web Interface, you must first _connect to your SensorGnome_. This process is described in detail in the [previous chapter](http://docs.motus.org/sensorgnome/connecting).
 {% endhint %}
 
 {% hint style="danger" %}
-If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option \(better to leave a SensorGnome that _may not_ be working, than leave no SensorGnome at all!\).
+If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option (better to leave a SensorGnome that_ may not_ be working, than leave no SensorGnome at all!).
 {% endhint %}
 
 The contents of the Web Interface is the same regardless of whether you have a BeagleBone or Raspberry Pi SensorGnome, though the layout may differ slightly depending on software version.
@@ -27,25 +27,25 @@ The SensorGnome keeps track of when and how often it reboots, and keeps an inter
 Finally, the **GPS location and time** are displayed. Time is displayed in UTC/GMT time so there is a good chance it will be offset from your local time zone. In addition to logging the precise location of the receiver, the GPS also has a role in keeping time. Whenever an SG reboots, the internal clock will reset to 2000-01-01 and start counting from there. It is the GPS that corrects this to the proper current so that accurate timekeeping is maintained. Sometimes when a receiver is found to be recording data when the time and/or location are not properly set, it may be possible retroactively correct them. But often, any data recorded during this period will be lost. Therefore it is critical to confirm the status of these during site visits.
 
 {% hint style="danger" %}
-Do not leave an SG in the field if you do not see the correct time \(in UTC/GMT time zone\), GPS location, and "PPS present" indicated. Even if the SG is collecting data, the detections will be of little use without the time and location.
+Do not leave an SG in the field if you do not see the correct time (in UTC/GMT time zone), GPS location, and "PPS present" indicated. Even if the SG is collecting data, the detections will be of little use without the time and location.
 {% endhint %}
 
 ## Pulses and Tags pane
 
-![The &#x201C;Live Pulses&#x201D; pane. If you do not see this, your SG is likely not recording!](.gitbook/assets/webinterface2.png)
+![The “Live Pulses” pane. If you do not see this, your SG is likely not recording!](.gitbook/assets/webinterface2.png)
 
 The **Live Pulses** pane will show all radio pulses detected by the receiver in real time. Unless you have a test tag on hand this is most likely just to be background radio noise. Background radio noise is a common occurrence and most sites will show at least something here. But the amount of activity will vary; some stations are so “noisy” there is a steady stream of pulses coming in, whereas others may go minutes or even days without recording pulses. The dongle/antenna that detected the pulse is also printed to the screen. The presence of pulses can help you confirm that your receiver and all antennas/dongles are functioning properly.
 
 The **Live Known Tags** pane may display two outputs:
 
-1. The actual tag ID of any Lotek Nanotags that the receiver detects in real time **if** that tag ID is present in the [local tag database](appendix/localtagdb.md) on that particular SG. By default, only 2 tags are loaded in a placeholder database \(the list is visible in the panel at the bottom of the Web Interface\). This feature is most useful when deploying tags near a station and you want to get visual confirmation in real time that the tag is being detected. It is not very useful for general detections as it does not have access to the complete tag database on the Motus server.
-2. CTT LifeTags/ PowerTags the receiver detects **if** the receiver has the [CTT compatibility patch](appendix/dualmode.md) installed \(and has CTT compatible dongles and antennas\). Unlike with Lotek Nanotags, there is no need to load a tag database onto the SG as a compatible receiver will recognize any CTT tag IDs. This includes false positives, where random radio noise resembles a supposed tag ID, which nonetheless can be helpful in confirming that a CTT compatible antenna and receiver are working properly.
+1. The actual tag ID of any Lotek Nanotags that the receiver detects in real time **if **that tag ID is present in the [local tag database](appendix/localtagdb.md) on that particular SG. By default, only 2 tags are loaded in a placeholder database (the list is visible in the panel at the bottom of the Web Interface). This feature is most useful when deploying tags near a station and you want to get visual confirmation in real time that the tag is being detected. It is not very useful for general detections as it does not have access to the complete tag database on the Motus server.
+2. CTT LifeTags/ PowerTags the receiver detects** if** the receiver has the [CTT compatibility patch](appendix/dualmode.md) installed (and has CTT compatible dongles and antennas). Unlike with Lotek Nanotags, there is no need to load a tag database onto the SG as a compatible receiver will recognize any CTT tag IDs. This includes false positives, where random radio noise resembles a supposed tag ID, which nonetheless can be helpful in confirming that a CTT compatible antenna and receiver are working properly.
 
 To the right of the Live Pulses and Live Known Tags panes is the Live Parameter Changes pane. This isn't generally of much use to the average user so isn't discussed here.
 
-Collectively, these three panes will only be displayed if a recognized Lotek compatible dongle is attached to the receiver. In other words, if you _only_ have a CTT compatible dongle plugged in, and no FUNcube or Lotek-compatible dongle attached, you will not see these panes. 
+Collectively, these three panes will only be displayed if a recognized Lotek compatible dongle is attached to the receiver. In other words, if you _only _have a CTT compatible dongle plugged in, and no FUNcube or Lotek-compatible dongle attached, you will not see these panes.&#x20;
 
-If you do have Lotek compatible dongles attached and you do not see these panes, there is either a problem with the dongle\(s\), with one of the USB connections, or something else is preventing the SG from recognizing the dongles. Adjusting the connections, as well as rebooting the SG may help. The SG generally will recognize a dongle if it is hot-plugged \(plugged in while the SG is running\) but it’s best to plug the dongles in while the SG is off, and then power it on when all the peripherals attached.
+If you do have Lotek compatible dongles attached and you do not see these panes, there is either a problem with the dongle(s), with one of the USB connections, or something else is preventing the SG from recognizing the dongles. Adjusting the connections, as well as rebooting the SG may help. The SG generally will recognize a dongle if it is hot-plugged (plugged in while the SG is running) but it’s best to plug the dongles in while the SG is off, and then power it on when all the peripherals attached.
 
 {% hint style="danger" %}
 If you do not see the Pulses and Tags pane or any dongles in the What I'm Doing Now pane, your SG is not recording data.
@@ -53,13 +53,13 @@ If you do not see the Pulses and Tags pane or any dongles in the What I'm Doing 
 
 ## What I'm Doing Now and Devices panes
 
-![The &#x201C;What I&#x2019;m Doing Now&#x201D; and &quot;Devices&quot; sections](.gitbook/assets/webinterface3.png)
+![The “What I’m Doing Now” and "Devices" sections](.gitbook/assets/webinterface3.png)
 
-The **What I’m doing now** section displays important information about the dongles connected. You should see each of the dongles \(e.g. FUNcube dongles\) in these two sections. Also note the frame rate and frequency. The frame rate should be 48 and the frequency should match your local region \(166 MHz in the Western Hemisphere, 150.1 in Europe, and 151 MHz in Australia\). 
+The **What I’m doing now** section displays important information about the dongles connected. You should see each of the dongles (e.g. FUNcube dongles) in these two sections. Also note the frame rate and frequency. The frame rate should be 48 and the frequency should match your local region (166 MHz in the Western Hemisphere, 150.1 in Europe, and 151 MHz in Australia).&#x20;
 
-CTT dongles \(434 MHz worldwide\) will only be shown in the lower section when plugged in; they will not be displayed in the top section, whereas FUNcube dongles should be displayed in both sections.
+CTT dongles (434 MHz worldwide) will only be shown in the lower section when plugged in; they will not be displayed in the top section, whereas FUNcube dongles should be displayed in both sections.
 
-You’ll also see the amount of storage space that has been filled on the MicroSD card. In the example above, only 7% of the nominal 32 GB has been used. In normal operating conditions it will take multiple years to fill up a 32 GB card with data, but it’s important to keep an eye on. 
+You’ll also see the amount of storage space that has been filled on the MicroSD card. In the example above, only 7% of the nominal 32 GB has been used. In normal operating conditions it will take multiple years to fill up a 32 GB card with data, but it’s important to keep an eye on.&#x20;
 
 Raspberry Pi SGs only save detection data on the MicroSD card as they have no internal storage. BeagleBone SGs do have internal memory; this is what the SG software is installed on. However in most cases, a MicroSD card is used to store the detection data since the BB only has 2GB or 4GB of internal storage. There are situations where the BB SG does not recognize the MicroSD card and will save detection data to the internal memory. In these cases, you will see the storage reported as 2 GB or 4 GB, depending on how much onboard storage that particular SG has.
 
@@ -69,7 +69,7 @@ It's a good idea to get in the habit of taking a photo or screenshot of the Web 
 
 ## The Web Interface on a SensorStation
 
-The SensorStation \(SS\) has its own web interface feature that allows you to view various aspects of the SS status including live CTT tag "beeps", location and time, as well as many other controls and diagnostic tools. For more information, [refer to CTT's documentation](https://cellular-tracking-technologies.github.io/ctt_documentation/v2-SensorStation-User-Guide.html#the-sensorstation-web-interface).
+The SensorStation (SS) has its own web interface feature that allows you to view various aspects of the SS status including live CTT tag "beeps", location and time, as well as many other controls and diagnostic tools. For more information, [refer to CTT's documentation](https://cellular-tracking-technologies.github.io/ctt\_documentation/v2-SensorStation-User-Guide.html#the-sensorstation-web-interface).
 
 The SS also allows you to view a version of the SensorGnome Web Interface described above. This is accessed by first visiting the SS web interface at `http://sensorstation.local` while connected with an Ethernet cable, and then clicking the button at the bottom of the page. The general layout is very similar to what you would see on a SensorGnome, with a couple key differences:
 
@@ -79,8 +79,6 @@ The SS also allows you to view a version of the SensorGnome Web Interface descri
 ## Overview of entire page
 
 Below is a screenshot of the entire Web Interface to give you a sense for how it appears it with all sections present.
-
-
 
 
 
