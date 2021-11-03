@@ -12,8 +12,9 @@
 ## Appendix
 
 * [What to bring](appendix/whattobring.md)
+* [Underpowered SensorGnomes](appendix/underpowered-sensorgnomes.md)
 * [Connection and folder path cheatsheet](appendix/cheatsheet.md)
-* [CTT LifeTag compatibility \(dual-mode\)](appendix/dualmode.md)
+* [CTT LifeTag compatibility (dual-mode)](appendix/dualmode.md)
 * [Anatomy of a SensorGnome](appendix/anatomy.md)
 * [Installing BeagleBone drivers](appendix/bbdrivers.md)
 * [Recovering a BeagleBone that can no longer be reimaged](appendix/rescue.md)
@@ -24,4 +25,3 @@
 * [How to build a SensorGnome](appendix/buildsg.md)
 * [Reflash FUNcube dongle firmware](appendix/fcdfirmware.md)
 * [Motus data file formats](appendix/fileformats.md)
-

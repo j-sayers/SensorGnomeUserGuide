@@ -94,6 +94,7 @@ Before connecting to a BeagleBone SG for the first time, it is likely you’ll n
 
 An inability to access the Web Interface may indicate issues with your SensorGnome. However there are a number of other potential causes. Here are a few suggestions as part of the troubleshooting process if you are running into issues.
 
+* If your SensorGnome is off-grid or powered with a non-standard power supply, see [Underpowered SensorGnomes](appendix/underpowered-sensorgnomes.md).
 * Sometimes it takes a while for the connection to the SG to be established, especially for the RPi Ethernet connection which may take _up to a minute_ to establish. If you do not see the Web Interface, wait several seconds before trying again.
 * Ensure you are using the correct URL for that SensorGnome and connection method
 * If you try to access the Web Interface before the connection to the SG has been fully established, some browsers will automatically replace the `http://` prefix with `www.`. Confirm that the URL in the address bar does not include `www.` before trying again.
