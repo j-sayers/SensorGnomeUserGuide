@@ -59,3 +59,13 @@ Currently available (as of Nov 3, 2021) cables are listed below:
 | --------- | ------------------ | ------ | ------------------------------------------------------------------------------------------- |
 | DigiKey   | $6.21 CAD          | 20 AWG | [Product page](https://www.digikey.ca/en/products/detail/tripp-lite/UR05C-003-UARB/5359414) |
 | MonoPrice | $0.99 USD (0.5 ft) | 22 AWG | [Product page](https://www.monoprice.com/product?p\_id=13924)                               |
+
+### DC-DC Voltage Converters for Raspberry Pi (not tested)
+
+Currently available (as of Nov 3, 2021) DC-DC converters are listed below:
+
+| Retailer | Price     | Volts (V) | Watts (W) | Link                                                                                       |
+| -------- | --------- | --------- | --------- | ------------------------------------------------------------------------------------------ |
+| DigiKey  | $60 USD   | 5.1 V     | 20 W      | [Product page](https://www.digikey.ca/en/products/detail/xp-power/DTE2024S5V1/5931159)     |
+| DigiKey  | $38.5 USD | 5.0 V     | 20 W      | [Product page](https://www.monoprice.com/product?p\_id=13924)                              |
+| DigiKey  | $51 USD   | 5.1 V     | 10 W      | [Product page](https://www.digikey.ca/en/products/detail/traco-power/TMDC-10-2411/9698249) |
