@@ -46,7 +46,7 @@ While it might seem like it's helpful to use a voltmeter to determine whether th
 ## Fixing power supply issues
 
 {% hint style="warning" %}
-Always have a spare micro USB cable lying around, one that has at least 22 gauge power delivery. See [USB Micro B Male cables for power delivery](underpowered-sensorgnomes.md#usb-micro-b-male-cables-for-power-delivery).&#x20;
+Always keep a spare micro USB cable handy, one that has at least 22 gauge power delivery. See [USB Micro B Male cables for power delivery](underpowered-sensorgnomes.md#usb-micro-b-male-cables-for-power-delivery).&#x20;
 {% endhint %}
 
 In most cases, fixing the issue is as simple as replacing the Micro USB cable which plugs into the Raspberry Pi. It is also possible to swap out the DC-DC voltage converter to a device that is rated for more current and/or voltage (no more than 5.1 V, however!), but these have not been tested.
@@ -62,7 +62,7 @@ Currently available (as of Nov 3, 2021) cables are listed below:
 
 ### DC-DC Voltage Converters for Raspberry Pi (not tested)
 
-Currently available (as of Nov 3, 2021) DC-DC converters are listed below:
+Currently available (as of Nov 3, 2021) DC-DC converters are listed below. Please note that these models have not been tested, but are expected to perform better the default model.
 
 | Retailer | Price     | Volts (V) | Watts (W) | Link                                                                                       |
 | -------- | --------- | --------- | --------- | ------------------------------------------------------------------------------------------ |
