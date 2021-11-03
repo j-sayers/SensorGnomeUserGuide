@@ -1,8 +1,8 @@
 ---
 description: >-
-  Underpowered SensorGnomes are an issue with off-grid stations and should be
-  addressed to ensure station reliability. This section describes how to
-  identify and troubleshoot underpowered computers.
+  Underpowered SensorGnomes are a potential issue with off-grid stations which
+  can seem confusing at first. If your SensorGnome has signs of being
+  underpowered, it should be addressed to ensure station
 ---
 
 # Underpowered SensorGnomes
@@ -11,7 +11,7 @@ description: >-
 
 When a SensorGnome isn't receiving enough power -- that is, the voltage and/or current is lower than the device is rated for -- it can result in a malfunctioning station that doesn't collect data.&#x20;
 
-This typically occurs in off-grid setups due to the non-standard power supply that is used; however, this is also possible if an incorrect AC adaptor is used. The AC adaptor should output 5.1 Volts and 2.5 Amps (2500 mA).
+This typically occurs in off-grid stations due to the non-standard power supply that is used; however, this is also possible if an incorrect AC adaptor is used. The AC adaptor should output 5.1 Volts and 2.5 Amps (2500 mA).
 
 Raspberry Pi based SensorGnomes in off-grid setups are most susceptible to underpowered situations due to the higher voltage requirements in comparison to BeagleBone computers (5.1 V required for Raspberry Pi; 5.0 for BeagleBone). The DC-DC voltage converter used in the SensorGnome, which converts the batteries 12 Volts down to something the computer can use, outputs just 5.0 Volts and 2.0 Amps. This alone isn't enough for the SenorGnome to malfunction, but over time wear and tear to the USB cable and its connections can increase the resistance to the flow of electricity and can eventually result in a malfunctioning system.
 
@@ -39,6 +39,10 @@ When trying to connect to Wi-Fi, there are a few different reasons why it may no
 
 If swapping out the computer _and _Wi-Fi button (if applicable) doesn't change the behaviour, it's likely it is an underpowered SensorGnome and the issue lies with the power supply/USB Cable.
 
+{% hint style="warning" %}
+Sometimes the above symptoms are intermittent and during apparently random intervals it's possible to connect to the SensorGnome. This should still be considered an underpowered device since it's likely a slight shift in the USB cable's position which is causing this unpredictable behaviour.
+{% endhint %}
+
 {% hint style="info" %}
 While it might seem like it's helpful to use a voltmeter to determine whether the power supply is the issue, it's often that the USB cable is the culprit which hard to measure.
 {% endhint %}
@@ -49,7 +53,7 @@ While it might seem like it's helpful to use a voltmeter to determine whether th
 Always keep a spare micro USB cable handy, one that has at least 22 gauge power delivery. See [USB Micro B Male cables for power delivery](underpowered-sensorgnomes.md#usb-micro-b-male-cables-for-power-delivery).&#x20;
 {% endhint %}
 
-In most cases, fixing the issue is as simple as replacing the Micro USB cable which plugs into the Raspberry Pi. It is also possible to swap out the DC-DC voltage converter to a device that is rated for more current and/or voltage (no more than 5.1 V, however!), but these have not been tested.
+In most cases, fixing the issue is as simple as replacing the Micro USB cable which plugs into the Raspberry Pi. It is also possible to swap out the DC-DC voltage converter to a device that is rated for more current and/or voltage (no more than 5.1 V, however!), but these have not been tested. See: [DC-DC Voltage Converters for Raspberry Pi (not tested)](underpowered-sensorgnomes.md#dc-dc-voltage-converters-for-raspberry-pi-not-tested).
 
 ### USB Micro B Male cables for power delivery
 
