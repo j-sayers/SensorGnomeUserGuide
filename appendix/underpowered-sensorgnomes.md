@@ -37,7 +37,7 @@ When trying to connect to Wi-Fi, there are a few different reasons why it may no
 * Button lights up, but no Wi-Fi network is visible
 * Wi-Fi network is visible, but can't connect to it
 
-If swapping out the computer _and _Wi-Fi button (if applicable) doesn't change the behaviour, it's likely it is an underpowered SensorGnome and the issue lies with the power supply/USB Cable.
+If swapping out the computer _and_ Wi-Fi button (if applicable) doesn't change the behaviour, it's likely it is an underpowered SensorGnome and the issue lies with the power supply/USB Cable.
 
 {% hint style="warning" %}
 Sometimes the above symptoms are intermittent and during apparently random intervals it's possible to connect to the SensorGnome. This should still be considered an underpowered device since it's likely a slight shift in the USB cable's position which is causing this unpredictable behaviour.
@@ -71,5 +71,5 @@ Currently available (as of Nov 3, 2021) DC-DC converters are listed below. Pleas
 | Retailer | Price     | Volts (V) | Watts (W) | Link                                                                                       |
 | -------- | --------- | --------- | --------- | ------------------------------------------------------------------------------------------ |
 | DigiKey  | $60 USD   | 5.1 V     | 20 W      | [Product page](https://www.digikey.ca/en/products/detail/xp-power/DTE2024S5V1/5931159)     |
-| DigiKey  | $38.5 USD | 5.0 V     | 20 W      | [Product page](https://www.monoprice.com/product?p\_id=13924)                              |
+| DigiKey  | $38.5 USD | 5.0 V     | 20 W      | [Product page](https://www.mouser.com/ProductDetail/490-PYB15-Q24-S5-T)                    |
 | DigiKey  | $51 USD   | 5.1 V     | 10 W      | [Product page](https://www.digikey.ca/en/products/detail/traco-power/TMDC-10-2411/9698249) |

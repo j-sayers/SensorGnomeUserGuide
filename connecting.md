@@ -44,6 +44,10 @@ The disadvantage is that activating the Wi-Fi hotspot via the button can be fini
 * Navigate to `http://192.168.7.2`
 * You should now see the SensorGnome Web Interface
 
+{% hint style="info" %}
+The WiFi hotspot should deactivate automatically after about 30 minutes.&#x20;
+{% endhint %}
+
 #### Option 2: Ethernet Cable
 
 An Ethernet cable is usually the most reliable way of connecting to a RPi SG, and doesn’t depend on having a Wi-Fi hotspot activation button. No configuration is needed on the RPi. However some configuration may be required on your computer.
