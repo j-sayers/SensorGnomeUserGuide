@@ -6,7 +6,7 @@
 * [Establishing an FTP connection](ftp.md)
 * [Downloading detection data](downloading.md)
 * [Uploading detection data](uploading.md)
-* [Updating SensorGnome software](updating.md)
+* [Installing and updating SensorGnome software](updating.md)
 * [Data syncing over the Internet](internet.md)
 
 ## Appendix

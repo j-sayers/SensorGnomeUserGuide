@@ -14,7 +14,7 @@ Raspberry Pi and BeagleBone based SensorGnomes save their detection data in slig
 
 {% tabs %}
 {% tab title="Raspberry Pi" %}
-RPi SensorGnomes save detection data on the MicroSD card. This is the _only _place where detection data can be found as the RPi has no internal storage of its own. The software which runs the SG is also stored on the MicroSD card.
+RPi SensorGnomes save detection data on the MicroSD card. This is the _only_ place where detection data can be found as the RPi has no internal storage of its own. The software which runs the SG is also stored on the MicroSD card.
 
 #### Detection data (SGdata) folder
 
@@ -55,7 +55,7 @@ When you copy the detection data onto your computer, put it in a folder with a m
 
 Transferring via an FTP connection is the recommended way of copying the data files. That allows you to check the live status of the SG on the Web Interface without turning the SensorGnome off, and gives you a better sense of the state you are leaving the station in. If you cannot establish an FTP connection, there are a couple other options to copy the data; these are described later in this chapter.
 
-**1) **Connect to your SensorGnome using the instructions above. Confirm you are connected by accessing the Web Interface. If you cannot access the Web Interface there is a very good chance you will not be able to establish an FTP connection either.
+**1)** Connect to your SensorGnome using the instructions above. Confirm you are connected by accessing the Web Interface. If you cannot access the Web Interface there is a very good chance you will not be able to establish an FTP connection either.
 
 **2)** Open FileZilla and establish a connection following the instructions above. In FileZilla, navigate to the SGdata folder where the detection data files are stored.&#x20;
 
@@ -69,7 +69,7 @@ Transferring via an FTP connection is the recommended way of copying the data fi
 {% endtab %}
 {% endtabs %}
 
-**3) **In the lower right panel, you should see a series of folders named for each date that the SG was recording data. Copy over all of the folders to a location on your computer so that it can be later uploaded to the Motus server to processing. Give the folder on your computer a meaningful name, such as "Site Name 2021-02-03", including the site name and the date you downloaded the data.
+**3)** In the lower right panel, you should see a series of folders named for each date that the SG was recording data. Copy over all of the folders to a location on your computer so that it can be later uploaded to the Motus server to processing. Give the folder on your computer a meaningful name, such as "Site Name 2021-02-03", including the site name and the date you downloaded the data.
 
 ![SGdata folder on a RPi SG](.gitbook/assets/sgdata.png)
 
@@ -107,7 +107,7 @@ In normal operating conditions a BeagleBone SG saves detection data on a MicroSD
 
 There are two methods of accessing the internal storage of a BB:
 
-**1)** Accessing the BeagleBone as a **shared network drive **in Windows Explorer or the Mac equivalent. Here you can view and manipulate files just as you would on your computer.
+**1)** Accessing the BeagleBone as a **shared network drive** in Windows Explorer or the Mac equivalent. Here you can view and manipulate files just as you would on your computer.
 
 * Internal storage folder path
   * **`\\192.168.7.2\data\internal_system_memory\SGdata`**

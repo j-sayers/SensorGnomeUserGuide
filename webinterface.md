@@ -7,7 +7,7 @@ In  order to access the Web Interface, you must first _connect to your SensorGno
 {% endhint %}
 
 {% hint style="danger" %}
-If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option (better to leave a SensorGnome that_ may not_ be working, than leave no SensorGnome at all!).
+If you cannot access the Web Interface, or if some of the key elements are absent, there is a good chance that the SensorGnome is not working properly. Don’t leave an SG in this condition in the field unless you have no other option (better to leave a SensorGnome that _may not_ be working, than leave no SensorGnome at all!).
 {% endhint %}
 
 The contents of the Web Interface is the same regardless of whether you have a BeagleBone or Raspberry Pi SensorGnome, though the layout may differ slightly depending on software version.
@@ -38,12 +38,12 @@ The **Live Pulses** pane will show all radio pulses detected by the receiver in 
 
 The **Live Known Tags** pane may display two outputs:
 
-1. The actual tag ID of any Lotek Nanotags that the receiver detects in real time **if **that tag ID is present in the [local tag database](appendix/localtagdb.md) on that particular SG. By default, only 2 tags are loaded in a placeholder database (the list is visible in the panel at the bottom of the Web Interface). This feature is most useful when deploying tags near a station and you want to get visual confirmation in real time that the tag is being detected. It is not very useful for general detections as it does not have access to the complete tag database on the Motus server.
-2. CTT LifeTags/ PowerTags the receiver detects** if** the receiver has the [CTT compatibility patch](appendix/dualmode.md) installed (and has CTT compatible dongles and antennas). Unlike with Lotek Nanotags, there is no need to load a tag database onto the SG as a compatible receiver will recognize any CTT tag IDs. This includes false positives, where random radio noise resembles a supposed tag ID, which nonetheless can be helpful in confirming that a CTT compatible antenna and receiver are working properly.
+1. The actual tag ID of any Lotek Nanotags that the receiver detects in real time **if** that tag ID is present in the [local tag database](appendix/localtagdb.md) on that particular SG. By default, only 2 tags are loaded in a placeholder database (the list is visible in the panel at the bottom of the Web Interface). This feature is most useful when deploying tags near a station and you want to get visual confirmation in real time that the tag is being detected. It is not very useful for general detections as it does not have access to the complete tag database on the Motus server.
+2. CTT LifeTags/ PowerTags the receiver detects **if** the receiver has the [CTT compatibility patch](appendix/dualmode.md) installed (and has CTT compatible dongles and antennas). Unlike with Lotek Nanotags, there is no need to load a tag database onto the SG as a compatible receiver will recognize any CTT tag IDs. This includes false positives, where random radio noise resembles a supposed tag ID, which nonetheless can be helpful in confirming that a CTT compatible antenna and receiver are working properly.
 
 To the right of the Live Pulses and Live Known Tags panes is the Live Parameter Changes pane. This isn't generally of much use to the average user so isn't discussed here.
 
-Collectively, these three panes will only be displayed if a recognized Lotek compatible dongle is attached to the receiver. In other words, if you _only _have a CTT compatible dongle plugged in, and no FUNcube or Lotek-compatible dongle attached, you will not see these panes.&#x20;
+Collectively, these three panes will only be displayed if a recognized Lotek compatible dongle is attached to the receiver. In other words, if you _only_ have a CTT compatible dongle plugged in, and no FUNcube or Lotek-compatible dongle attached, you will not see these panes.&#x20;
 
 If you do have Lotek compatible dongles attached and you do not see these panes, there is either a problem with the dongle(s), with one of the USB connections, or something else is preventing the SG from recognizing the dongles. Adjusting the connections, as well as rebooting the SG may help. The SG generally will recognize a dongle if it is hot-plugged (plugged in while the SG is running) but it’s best to plug the dongles in while the SG is off, and then power it on when all the peripherals attached.
 

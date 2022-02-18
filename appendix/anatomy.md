@@ -13,7 +13,7 @@ Both RPi and BB SensorGnome consists of the same core components:
 
 ### Raspberry Pi
 
-#### Ports and slots <a href="rpi-ports-and-slots" id="rpi-ports-and-slots"></a>
+#### Ports and slots <a href="#rpi-ports-and-slots" id="rpi-ports-and-slots"></a>
 
 The numbering of the USB ports is very important when attaching antennas since this information is recording along with detection data and can be used to determine the direction and time of approach or departure of a tagged animal.
 
@@ -27,7 +27,7 @@ Power is supplied to a RPi through the Micro USB port. This port only supplies p
 
 ![Micro USB port on a Raspberry Pi](../.gitbook/assets/rpi5v.jpg)
 
-#### Lights <a href="rpi-lights" id="rpi-lights"></a>
+#### Lights <a href="#rpi-lights" id="rpi-lights"></a>
 
 LED lights can be useful in determining if the unit has power and if it is functioning properly. The RPi has fewer lights and they are less information than a BeagleBone, but they can still be helpful.
 
@@ -47,31 +47,31 @@ Lastly, there are two indicator lights on the bottom of the Ethernet port. When 
 
 ![](../.gitbook/assets/rpiethernet.jpg)
 
-### GPS <a href="rpi-gps" id="rpi-gps"></a>
+### GPS <a href="#rpi-gps" id="rpi-gps"></a>
 
 ### Fully assembled RPi SensorGnome
 
 ![The primary components inside a typical Raspberry Pi SensorGnome](../.gitbook/assets/sginternal.jpg)
 
-**a) **The Raspberry Pi. The colour of the RPi case may vary between SG’s but they will also be roughly the same size
+**a)** The Raspberry Pi. The colour of the RPi case may vary between SG’s but they will also be roughly the same size
 
-**b) **FunCUBE Dongles. A Raspberry Pi SG can accommodate up to 4 dongles plugged directly into the RPi. In order to accommodate additional antennas, a USB hub would be required. The cables from the antennas will plug into the free end of the dongles.
+**b)** FunCUBE Dongles. A Raspberry Pi SG can accommodate up to 4 dongles plugged directly into the RPi. In order to accommodate additional antennas, a USB hub would be required. The cables from the antennas will plug into the free end of the dongles.
 
-**c) **This is the inside view of the button used to activate the WiFi hotspot.
+**c)** This is the inside view of the button used to activate the WiFi hotspot.
 
 **d)** GPS antenna. When deployed in the field, this end of the antenna would be outside the SG case, and attached to something that had a clear view of the sky. The other end is attached to the Raspberry Pi by way of the gold-coloured “SMA” port on the top right corner of this particular RPi.
 
-**e) **Voltage converter. If powered by a solar panel and battery, as this SG is, the power coming in will be 12V. However the RPi only requires 5V, so a voltage converter is used to downgrade the current to the acceptable level. If powered directly by AC power, the wall adapter itself should output 5V, eliminating the need for a voltage converter.
+**e)** Voltage converter. If powered by a solar panel and battery, as this SG is, the power coming in will be 12V. However the RPi only requires 5V, so a voltage converter is used to downgrade the current to the acceptable level. If powered directly by AC power, the wall adapter itself should output 5V, eliminating the need for a voltage converter.
 
 ## BeagleBone SensorGnome
 
 ### BeagleBone
 
-#### Ports and slots <a href="bb-ports-and-slots" id="bb-ports-and-slots"></a>
+#### Ports and slots <a href="#bb-ports-and-slots" id="bb-ports-and-slots"></a>
 
 ![](../.gitbook/assets/bbports3.jpg)
 
-**a) **SMA port for attaching GPS antenna. This particular BeagleBone is outfitted with an integrated "GPS hat" and requires an external antenna. Some older BeagleBones lack an integrated GPS and will not have this port&#x20;
+**a)** SMA port for attaching GPS antenna. This particular BeagleBone is outfitted with an integrated "GPS hat" and requires an external antenna. Some older BeagleBones lack an integrated GPS and will not have this port&#x20;
 
 **b)** 5V barrel jack port. This is where the primary power supply is plugged in when deployed in the field
 
@@ -83,21 +83,21 @@ Lastly, there are two indicator lights on the bottom of the Ethernet port. When 
 
 **a)** Standard USB port. Typically the USB Hub will be attached here as the BB only has one standard USB port. FUNcubes and other dongles are then plugged in to the USB hub. This port is not used for communication between the computer and BB.
 
-**b) **MicroSD card slot. In the BB the card is inserted with the contacts facing down, and there is a slight click when properly inserted.
+**b)** MicroSD card slot. In the BB the card is inserted with the contacts facing down, and there is a slight click when properly inserted.
 
-#### Lights <a href="bb-lights" id="bb-lights"></a>
+#### Lights <a href="#bb-lights" id="bb-lights"></a>
 
-### GPS <a href="bb-gps" id="bb-gps"></a>
+### GPS <a href="#bb-gps" id="bb-gps"></a>
 
 ### Fully assembled BB SensorGnome
 
 ![](../.gitbook/assets/bbsg.jpg)
 
-**a) **BeagleBone mini computer. The colour of the case may vary but it will always be roughly the same size.
+**a)** BeagleBone mini computer. The colour of the case may vary but it will always be roughly the same size.
 
 **b)** GPS antenna. This BB has a "GPS hat" attached to the BeagleBone itself, and only requires an external antenna. Many BB last the integrated GPS and require a USB GPS, which is plugged into the USB hub
 
-**c) **FUNcube dongles plugged into ports 1 and 2 of the USB hub. The antenna cables would be attached to the loose ends. Note that the antennas must be plugged into a USB hub as the BB only has one standard USB port.
+**c)** FUNcube dongles plugged into ports 1 and 2 of the USB hub. The antenna cables would be attached to the loose ends. Note that the antennas must be plugged into a USB hub as the BB only has one standard USB port.
 
 **d)** USB hub. The USB hub is supplied with power by via a splitter coming from the main power source, with the other end supplying the BeagleBone. It is attached to the BB's only standard USB port.
 

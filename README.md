@@ -47,7 +47,7 @@ A **Raspberry Pi** (below) has one Ethernet port on the left, with **4 standard 
 
 ![Raspberry Pi](.gitbook/assets/rpi.jpg)
 
-A **BeagleBone **(below) has one Ethernet port in the centre flanked by a Mini USB port on its left, and a circular “barrel jack” on its right.&#x20;
+A **BeagleBone** (below) has one Ethernet port in the centre flanked by a Mini USB port on its left, and a circular “barrel jack” on its right.&#x20;
 
 ![BeagleBone](.gitbook/assets/bb.jpg)
 
@@ -56,7 +56,7 @@ There are two other receivers compatible with the Motus network: the SensorStati
 {% endhint %}
 
 {% hint style="danger" %}
-If you have never used a SensorGnome before, give yourself plenty of time before going out into the field to familiarize yourself with the equipment and the instructions. And if at all possible, confirm that the computer you will be using _can _connect to a BeagleBone or Raspberry Pi SG before going into the field.&#x20;
+If you have never used a SensorGnome before, give yourself plenty of time before going out into the field to familiarize yourself with the equipment and the instructions. And if at all possible, confirm that the computer you will be using _can_ connect to a BeagleBone or Raspberry Pi SG before going into the field.&#x20;
 
 We also have a ["What to bring"](appendix/whattobring.md) checklist to help ensure that you have all the cables and software required to use (and troubleshoot) a SensorGnome on hand before getting there.
 {% endhint %}

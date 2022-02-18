@@ -16,7 +16,7 @@ The folder structure will look a bit different than in FileZilla and you will se
   * `\\192.168.7.2\root\media\internal_SD_card\SGdata`
 * **Internal detection data folder (when MicroSD card is absent or can't be read)**
   * `\\192.168.7.2\root\media\internal_system_memory\SGdata`
-* _**uboot **_**folder (configuration files)**
+* _**uboot**_** folder (configuration files)**
   * &#x20;`\\192.168.7.2\root\boot\uboot\`
 
 ### Mapping the networked drive

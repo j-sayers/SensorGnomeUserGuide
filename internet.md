@@ -6,9 +6,9 @@ Configuring your SensorGnome to sync detection data automatically results in mor
 
 The simplest method of syncing data over the internet is to plug the BB or RPi into the Internet via an Ethernet cable. If the internet is not password-protected, and the software on the SG is up-to-date, the SensorGnome should connect to the Motus server within minutes and begin syncing data an hour later.&#x20;
 
-**1) **Connect an Ethernet cable that is non-password-protected to the SG.
+**1)** Connect an Ethernet cable that is non-password-protected to the SG.
 
-**2) **[Confirm that the SG has checked in with the Motus server on sensorgnome.org/status, then check in again several hours later to confirm that data syncing is occurring.](http://docs.motus.org/sensorgnome/internet#status)
+**2)** [Confirm that the SG has checked in with the Motus server on sensorgnome.org/status, then check in again several hours later to confirm that data syncing is occurring.](http://docs.motus.org/sensorgnome/internet#status)
 
 ## Option 2: Wi-Fi&#x20;
 
@@ -18,7 +18,7 @@ Connecting over a Wi-Fi network is also an option. In this case a bit of configu
 
 {% tabs %}
 {% tab title="Raspberry Pi " %}
-#### Raspberry Pi_** **uboot _**folder **
+#### Raspberry Pi _**** uboot_ **folder**&#x20;
 
 * FTP connection (e.g. in FileZilla)
   * `/dev/sdcard/uboot`
@@ -31,7 +31,7 @@ If an RPi SG is connected to the internet, make sure you _don't_ use a MicroSD c
 {% endtab %}
 
 {% tab title="BeagleBone" %}
-#### BeagleBone _uboot _folder&#x20;
+#### BeagleBone _uboot_ folder&#x20;
 
 * FTP connection (e.g. in FileZilla)
   * `/boot/uboot`
@@ -40,19 +40,19 @@ If an RPi SG is connected to the internet, make sure you _don't_ use a MicroSD c
 {% endtab %}
 {% endtabs %}
 
-**2) **Open the `network.txt` file and follow the instructions in the file for adding the network name and password.
+**2)** Open the `network.txt` file and follow the instructions in the file for adding the network name and password.
 
 {% hint style="info" %}
 The Wi-Fi network you wish to use must be configured with WPA2 security. This is the standard on most Wi-Fi networks already. An SG will _not_ connect to a Wi-Fi network that has no password.
 {% endhint %}
 
-**3) **Ensure that the changes have been saved to the SG, then power down and reboot
+**3)** Ensure that the changes have been saved to the SG, then power down and reboot
 
-**4) **[Confirm that the SG has checked in with the Motus server on sensorgnome.org/status, then check in again several hours later to confirm that data syncing is occurring.](http://docs.motus.org/sensorgnome/internet#status)
+**4)** [Confirm that the SG has checked in with the Motus server on sensorgnome.org/status, then check in again several hours later to confirm that data syncing is occurring.](http://docs.motus.org/sensorgnome/internet#status)
 
 _Note: Activating the WiFi hotspot will temporarily disable the connection to the Internet. One the WiFi hotspot turns off, the connection to the Internet will be re-established._
 
-## Checking sync status on sensorgnome.org/status <a href="status" id="status"></a>
+## Checking sync status on sensorgnome.org/status <a href="#status" id="status"></a>
 
 You can check the sync status of your networked SensorGnome by visiting [sensorgnome.org/status](http://www.sensorgnome.org/status). This page displays a master list of SensorGnomes that are, or have recently been, connected to the Internet.
 

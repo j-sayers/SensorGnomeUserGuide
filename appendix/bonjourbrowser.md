@@ -8,7 +8,7 @@ Sometimes, though, navigating to `http://sgpi.local` does not work, even with Bo
 
 **1)** Connect the Raspberry Pi SG to your computer using an Ethernet cable and ensure the RPi has power supplied to it.
 
-&#x20;**2) **Download Bonjour Browser [from here](https://hobbyistsoftware.com/bonjourbrowser) and launch the program.
+&#x20;**2)** Download Bonjour Browser [from here](https://hobbyistsoftware.com/bonjourbrowser) and launch the program.
 
 **3)** Allow enough time for the connection to establish (usually 30-60 seconds) then hit the "Refresh" button in the top right hand corner of Bonjour Browser.
 
@@ -22,6 +22,6 @@ Sometimes, though, navigating to `http://sgpi.local` does not work, even with Bo
 
 **6)** Paste the IP address into the address bar of Firefox or Chrome _without the port number (the colon and the numbers following it)_
 
-**7) **You should now see the Web Interface.
+**7)** You should now see the Web Interface.
 
 ![](../.gitbook/assets/bonjour3.jpg)

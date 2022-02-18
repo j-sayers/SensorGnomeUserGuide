@@ -1,4 +1,4 @@
-# Updating SensorGnome software
+# Installing and updating SensorGnome software
 
 One of the first steps in troubleshooting is to ensure that you have the most up-to-date software installed on your SensorGnome. Aside from ensuring your SG is up-to-date – this entire guide as based on the premise that you are using the most recent software – reinstalling the most recent software can resolve many issues.
 
@@ -57,30 +57,30 @@ This will overwrite any data that happens to be on the target MicroSD card so ma
 
 **4)** Once the process is complete, you may get a computer popup warning that the MicroSD card is corrupted and needs to be formatted. This is expected as the file format is no longer compatible with a Windows or Mac computer.
 
-### Re-imaging** the BeagleBone**
+### Re-imaging **the BeagleBone**
 
 Once you have your image card, you can use it to update or re-image the BeagleBone SG.
 
 **1)** Ensure that the BeagleBone is completely powered down. A BeagleBone has two possible power sources (mini USB and “barrel jack”); ensure that both are disconnected from power.
 
-![Ensure that the mini USB (a) and barrel jack (b) ports are disconnected from power](<.gitbook/assets/bbpower (1) (2).jpg>)
+1.  Ensure that the BeagleBone is completely powered down. A BeagleBone has two possible power sources (mini USB and “barrel jack”); ensure that both are disconnected from power.
 
-**4)** Insert the image card into the BeagleBone and power on.
+    ![](<.gitbook/assets/bbpower (1) (2).jpg>)
+2. Insert the imaged microSD card in to the slot of the BeagleBone.
+3. **If this is the first time you are installing software** (or if you want to do a "clean" install) you must hold down the boot button for several seconds while powering on the SensorGnome. Otherwise, just plug in the BeagleBone and wait for it to boot up.![](.gitbook/assets/=beaglebone\_black\_image\_showing\_boot\_button.jpg)
+4.  Once powered on, the 4 blue LED lights above the mini USB connection will begin flashing in a sporadic/sporadic pattern. After a few seconds, all 4 LED’s will flash on/off in unison several times. This indicates that the process of writing the software to the BB is beginning.
 
-**5)** Once powered on, the 4 blue LED lights above the mini USB connection will begin flashing in a sporadic/sporadic pattern. After a few seconds, all 4 LED’s will flash on/off in unison several times. This indicates that the process of writing the software to the BB is beginning.&#x20;
+    ![](.gitbook/assets/leds\_flash.gif)
 
-![All 4 LED lights flash in unison when re-imaging begins](.gitbook/assets/leds\_flash.gif)
+    &#x20;All 4 LED lights flash in unison when re-imaging begins
+5.  Then, the LEDs will begin flashing in a “crawling” or “wave” light pattern from one end to the other. This should continue for several minutes.&#x20;
 
-**6)** Then, the LEDs will begin flashing in a “crawling” or “wave” light pattern from one end to the other. This should continue for several minutes.&#x20;
-
-![The "crawling" pattern may continue for several minutes](.gitbook/assets/leds\_crawl.gif)
-
-**7)** When the process is complete, all 4 LEDs will light up and remain on. You can now power down the BB and remove the installation card.
+    ![](.gitbook/assets/leds\_crawl.gif)
+6. When the process is complete, all 4 LEDs will light up and remain on. You can now power down the BB and remove the installation card.
+7. Power up the BB again (without the image card) and visit the Web Interface to confirm everything is working
 
 {% hint style="warning" %}
 If the "crawling" pattern only lasts for a few seconds it is quite likely that the re-imaging process failed. [Refer here](appendix/rescue.md) for tips on how to recover a BB in this state.
 {% endhint %}
-
-**8)** Power up the BB again (without the image card) and visit the Web Interface to confirm everything is working
 {% endtab %}
 {% endtabs %}
