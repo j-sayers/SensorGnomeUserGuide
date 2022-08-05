@@ -25,3 +25,7 @@
 * [How to build a SensorGnome](appendix/buildsg.md)
 * [Reflash FUNcube dongle firmware](appendix/fcdfirmware.md)
 * [Motus data file formats](appendix/fileformats.md)
+
+***
+
+* [How to install the new SensorGnome software](how-to-install-the-new-sensorgnome-software.md)

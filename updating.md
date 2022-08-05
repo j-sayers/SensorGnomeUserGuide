@@ -43,7 +43,7 @@ The software that runs the BeagleBone SG is installed onto the internal storage 
 
 **1)** Download the latest software version for the BB SG. Currently this is the 2017-03-16 version. Direct download link: [sensorgnome\_image\_2017-03-06\_15-33-00.img.7z](https://public.sensorgnome.org/Beaglebone\_Sensorgnome\_Images/sensorgnome\_image\_2017-03-06\_15-33-00.img.7z)
 
-This file is a compressed _.7z_ file. In order to uncompress it you will need 7zip installed. Your computer may already have this installed, but if not, [you can find it at this link](https://www.7-zip.org). The uncompressed file will have an _.img_ extension.
+This file is a compressed _.7z_ file. In order to uncompress it you will need 7zip installed. Your computer may already have this installed, but if not, [you can find it at this link](https://www.7-zip.org/). The uncompressed file will have an _.img_ extension.
 
 **2)** Download [balenaEtcher](https://www.balena.io/etcher/?), a free and open-sourced program for creating disk images, and click “Select Image,” where you can select the the _.img_ file.&#x20;
 
@@ -65,17 +65,17 @@ Once you have your image card, you can use it to update or re-image the BeagleBo
 
 1.  Ensure that the BeagleBone is completely powered down. A BeagleBone has two possible power sources (mini USB and “barrel jack”); ensure that both are disconnected from power.
 
-    ![](<.gitbook/assets/bbpower (1) (2).jpg>)
+    <img src=".gitbook/assets/bbpower (1) (2).jpg" alt="" data-size="original">
 2. Insert the imaged microSD card in to the slot of the BeagleBone.
 3. **If this is the first time you are installing software** (or if you want to do a "clean" install) you must hold down the boot button for several seconds while powering on the SensorGnome. Otherwise, just plug in the BeagleBone and wait for it to boot up.![](.gitbook/assets/=beaglebone\_black\_image\_showing\_boot\_button.jpg)
 4.  Once powered on, the 4 blue LED lights above the mini USB connection will begin flashing in a sporadic/sporadic pattern. After a few seconds, all 4 LED’s will flash on/off in unison several times. This indicates that the process of writing the software to the BB is beginning.
 
-    ![](.gitbook/assets/leds\_flash.gif)
+    <img src=".gitbook/assets/leds_flash.gif" alt="" data-size="original">
 
     &#x20;All 4 LED lights flash in unison when re-imaging begins
 5.  Then, the LEDs will begin flashing in a “crawling” or “wave” light pattern from one end to the other. This should continue for several minutes.&#x20;
 
-    ![](.gitbook/assets/leds\_crawl.gif)
+    <img src=".gitbook/assets/leds_crawl.gif" alt="" data-size="original">
 6. When the process is complete, all 4 LEDs will light up and remain on. You can now power down the BB and remove the installation card.
 7. Power up the BB again (without the image card) and visit the Web Interface to confirm everything is working
 

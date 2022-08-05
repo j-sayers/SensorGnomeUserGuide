@@ -2,7 +2,7 @@
 
 ## Introduction
 
-FUNcube Dongles are a component used in [SensorGnomes](https://sensorgnome.org) and [CTT SensorStations](https://celltracktech.com) for listening to tags developed by [Lotek Wireless](https://lotek.com). They were originally developed as a teaching tool for satellite communications and have been repurposed for many custom radio projects.
+FUNcube Dongles are a component used in [SensorGnomes](https://sensorgnome.org/) and [CTT SensorStations](https://celltracktech.com/) for listening to tags developed by [Lotek Wireless](https://lotek.com/). They were originally developed as a teaching tool for satellite communications and have been repurposed for many custom radio projects.
 
 The firmware loaded onto the FUNcube Dongles by default is incompatible with the SensorGnome software. Differences in hardware and plugin frame rates result in odd behaviour that often goes uncaught. Sometimes it will take a minute or two before this can be seen on the SensorGnome Web Interface. The image below shows FUNcubes with the wrong firmware tuned to the incorrect frequency.
 

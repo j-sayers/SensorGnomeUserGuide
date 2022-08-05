@@ -66,7 +66,7 @@ Sometimes none of the above steps will work in which case you will have to resor
 This is done in much the same way as a regular software image for the BeagleBone, it's just a different file.
 
 1. Download and unzip the rescue image here: [sensorgnome\_rescue\_image\_2017-03-06\_15-33-00.img.7z](https://public.sensorgnome.org/Beaglebone\_Sensorgnome\_Images/sensorgnome\_rescue\_image\_2017-03-06\_15-33-00.img.7z)
-   * If you don't have 7Zip, you can download it here: [https://www.7-zip.org/](https://www.7-zip.org)
+   * If you don't have 7Zip, you can download it here: [https://www.7-zip.org/](https://www.7-zip.org/)
 2. Download [balenaEtcher](https://www.balena.io/etcher/?), a free and open-sourced program for creating disk images, and click “Select Image,” where you can select the the _.img_ file
 3. Select the MicroSD card in the next step, and then click “Flash!”.
 4. Once flashing has completed, safely remove the card from your computer.
