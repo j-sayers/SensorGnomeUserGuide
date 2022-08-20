@@ -14,6 +14,10 @@ The simplest method of syncing data over the internet is to plug the BB or RPi i
 
 Connecting over a Wi-Fi network is also an option. In this case a bit of configuration is needed. The Raspberry Pi comes with a Wi-Fi adapter already on-board. Wi-Fi connectivity is also possible with a BeagleBone, though it requires a USB Wi-Fi adapter. The BeagleBone software is configured to work with the [TP-Link TL-WN725N Wi-Fi adapter](https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn725n/). This is an affordable and reliable Wi-Fi adapter that is available from multiple retailers.
 
+{% hint style="warning" %}
+If the WiFi router broadcasts on both 2.4 GHz and 5 GHz bands, make sure you use the 2,4 GHz option. The SG will not properly connect to the 5 GHz band.
+{% endhint %}
+
 **1)** Connect to the SG and navigate to the `uboot`folder
 
 {% tabs %}
