@@ -17,6 +17,7 @@
 * [CTT LifeTag compatibility (dual-mode)](appendix/dualmode.md)
 * [Anatomy of a SensorGnome](appendix/anatomy.md)
 * [Installing BeagleBone drivers](appendix/bbdrivers.md)
+* [Restoring BeagleBone drivers on Windows](appendix/restoring-beaglebone-drivers-on-windows.md)
 * [Recovering a BeagleBone that can no longer be reimaged](appendix/rescue.md)
 * [Accessing BeagleBone as a network drive](appendix/networkdrive.md)
 * [Connecting to a BeagleBone using an Ethernet cable](appendix/bbethernet.md)
