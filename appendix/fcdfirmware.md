@@ -21,9 +21,17 @@ _FUNcube Dongles tuned to the wrong frequency (left; ports 1 and 2) compared to 
 
 ## Downloads
 
-* [**Frequency control program**](http://www.funcubedongle.com/MyImages/FCHid2.002.zip)
-* [**Bootloader**](http://www.funcubedongle.com/MyImages/FCHIDBL2.001.zip)
-* [**Firmware**](http://www.funcubedongle.com/MyImages/FCD2.20.03.48.pro.bin)
+{% file src="../.gitbook/assets/[FREQUENCY-CONTROL]FCHid2.002.zip" %}
+Frequency control program
+{% endfile %}
+
+{% file src="../.gitbook/assets/[BOOTLOADER]FCHIDBL2.001.zip" %}
+Bootloader
+{% endfile %}
+
+{% file src="../.gitbook/assets/[FIRMWARE]FCD2.20.03.48.pro.bin" %}
+Firmware
+{% endfile %}
 
 ## Steps
 
