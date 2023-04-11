@@ -99,9 +99,10 @@ Before connecting to a BeagleBone SG for the first time, it is likely you’ll n
 An inability to access the Web Interface may indicate issues with your SensorGnome. However there are a number of other potential causes. Here are a few suggestions as part of the troubleshooting process if you are running into issues.
 
 * If your SensorGnome is off-grid or powered with a non-standard power supply, see [Underpowered SensorGnomes](appendix/underpowered-sensorgnomes.md).
+* Check your power supply. Both the [RPi ](appendix/anatomy.md#rpi-lights)and [BB ](appendix/anatomy.md#bb-lights)have diagnostic LED lights to make visual confirmation of power supply easier.&#x20;
 * Sometimes it takes a while for the connection to the SG to be established, especially for the RPi Ethernet connection which may take _up to a minute_ to establish. If you do not see the Web Interface, wait several seconds before trying again.
 * Ensure you are using the correct URL for that SensorGnome and connection method
-* If you try to access the Web Interface before the connection to the SG has been fully established, some browsers will automatically replace the `http://` prefix with `www.`. Confirm that the URL in the address bar does not include `www.` before trying again.
+* If you try to access the Web Interface before the connection to the SG has been fully established, some browsers will automatically replace the `http://` prefix with `https://` or  add `www.`. Correct the URL in the address bar is  before trying again.
 * Try a different connection method if you have the option
 * Make sure the cables you are using are connected properly. Try different cables if you have them.
 * Try a different USB port if applicable
@@ -109,7 +110,7 @@ An inability to access the Web Interface may indicate issues with your SensorGno
 * Reboot and restart both the computer and SG
 * Try a different computer if you have one available. Preferably one that you've confirmed can actually connect to this type of SG
 * Try a different internet browser
-* Check your power supply. Both the [RPi ](appendix/anatomy.md#rpi-lights)and [BB ](appendix/anatomy.md#bb-lights)have diagnostic LED lights to make visual confirmation of power supply easier.&#x20;
+* Many newer Windows computers repeatedly reset BeagleBone driver settings. You can fix that following the instructions here: [restoring-beaglebone-drivers-on-windows.md](appendix/restoring-beaglebone-drivers-on-windows.md "mention")
 * Use [Bonjour Browser ](appendix/bonjourbrowser.md)to get the IP address of a connected Raspberry Pi SG&#x20;
 * Re-image the SG (if it's a BeagleBone) or try a clean software version (if it's a Raspberry Pi). Instructions can be found in the [updating SG software section](updating.md).
 * If you just need to download data there a few other methods of getting this as a temporary solution (see [downloading detection data section](downloading.md))
