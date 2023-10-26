@@ -22,7 +22,7 @@ If the WiFi router broadcasts on both 2.4 GHz and 5 GHz bands, make sure you use
 
 {% tabs %}
 {% tab title="Raspberry Pi " %}
-#### Raspberry Pi _**** uboot_ **folder**&#x20;
+#### Raspberry Pi _uboot_ **folder**&#x20;
 
 * FTP connection (e.g. in FileZilla)
   * `/dev/sdcard/uboot`

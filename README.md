@@ -23,7 +23,7 @@ Throughout this document, we will often refer to a SensorGnome as an **SG**, and
 
 Generally each time you work with a SensorGnome – either deployed in the field or as a test on your desktop – you will perform the same basic steps below.&#x20;
 
-1. ****[**Connect**](connecting.md) the SensorGnome to your computer
+1. [**Connect**](connecting.md) the SensorGnome to your computer
 2. Open [**the Web Interface**](webinterface.md) in a browser to check the SG's initial status
 3. Establish an [**FTP connection** ](ftp.md)to download detection data or modify configuration files.
 4. Confirm status once again on the Web Interface (and take a photo or screenshot)

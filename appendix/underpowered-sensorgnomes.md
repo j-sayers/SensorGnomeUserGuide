@@ -59,17 +59,10 @@ In most cases, fixing the issue is as simple as replacing the Micro USB cable wh
 
 Currently available (as of Nov 3, 2021) cables are listed below:
 
-| Retailer  | Price              | Gauge  | Link                                                                                        |
-| --------- | ------------------ | ------ | ------------------------------------------------------------------------------------------- |
-| DigiKey   | $6.21 CAD          | 20 AWG | [Product page](https://www.digikey.ca/en/products/detail/tripp-lite/UR05C-003-UARB/5359414) |
-| MonoPrice | $0.99 USD (0.5 ft) | 22 AWG | [Product page](https://www.monoprice.com/product?p\_id=13924)                               |
+<table><thead><tr><th>Retailer</th><th>Price</th><th width="208">Gauge</th><th>Link</th></tr></thead><tbody><tr><td>DigiKey</td><td>$6.21 CAD</td><td>20 AWG</td><td><a href="https://www.digikey.ca/en/products/detail/tripp-lite/UR05C-003-UARB/5359414">Product page</a></td></tr><tr><td>MonoPrice</td><td>$0.99 USD (0.5 ft)</td><td>22 AWG</td><td><a href="https://www.monoprice.com/product?p_id=13924">Product page</a></td></tr></tbody></table>
 
 ### DC-DC Voltage Converters for Raspberry Pi (not tested)
 
 Currently available (as of Nov 3, 2021) DC-DC converters are listed below. Please note that these models have not been tested, but are expected to perform better the default model.
 
-| Retailer | Price     | Volts (V) | Watts (W) | Link                                                                                       |
-| -------- | --------- | --------- | --------- | ------------------------------------------------------------------------------------------ |
-| DigiKey  | $60 USD   | 5.1 V     | 20 W      | [Product page](https://www.digikey.ca/en/products/detail/xp-power/DTE2024S5V1/5931159)     |
-| DigiKey  | $38.5 USD | 5.0 V     | 20 W      | [Product page](https://www.mouser.com/ProductDetail/490-PYB15-Q24-S5-T)                    |
-| DigiKey  | $51 USD   | 5.1 V     | 10 W      | [Product page](https://www.digikey.ca/en/products/detail/traco-power/TMDC-10-2411/9698249) |
+<table><thead><tr><th width="150">Retailer</th><th width="150">Price</th><th width="150">Volts (V)</th><th width="162">Watts (W)</th><th>Link</th></tr></thead><tbody><tr><td>DigiKey</td><td>$60 USD</td><td>5.1 V</td><td>20 W</td><td><a href="https://www.digikey.ca/en/products/detail/xp-power/DTE2024S5V1/5931159">Product page</a></td></tr><tr><td>DigiKey</td><td>$38.5 USD</td><td>5.0 V</td><td>20 W</td><td><a href="https://www.mouser.com/ProductDetail/490-PYB15-Q24-S5-T">Product page</a></td></tr><tr><td>DigiKey</td><td>$51 USD</td><td>5.1 V</td><td>10 W</td><td><a href="https://www.digikey.ca/en/products/detail/traco-power/TMDC-10-2411/9698249">Product page</a></td></tr></tbody></table>
