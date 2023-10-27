@@ -15,6 +15,7 @@
 * [Underpowered SensorGnomes](appendix/underpowered-sensorgnomes.md)
 * [Connection and folder path cheatsheet](appendix/cheatsheet.md)
 * [CTT LifeTag compatibility (dual-mode)](appendix/dualmode.md)
+* [CTT Motus receiver dongles for 434 MHz (dual-mode) capability on SensorGnome](appendix/dualmode-1.md)
 * [Anatomy of a SensorGnome](appendix/anatomy.md)
 * [Installing BeagleBone drivers](appendix/bbdrivers.md)
 * [Restoring BeagleBone drivers on Windows](appendix/restoring-beaglebone-drivers-on-windows.md)
