@@ -12,8 +12,13 @@ _CTT stopped manufacturing these dongles in early 2023. However, they have gener
 * [**uFL surface mount antenna connector**](https://www.adafruit.com/product/1661)
 * [**uFL to SMA bulkhead adapter**](https://www.amazon.com/Superbat-Wireless-Extension) (a shorter, more flexible cable is preferred)
 * [**USB-A to microUSB cable**](https://www.adafruit.com/product/592) **or** [**USB-C to microUSB cable**](https://www.adafruit.com/product/3879)**,** depending on your computer's USB port availability. If you can use a USB-A cable with your computer, and get a short one, you can use it later when installing the CTT Dongle as part of the SensorGnome.
-* **Arduino Feather Programmer and CTT Dongle firmware bundle**
-* **CTT Dongle case 3D printing  STL files**
+* **Arduino Feather Programmer and CTT Dongle firmware bundle below**
+
+{% file src="../.gitbook/assets/CTT_dongle_Feather_programmer_w_firmware.zip" %}
+
+* **CTT Dongle case 3D printing  STL files below**
+
+{% file src="../.gitbook/assets/CTT_dongle_case_STL_files.zip" %}
 
 **2)** Connect the AdaFruit Feather board to a USB port on your computer. The Feather board has a microUSB connection, so you'll need the USB cable.
 
