@@ -3,7 +3,7 @@
 Once you have the SensorGnome loaded with the necessary software to detect CTT LifeTags/ PowerTags (i.e., it's "dual-mode"), you will require a USB receiver dongle for each antenna listening at 434 MHz. These are often referred to as "CTT Motus dongles." &#x20;
 
 {% hint style="info" %}
-_CTT stopped manufacturing these dongles in early 2023. However, they have generously provided the firmware and 3D printing schematics that make it possible to build and assemble your own. Below we provide the necessary components and general steps, which we will expand on in the near future._
+_CTT stopped manufacturing these dongles in early 2023. However, they have generously provided the firmware and 3D printing schematics that make it possible to build and assemble your own._
 {% endhint %}
 
 **1)** Acquire the necessary components and files
@@ -55,4 +55,4 @@ _CTT stopped manufacturing these dongles in early 2023. However, they have gener
 
 <figure><img src="../.gitbook/assets/dongle_complete.jpg" alt=""><figcaption><p>Completed CTT Motus dongle, ready for installation in a SensorGnome.</p></figcaption></figure>
 
-**13)** To use with a SensorGnome, you will need a [USB-A to microUSB cable](https://www.amazon.com/6in-Micro-USB-Cable-6-inches/dp/B003YKX6WM), preferably 25cm or less. Connect to a USB port on the SensorGnome via the USB-A to microUSB cable. The antenna connects to the SMA connector, similarly to a FUNcube dongle. This may be the same one you used above during firmware installation.
+**13)** To use with a SensorGnome, you will need a [USB-A to microUSB cable](https://www.amazon.com/6in-Micro-USB-Cable-6-inches/dp/B003YKX6WM), preferably 25cm or less. This may be the same one you used above during firmware installation. Connect to a USB port on the SensorGnome via the USB-A to microUSB cable. The antenna connects to the SMA connector, similarly to a FUNcube dongle.&#x20;
