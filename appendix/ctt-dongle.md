@@ -10,8 +10,9 @@ _CTT stopped manufacturing these dongles in early 2023. However, they have gener
 
 * [**AdaFruit Feather 32u4 Radio (RFM69HCW)**](https://www.adafruit.com/product/3077)
 * [**uFL surface mount antenna connector**](https://www.adafruit.com/product/1661)
-* [**uFL to SMA bulkhead adapter**](https://www.amazon.com/Superbat-Wireless-Extension) (a shorter, more flexible cable is preferred)
-* [**USB-A to microUSB cable**](https://www.adafruit.com/product/592) **or** [**USB-C to microUSB cable**](https://www.adafruit.com/product/3879)**,** depending on your computer's USB port availability. If you can use a USB-A cable with your computer, and get a short one, you can use it later when installing the CTT Dongle as part of the SensorGnome.
+* (2-3) [M1-0.25 x 2mm screws](https://www.amazon.com/uxcell-Stainless-Phillips-Furniture-Connection/dp/B0C1SCVNDZ?th=1) (or similar), for securing Feather to case
+* [**uFL to SMA bulkhead adapter**](https://www.amazon.com/gp/product/B07P71FX45/ref=ox\_sc\_act\_title\_1?smid=A1TE63QTMAEOQO\&th=1) (a shorter, more flexible cable is preferred)
+* [**USB-A to microUSB cable**](https://www.amazon.com/SABRENT-Charging-Android-Premium-Charger/dp/B011KMSNXM?th=1) **or** [**USB-C to microUSB cable**](https://www.adafruit.com/product/3879)**,** depending on your computer's USB port availability. If you can use a USB-A cable with your computer, and get a short one similar to the example linked, you can use it later when installing the CTT Dongle as part of the SensorGnome.
 * **Arduino Feather Programmer and CTT Dongle firmware bundle below**
 
 {% file src="../.gitbook/assets/CTT_dongle_Feather_programmer_w_firmware.zip" %}
@@ -34,18 +35,24 @@ _CTT stopped manufacturing these dongles in early 2023. However, they have gener
 
 **6)** Press the `Program` button at the bottom of the window and wait until the program indicates the firmware installation is done. You may then close the program and disconnect the Feather device.
 
-**7)** Solder the uFL surface mount connector to the underside of the Feather ([see here for tips](https://learn.adafruit.com/adafruit-feather-32u4-radio-with-rfm69hcw-module/antenna-options#ufl-antenna-2432562)) and connect the uFL to SMA adapter.&#x20;
-
-{% hint style="info" %}
-We're not yet familiar with the assembly of these units, so the description below may not be entirely complete or accurate.
-{% endhint %}
+**7)** Solder the uFL surface mount connector to the underside of the Feather ([see here for tips](https://learn.adafruit.com/adafruit-feather-32u4-radio-with-rfm69hcw-module/antenna-options#ufl-antenna-2432562)).&#x20;
 
 **8)** Print the body and lid of the CTT dongle case with your 3D printer.
 
-**9)** Install the Feather, with the attached SMA cable, into the body of the printed case. The SMA cable should fold beneath the board. Take care the the microUSB port on the Feather sits nicely into the corresponding opening on the case. The Feather is secured in place via two screws installed through the bottom of the case. In addition, you may need to apply some hot glue or similar to secure the SMA connector in place. The final produce will look similar to this:
+**9)** Install the SMA bulkhead first, tightening it securely and helping the bulkhead to fit into the hexagonal opening that fits its base.&#x20;
 
-<figure><img src="../.gitbook/assets/IMG_0754.jpg" alt=""><figcaption><p>Assembled CTT dongle in case</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/dongle_case.jpg" alt=""><figcaption><p>SMA bulkhead installed and tightened securely.</p></figcaption></figure>
 
-**10)** Install the lid to the case. This may need to be secured as well with an appropriate adhesive (e.g., SuperGlue).
+**10)** Attach the uFL connector to the newly-installed uFL surface mount connector on the bottom of the Feather. This connection can easily come undone, so secure with some liquid electrical tape or high temperature hot glue.
 
-**11)** To use with a SensorGnome, you will need a [USB-A to microUSB cable](https://www.amazon.com/6in-Micro-USB-Cable-6-inches/dp/B003YKX6WM), preferably 25cm or less. This may be the same one you used above &#x20;
+<figure><img src="../.gitbook/assets/uFL_liquid_electrical_tape.jpg" alt=""><figcaption><p>uFL connector secured with liquid electrical tape.</p></figcaption></figure>
+
+**11)** Insert the Feather into the case, carefully maneuvering the SMA to uFL cable under the board and around the 3D printed board support, aligning the corner mounting holes with the screw mounts in the bottom of the case. Install 2-3 of the M1 screws in the corner, securing the board to the base.
+
+<figure><img src="../.gitbook/assets/dongle_screws_installed.jpg" alt=""><figcaption><p>M1 screws in and secure. Install at least one on each end of the Feather board.</p></figcaption></figure>
+
+**12)** Attach the case lid. It may be easiest to insert one long side in first and then press firmly on the opposite side until the lid snaps into place.
+
+<figure><img src="../.gitbook/assets/dongle_complete.jpg" alt=""><figcaption><p>Completed CTT Motus dongle, ready for installation in a SensorGnome.</p></figcaption></figure>
+
+**13)** To use with a SensorGnome, you will need a [USB-A to microUSB cable](https://www.amazon.com/6in-Micro-USB-Cable-6-inches/dp/B003YKX6WM), preferably 25cm or less. Connect to a USB port on the SensorGnome via the USB-A to microUSB cable. The antenna connects to the SMA connector, similarly to a FUNcube dongle. This may be the same one you used above during firmware installation.
