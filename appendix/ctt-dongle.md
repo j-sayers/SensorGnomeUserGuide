@@ -31,7 +31,7 @@ _CTT stopped manufacturing these dongles in early 2023. However, they have gener
 
 **4)** Once the program window opens, from the drop-down box, select the COM port that the Feather device is connected to. If you have multiple COM ports listed, you can identify the correct port by (a) noting which COM ports are listed, (b) unplugging the device, (c) pressing the`Refresh` button, (d) see which port has disappeared from the list of COM ports, (e) plugging the device back in, and (f) refreshing again and selecting the new COM port.
 
-**5)** Press the `Select File` button and navigate to the `station_radio_v_3_0_1.hex` file located in the `Firmware` directory of the bundle you unzipped in Step 2.
+**5)** Press the `Select File` button and navigate to the `station_radio_last_commercial.hex` file located in the `Firmware` directory of the bundle you unzipped in Step 2.
 
 **6)** Press the `Program` button at the bottom of the window and wait until the program indicates the firmware installation is done. You may then close the program and disconnect the Feather device.
 
