@@ -23,7 +23,7 @@ _CTT stopped manufacturing these dongles in early 2023. However, they have gener
 
 **2)** Connect the AdaFruit Feather board to a USB port on your computer. The Feather board has a microUSB connection, so you'll need the USB cable.
 
-**3)** Unzip the Arduino Feather Programmer and CTT Dongle firmware bundle to your computer.
+**3)** Unzip the Arduino Feather Programmer and CTT Dongle firmware bundle to your computer. You will have to extract or copy the entire `CTT_dongle_Feather_programmer_w_firmware` folder contained in the zip file to a new, physical location on your computer. You cannot run the firmware installation program from within the zipped file.
 
 **4)** Within the newly unzipped directory, run the `Feather32u4Programmer.exe` program. It should look something like this:
 
