@@ -25,6 +25,7 @@
 4. Once you submit the form, you will be disconnected from the WiFi network and a new WiFi network will be seen, again comprised of the serial number, but lacking "-init" at the end. Connect to this new network, using the password you just assigned.
 5. After connecting to the Wi-Fi again, navigate to [https://192.168.7.2:88/](https://192.168.7.2:88/) again to view the web interface.
 6. When prompted, enter the password you previously assigned. The username is always `gnome` but should be pre-populated when you load the page.
+7. Once configured, you can connect to the WiFi hotspot broadcast by the SG with a computer or smartphone to check status and modify any additional configuration.
 
 ## Basic management and configuration
 
