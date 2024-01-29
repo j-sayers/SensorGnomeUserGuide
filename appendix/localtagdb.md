@@ -12,6 +12,10 @@ If you are installing a SensorGnome that detects Lotek tags, it is often useful 
 
 Viewing your live tag detections can also be useful when deploying tags or as a make-shift manual tracking device when a Lotek receiver is unavailable.
 
+{% hint style="warning" %}
+It's important to remember the limitations of this method: it will only search for the tags that it has been provided, and it is incapable of discerning or handling ambiguous tag IDs.
+{% endhint %}
+
 This works by using a local version of the tag finder algorithm ([`find_tags_unifile`](https://github.com/MotusWTS/find\_tags)) in comparison with the tag recordings provided during registration. Note that this local version differs from the version found on Motus, mainly in that Motus searches for tags from all projects across the network (but only those known to be actively deployed during the given time period) whereas this method will only compare raw radio data with the tag patterns it has been provided, regardless of deployment period.
 
 {% hint style="info" %}
@@ -33,10 +37,6 @@ You are done! You can now view the ["live known tags" pane](../webinterface.md#p
 ## Merging multiple tag databases into one
 
 As only one tag database can be loaded onto a SensorGnome at any given time, it is sometimes necessary to merge multiple tag databases together.  You can use or modify the script below to merge multiple databases in R.
-
-{% hint style="warning" %}
-It's important to remember the limitations of this method: it will only search for the tags that it has been provided, and it is incapable of discerning or handling ambiguous tag IDs.
-{% endhint %}
 
 ```
 ### merge tag databases ####
