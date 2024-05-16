@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-If you are installing a SensorGnome that detects Lotek tags, it is often useful to know whether it is able to detect tags in real time, particularly if you are deploying tags in the vicinity. Thankfully this is possible by loading a local tag database on to the internal storage of the device. When the SensorGnome boots up, it checks for a tag database and will display any of those tags it "hears" on its web interface.&#x20;
+If you are installing a SensorGnome or SensorStation that detects Lotek tags, it is often useful to know whether it is able to detect tags in real time, particularly if you are deploying tags in the vicinity. Thankfully this is possible by loading a local tag database on to the internal storage of the device. When the SensorGnome boots up, it checks for a tag database and will display any of those tags it "hears" on its web interface.&#x20;
 
 Viewing your live tag detections can also be useful when deploying tags or as a make-shift manual tracking device when a Lotek receiver is unavailable.
 
@@ -18,19 +18,32 @@ It's important to remember the limitations of this method: it will only search f
 
 This works by using a local version of the tag finder algorithm ([`find_tags_unifile`](https://github.com/MotusWTS/find\_tags)) in comparison with the tag recordings provided during registration. Note that this local version differs from the version found on Motus, mainly in that Motus searches for tags from all projects across the network (but only those known to be actively deployed during the given time period) whereas this method will only compare raw radio data with the tag patterns it has been provided, regardless of deployment period.
 
-{% hint style="info" %}
-Loading a Lotek tag database is not yet possible on a SensorStation
-{% endhint %}
+## Steps
 
-### Steps
+### Download the Tag Database
 
-1. Navigate to your project's [Manage Tags](https://motus.org/data/project/tags) page and click on the "Download tag database" button on the right hand side
-2. Download the `.sqlite` tag database. The first link contains all tags currently registered to this project, whereas the links below are older format that summarized by yearly quarter. In nearly all cases you will want the first link.
-3. [Connect to your SensorGnome](../connecting.md) with a computer using 'root' as both the username _and_ password and navigate to the [`uboot`](https://docs.motus.org/sensorgnome/appendix/cheatsheet#uboot-folder-configuration-files) folder. If using the V2 SensorGnome software, you can simply upload this via the web UI.
-4. Rename the files `SG_tag_database.sqlite` with the suffix ‘old’, or delete them all together.
-5. Copy the tag database you just downloaded from _motus.org_ into the `uboot` folder. Rename the file to `SG_tag_database.sqlite`
-6. 5\. Reboot the SensorGnome.
-7. 6\. Load [the SensorGnome's web interface](../webinterface.md) and scroll down to near the bottom of the page where it says "Tag Database" and verify the list of tags includes tags from your project.
+1. Navigate to your project's [Manage Tags](https://motus.org/data/project/tags) page and click on the blue "Download tag database" button on the right hand side
+2. Download the `.sqlite` tag database. The first link contains all tags currently registered to this project, whereas the links below are older format that summarized by yearly quarter. In nearly all cases you will want the first link.&#x20;
+
+### Upload the tag database to your station
+
+The following steps will differ depending on whether you are you using a SensorGnome or SensorStation
+
+#### SensorGnome
+
+1. [Connect to your SensorGnome](../connecting.md) with a computer using 'root' as both the username _and_ password and navigate to the [`uboot`](https://docs.motus.org/sensorgnome/appendix/cheatsheet#uboot-folder-configuration-files) folder. If using the V2 SensorGnome software, you can simply upload this via the web UI.
+2. Rename the files `SG_tag_database.sqlite` with the suffix ‘old’, or delete them all together.
+3. Copy the tag database you just downloaded from _motus.org_ into the `uboot` folder. Rename the file to `SG_tag_database.sqlite`
+4. 5\. Reboot the SensorGnome.
+5. 6\. Load [the SensorGnome's web interface](../webinterface.md) and scroll down to near the bottom of the page where it says "Tag Database" and verify the list of tags includes tags from your project.
+
+#### SensorStation
+
+1. Connect to the SensorStation with an Ethernet cable.
+2. Navigate in a browser to `sensorstation.local`
+3. Once the SensorStation web interface loads, scroll down to the very bottom and select "Browse" to choose the file on your computer. There is no need to rename the `.sqlite` file.
+4. Click the red "Upload Tag Database File" button
+5. After seeing the confirmation message scroll up and click the blue button "SensorGnome Interface" to confirm that your tags are there.
 
 You are done! You can now view the ["live known tags" pane](../webinterface.md#pulses-and-tags-pane) at the top of the page to check whether your tags are being detected by this station.
 
