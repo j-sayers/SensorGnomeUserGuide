@@ -5,7 +5,7 @@
 * MicroSD card with _at least_ 16 GB (we recommend 32 GB, but more is also fine).
 * A computer with Windows/Mac OS/Linux.
 * MicroSD card adapter and an SD card reader (most MicroSD cards come with an adapter).
-* The latest SensorGnome software release (as of 2024-03-04 this is [ ](https://sensorgnome.s3.amazonaws.com/images/pimod/sg-armv7-rpi-bullseye-testing-2023-341.zip) [https://sensorgnome.s3.amazonaws.com/images/sg-armv7-rpi-2.0-rc14.zip](https://sensorgnome.s3.amazonaws.com/images/sg-armv7-rpi-2.0-rc14.zip))
+* The latest [SensorGnome software release](https://www.sensorgnome.net/download) (as of 2024-06-06 this is [ ](https://sensorgnome.s3.amazonaws.com/images/pimod/sg-armv7-rpi-bullseye-testing-2023-341.zip) [https://sensorgnome.s3.amazonaws.com/images/sg-armv7-rpi-2.0-rc15.zip](https://sensorgnome.s3.amazonaws.com/images/sg-armv7-rpi-2.0-rc15.zip))
 * **Raspberry Pi Imager** installed on your computer. Software is here: [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/)
 * A Raspberry Pi 2, 3, 4, or Zero 2 W.
 
