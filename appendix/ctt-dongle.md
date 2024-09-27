@@ -3,7 +3,7 @@
 Once you have the SensorGnome loaded with the necessary software to detect CTT LifeTags/ PowerTags (i.e., it's "dual-mode"), you will require a USB receiver dongle for each antenna listening at 434 MHz. These are often referred to as "CTT Motus dongles." &#x20;
 
 {% hint style="info" %}
-_CTT stopped manufacturing these dongles in early 2023. However, they have generously provided the firmware and 3D printing schematics that make it possible to build and assemble your own._
+_CTT stopped manufacturing these dongles in early 2023. However, they have generously provided the firmware and 3D printing schematics that make it possible to build and assemble your own. Please contact the Motus team at Birds Canada if you have an interest in purchasing fully assembed dongles._
 {% endhint %}
 
 **1)** Acquire the necessary components and files
