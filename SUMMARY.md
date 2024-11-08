@@ -27,6 +27,7 @@
 * [How to build a SensorGnome](appendix/buildsg.md)
 * [Reflash FUNcube dongle firmware](appendix/fcdfirmware.md)
 * [Motus data file formats](appendix/fileformats.md)
+* [Configuring SensorGnomes for use outside the Western Hemisphere](appendix/configuring-sensorgnomes-for-use-outside-the-western-hemisphere.md)
 
 ***
 
