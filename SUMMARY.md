@@ -14,6 +14,7 @@
 * [What to bring](appendix/whattobring.md)
 * [Underpowered SensorGnomes](appendix/underpowered-sensorgnomes.md)
 * [Connection and folder path cheatsheet](appendix/cheatsheet.md)
+* [Configuring the SensorGnome frequency](appendix/configuring-the-sensorgnome-frequency.md)
 * [CTT LifeTag compatibility (dual-mode)](appendix/dualmode.md)
 * [CTT Motus receiver dongles for 434 MHz (dual-mode) capability on SensorGnome](appendix/ctt-dongle.md)
 * [Anatomy of a SensorGnome](appendix/anatomy.md)
