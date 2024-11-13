@@ -40,11 +40,13 @@ On a RPi SG the deployment.txt file can be modified directly on the MicroSD card
 
 **2)** [Establish an FTP connection ](../ftp.md)
 
-**3)** Navigate to the configuration folder (`/dev/sdcard/uboo`t on Raspberry Pi or `/boot/uboot` on BeagleBone
+**3)** Navigate to the configuration folder (`/dev/sdcard/uboot` on Raspberry Pi or `/boot/uboot` on BeagleBone
 
 4\) Download the `deployment.txt` file to your computer and modify the frequency setting. There are four places where this is set. Three settings for the various dongles (FunCube Pro, FunCube Pro Plus, and RTL-SDR). These are set to the actual frequency minus 4 kHz, as described above. The fourth setting is at the very bottom of the file and is set to the actual frequency. These settings should be found on or around lines 52, 218, 314, and 364 of the `deployment.txt` file.
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>The frequency setting for the FunCube Pro Plus dongle on line 218</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The frequency setting at the bottom of the file. Note this is the <em>actual</em> frequency.</p></figcaption></figure>
 
 5\) Save the file and re-upload the file back to the `uboot` folder, overwriting the existing file.
 
