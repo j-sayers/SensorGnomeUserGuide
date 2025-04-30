@@ -1,9 +1,4 @@
----
-description: >-
-  This document explains how to connect to your SensorGnome, check its status
-  via the Web Interface, download detection data, update the software, and
-  modify configuration files.
----
+* This repo is archived and has been replaced by https://github.com/MotusWTS/sensorgnome-guide-v1
 
 # Introduction and Overview
 
